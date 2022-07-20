@@ -33,10 +33,10 @@ const Dashboard = () => {
               Home
             </NavLink>
             <NavLink
-              to="home2"
+              to="sale"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Orfer
+              Sale
             </NavLink>
             <NavLink
               to="home1"
@@ -61,33 +61,29 @@ const Dashboard = () => {
               className="fas fa-align-left primary-text fs-4 me-4 toggle-icon"
               onClick={handleSubmit}
             ></i>
-            <Navbar.Brand href="#home">Sale Window</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto">
-                <NavDropdown
-                  title="Profile"
-                  id="basic-nav-dropdown"
-                  style={{
-                    color: "red",
-                    fontWeight: "bold",
-                    marginRight: "80px",
-                  }}
-                >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
+            <Nav className="ms-auto">
+              <NavDropdown
+                title="Profile"
+                // id="basic-nav-dropdown"
+                style={{
+                  color: "red",
+                  fontWeight: "bold",
+                  marginRight: "80px",
+                }}
+              >
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Something
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
           </Navbar>
 
           {/* Dashboard Main Content  */}
-          <Container fluid>
+          <Container fluid style={{ padding: "10px" }}>
             <Outlet />
           </Container>
         </div>

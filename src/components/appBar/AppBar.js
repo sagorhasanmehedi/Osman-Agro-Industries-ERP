@@ -8,7 +8,7 @@ const data = [
     name: "Dashboard",
   },
   {
-    path: "/",
+    path: "/home1",
     name: "Suspense",
   },
   {
@@ -18,9 +18,10 @@ const data = [
 ];
 
 function AppBar() {
-  const activeStyle = {
-    textDecoration: "underline",
+  let activeStyle = {
+    color: "red",
   };
+
   return (
     <Navbar className="navbar" expand="lg">
       <Container>
@@ -31,7 +32,12 @@ function AppBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {data.map((item, index) => (
-              <NavLink to={item.path} key={index} className="list_item">
+              <NavLink
+                to={item.path}
+                key={index}
+                className="list_item"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
                 {item.name}
               </NavLink>
             ))}
