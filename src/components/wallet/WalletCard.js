@@ -5,7 +5,7 @@ import {
   ContainerCenter,
   PlainText,
   WalletDiv,
-} from "../../Pages/loginPage/LoginStyled";
+} from "../../Pages/landingPage/LandingPageStyled";
 
 const WalletCard = () => {
   return (

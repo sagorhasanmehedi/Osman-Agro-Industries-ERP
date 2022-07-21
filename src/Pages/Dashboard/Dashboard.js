@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./Dashboard.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -69,6 +69,7 @@ const Dashboard = () => {
                   color: "red",
                   fontWeight: "bold",
                   marginRight: "80px",
+                  padding: "7px 0px",
                 }}
               >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

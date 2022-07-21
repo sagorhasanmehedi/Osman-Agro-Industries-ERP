@@ -25,8 +25,8 @@ const SaleWindowTable = () => {
         </tr>
       </thead>
       <tbody>
-        {Array.from({ length: 12 }).map((_, idx) => (
-          <tr>
+        {Array.from({ length: 6 }).map((_, idx) => (
+          <tr key={idx}>
             <td>Si</td>
             <td>Invoice</td>
             <td>Status</td>

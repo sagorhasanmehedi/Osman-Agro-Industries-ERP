@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Input, CardContainer, Lavel, Button } from "./LoginStyled";
+import { Input, CardContainer, Button, Select } from "./LandingPageStyled";
 import loginImage from "../../assets/loginImage.png";
 
 const LoginPage = () => {
@@ -20,17 +20,20 @@ const LoginPage = () => {
         </Col>
         <Col>
           <CardContainer>
-            <Lavel onChange={(e) => console.log(e.target.value)}>
+            <Select
+              onChange={(e) => console.log(e.target.value)}
+              Padding="21px 14px"
+            >
               <option>Company</option>
               <option value="Wixtech1">Wixtech</option>
               <option value="Wixtech2">Wixtech2</option>
               <option value="Wixtech3">Wixtech3</option>
-            </Lavel>
+            </Select>
 
-            <Input type="email" placeholder="Email" />
-            <Input type="phone" placeholder="Phone" />
-            <Input type="password" placeholder="Password" />
-            <Button>Login</Button>
+            <Input type="email" placeholder="Email" Padding="21px 14px" />
+            <Input type="phone" placeholder="Phone" Padding="21px 14px" />
+            <Input type="password" placeholder="Password" Padding="21px 14px" />
+            <Button Padding="20px 100px">Login</Button>
           </CardContainer>
         </Col>
       </Row>

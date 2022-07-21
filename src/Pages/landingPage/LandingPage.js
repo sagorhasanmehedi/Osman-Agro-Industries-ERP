@@ -1,6 +1,6 @@
 import React from "react";
 import AppBar from "../../components/appBar/AppBar";
-import LoginPage from "../loginPage/LoginPage";
+import LoginPage from "./LoginPage";
 import WalletPage from "./WalletPage";
 
 const LandingPage = () => {

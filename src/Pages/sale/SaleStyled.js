@@ -10,13 +10,3 @@ export const PlainText2 = styled.div`
   padding: 10px 0px;
   border-bottom: 1px solid gray;
 `;
-
-export const ButtonGroupContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 17px;
-  margin: 10px 0px;
-`;
