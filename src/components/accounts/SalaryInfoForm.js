@@ -4,7 +4,7 @@ import {
   Button,
   CardContainer,
   Input,
-} from "../../../Pages/landingPage/LandingPageStyled";
+} from "../../Pages/landingPage/LandingPageStyled";
 
 const SalaryInfoForm = () => {
   return (

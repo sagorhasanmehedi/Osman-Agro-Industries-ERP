@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import BankAccountForm from "../../components/sales/accounts/BankAccountForm";
-import IncomeExpenseForm from "../../components/sales/accounts/IncomeExpenseForm";
+import { PlainText2 } from "../sale/SaleStyled";
+import CustomerAndSupplierAccount from "./CustomerAndSupplierAccount";
+import EmployeeAccount from "./EmployeeAccount";
+import BankAccountForm from "../../components/accounts/BankAccountForm";
+import IncomeExpenseForm from "../../components/accounts/IncomeExpenseForm";
 import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
-import CustomerAndSupplierAccount from "./allAccountsPage/CustomerAndSupplierAccount";
-import EmployeeAccount from "./allAccountsPage/EmployeeAccount";
-import { PlainText2 } from "./SaleStyled";
 
 const AddAccount = () => {
   const [data, setData] = useState("Customer & Supplier Account");

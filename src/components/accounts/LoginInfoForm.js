@@ -5,7 +5,7 @@ import {
   CardContainer,
   Input,
   Lavel,
-} from "../../../Pages/landingPage/LandingPageStyled";
+} from "../../Pages/landingPage/LandingPageStyled";
 
 const LoginInfoForm = () => {
   return (

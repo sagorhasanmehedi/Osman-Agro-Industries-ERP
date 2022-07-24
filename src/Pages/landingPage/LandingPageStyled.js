@@ -5,6 +5,7 @@ export const CardContainer = styled.div`
   box-shadow: ${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.16)"};
   border-radius: 10px;
   padding: ${(props) => props.Padding || "20px"};
+  margin-top: 20px;
 `;
 
 export const Input = styled.input`
@@ -95,6 +96,7 @@ export const ContainerCenter = styled.div`
 
 export const ButtonGroupContainer = styled.div`
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: ${(props) => props.Gap || "0px"};
   background: #ffffff;

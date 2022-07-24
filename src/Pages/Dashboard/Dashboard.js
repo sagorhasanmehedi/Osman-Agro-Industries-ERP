@@ -5,6 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
+import { SidebarData } from "./SidebarData";
+import SubMenu from "./SubMenu";
 
 const Dashboard = () => {
   const [data, setData] = useState(false);
@@ -26,13 +28,13 @@ const Dashboard = () => {
             HRM Project
           </div>
           <div className="list-group list-group-flush my-3 text-start">
-            <NavLink
+            {/*  <NavLink
               to="/"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               Home
             </NavLink>
-            <NavLink
+        <NavLink
               to="sale"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
@@ -49,7 +51,10 @@ const Dashboard = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               Product
-            </NavLink>
+            </NavLink> */}
+            {SidebarData.map((item, index) => {
+              return <SubMenu item={item} key={index} />;
+            })}
           </div>
         </div>
         {/* #sidebar-wrapper*/}

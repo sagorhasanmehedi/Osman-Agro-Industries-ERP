@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import SharedButtonNavigation from "../../shared/SharedButtonNavigation";
-import EmployeeAccountForm from "./EmployeeAccountForm";
-import LoginInfoForm from "./LoginInfoForm";
-import SalaryInfoForm from "./SalaryInfoForm";
+import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
+import EmployeeAccountForm from "../../components/accounts/EmployeeAccountForm";
+import LoginInfoForm from "../../components/accounts/LoginInfoForm";
+import SalaryInfoForm from "../../components/accounts/SalaryInfoForm";
+import BialogycalForm from "../../components/accounts/BialogycalForm";
 
 const EmployeeAccountPage = () => {
   const [data, setData] = useState("Basic Info");
@@ -20,6 +21,7 @@ const EmployeeAccountPage = () => {
         setData={setData}
       />
       {data === "Basic Info" && <EmployeeAccountForm />}
+      {data === "Biographical Info" && <BialogycalForm />}
       {data === "Salary Info" && <SalaryInfoForm />}
       {data === "Login Info" && <LoginInfoForm />}
     </div>

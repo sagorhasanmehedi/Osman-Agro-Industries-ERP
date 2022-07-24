@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PartyAccountForm from "../../../components/sales/accounts/PartyAccountForm";
-import PartyBankAccountForm from "../../../components/sales/accounts/PartyBankAccountForm";
-import SharedButtonNavigation from "../../../components/shared/SharedButtonNavigation";
+import PartyAccountForm from "../../components/accounts/PartyAccountForm";
+import PartyBankAccountForm from "../../components/accounts/PartyBankAccountForm";
+import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
 
 const CustomerAndSupplierAccount = () => {
   const [data, setData] = useState("Party Account Details");

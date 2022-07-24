@@ -3,7 +3,8 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import LandingPage from "./Pages/landingPage/LandingPage";
 import PageNotFound from "./Pages/PageNotFound";
 import SaleWindow from "./Pages/sale/SaleWindow";
-import AddAccount from "./Pages/sale/AddAccount";
+import AddAccount from "./Pages/allAccountsPage/AddAccount";
+import NewSale from "./Pages/sale/NewSale";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="dashboard" element={<Dashboard />}>
           <Route path="sale" element={<SaleWindow />} />
+          <Route path="newSale" element={<NewSale />} />
           <Route path="addaccount" element={<AddAccount />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
