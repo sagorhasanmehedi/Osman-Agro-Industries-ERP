@@ -70,27 +70,6 @@ const SaleSummary = () => {
           </Table>
         </Col>
       </Row>
-
-      <Row>
-        <Col style={{ paddingTop: "30px" }}>
-          <img
-            src="https://images.indianexpress.com/2022/07/Nitish-kumar-8.jpeg"
-            alt="image Preview"
-            style={{ width: "100%", height: "300px" }}
-          />
-        </Col>
-        <Col style={{ paddingTop: "30px" }}>
-          <Select>
-            <option>Select Payment Method</option>
-            <option>Cash Counter</option>
-            <option>Bank Ac</option>
-            <option>Mobile Banking</option>
-          </Select>
-          <Lavel>Upload Your Profile</Lavel>
-          <Input type="file" placeholder="Upload your file" />
-          <Button Padding="10px 40px"> Save </Button>
-        </Col>
-      </Row>
     </CardContainer>
   );
 };

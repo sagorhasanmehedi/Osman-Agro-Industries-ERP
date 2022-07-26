@@ -1,7 +1,6 @@
 import React from "react";
 import CustomerDetailsForm from "../../components/sales/CustomerDetailsForm";
 import ItemDetailsForm from "../../components/sales/ItemDetailsForm";
-import SaleSummary from "../../components/sales/SaleSummary";
 import { PlainText2 } from "./SaleStyled";
 
 const NewSale = () => {
@@ -11,8 +10,6 @@ const NewSale = () => {
       <CustomerDetailsForm />
       <PlainText2>Sales Summary</PlainText2>
       <ItemDetailsForm />
-      <PlainText2>Sales Summary</PlainText2>
-      <SaleSummary />
     </>
   );
 };

@@ -43,6 +43,29 @@ export const Lavel = styled.label`
   }
 `;
 
+
+export const ButtonGroupContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  padding: ${(props) => props.Padding || "0px"};
+  gap: ${(props) => props.Gap || "0px"};
+  /* background: #ffffff; */
+  border-radius: ${(props) => props.BorderRadius || "0px"};
+`;
+export const ButtonGroup = styled.button`
+  background: #0488a0;
+  color: white;
+  font-family: "Gotham Rounded";
+  font-style: normal;
+  border: none;
+  border-right: 1px solid white;
+  font-weight: ${(props) => props.FontWeight || "600"};
+  font-size: ${(props) => props.FontSize || "16px"};
+  padding: ${(props) => props.Padding || "10px"};
+`;
+
 export const Button = styled.button`
   background: #0488a0;
   color: white;
@@ -53,18 +76,6 @@ export const Button = styled.button`
   padding: ${(props) => props.Padding || "10px"};
   border-radius: ${(props) => props.BorderRadius || "8px"};
   border: none;
-`;
-export const ButtonGroup = styled.button`
-  background: #0488a0;
-  color: white;
-  font-family: "Gotham Rounded";
-  font-style: normal;
-  font-weight: ${(props) => props.FontWeight || "600"};
-  font-size: ${(props) => props.FontSize || "16px"};
-  padding: ${(props) => props.Padding || "10px"};
-  margin: 0px;
-  border: none;
-  border-right: 1px solid white;
 `;
 
 export const WalletDiv = styled.div`
@@ -94,13 +105,4 @@ export const ContainerCenter = styled.div`
   align-items: center;
 `;
 
-export const ButtonGroupContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: ${(props) => props.Gap || "0px"};
-  background: #ffffff;
-  border-radius: ${(props) => props.BorderRadius || "0px"};
-  padding: ${(props) => props.Padding || "0px"};
-  margin: 10px 0px;
-`;
+

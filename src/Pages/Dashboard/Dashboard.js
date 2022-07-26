@@ -14,10 +14,7 @@ const Dashboard = () => {
     setData(!data);
   };
 
-  let activeStyle = {
-    backgroundColor: "#7bc0ce",
-    borderLeft: "2px solid white",
-  };
+
 
   return (
     <>
