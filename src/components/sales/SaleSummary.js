@@ -1,30 +1,16 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import {
-  Button,
-  CardContainer,
-  Input,
-  Lavel,
-  Select,
-} from "../../Pages/landingPage/LandingPageStyled";
 import { Row, Col } from "react-bootstrap";
+import { TextAriea } from "../../Pages/landingPage/LandingPageStyled";
 
 const SaleSummary = () => {
   return (
-    <CardContainer>
-      <Row>
-        <Col xs={6}>
-          <div
-            style={{
-              padding: "10px",
-              border: "1px solid black",
-              height: "100%",
-            }}
-          >
-            sale Details
-          </div>
+    <>
+      <Row xs={1} sm={2}>
+        <Col>
+          <TextAriea rows={10} placeholder="Details..." />
         </Col>
-        <Col xs={6}>
+        <Col>
           <Table
             striped
             responsive
@@ -70,7 +56,7 @@ const SaleSummary = () => {
           </Table>
         </Col>
       </Row>
-    </CardContainer>
+    </>
   );
 };
 

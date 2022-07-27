@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Button,
-  CardContainer,
+  HeaderName,
   Input,
   Lavel,
   Select,
@@ -12,7 +12,7 @@ import SaleSummary from "./SaleSummary";
 
 const ItemDetailsForm = () => {
   return (
-    <CardContainer>
+    <>
       <Row>
         <Col>
           <Select>
@@ -44,12 +44,15 @@ const ItemDetailsForm = () => {
           <Button>Add</Button>
         </Col>
       </Row>
-      <PlainText2>Sales Summary</PlainText2>
+      <HeaderName>Sales Summary</HeaderName>
       <SaleSummary />
       <Row>
         <Col style={{ paddingTop: "30px" }}>
-          <img src="https://images.indianexpress.com/2022/07/Nitish-kumar-8.jpeg" alt="image Preview"
-            style={{ width: "100%", height: "300px" }} />
+          <img
+            src="https://images.indianexpress.com/2022/07/Nitish-kumar-8.jpeg"
+            alt="image Preview"
+            style={{ width: "100%", height: "300px" }}
+          />
         </Col>
         <Col style={{ paddingTop: "30px" }}>
           <Select>
@@ -60,10 +63,9 @@ const ItemDetailsForm = () => {
           </Select>
           <Lavel>Upload Your Profile</Lavel>
           <Input type="file" placeholder="Upload your file" />
-          <Button Padding="10px 40px"> Save </Button>
         </Col>
       </Row>
-    </CardContainer>
+    </>
   );
 };
 

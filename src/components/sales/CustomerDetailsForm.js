@@ -2,14 +2,13 @@ import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import {
   Button,
-  CardContainer,
   Input,
   Select,
 } from "../../Pages/landingPage/LandingPageStyled";
 
 const CustomerDetailsForm = () => {
   return (
-    <CardContainer>
+    <>
       <Row>
         <Col xs={9}>
           <Row>
@@ -79,7 +78,7 @@ const CustomerDetailsForm = () => {
           <Input type="text" placeholder="Estimate No" />
         </Col>
       </Row>
-    </CardContainer>
+    </>
   );
 };
 

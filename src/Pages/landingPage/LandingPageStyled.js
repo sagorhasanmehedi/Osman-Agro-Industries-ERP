@@ -20,6 +20,17 @@ export const Input = styled.input`
     color: ${(props) => props.PlaceHolderColor || "#0488a0"};
   }
 `;
+export const TextAriea = styled.textarea`
+  width: 100%;
+  padding: ${(props) => props.Padding || "10px"};
+  border: 1px solid #e0e0e0;
+  font-family: "Gotham Rounded";
+  border-radius: 7px;
+  color: ${(props) => props.Color || "#0488a0"};
+  ::placeholder {
+    color: ${(props) => props.PlaceHolderColor || "#0488a0"};
+  }
+`;
 export const Select = styled.select`
   width: 100%;
   margin: 10px 0px;
@@ -42,7 +53,6 @@ export const Lavel = styled.label`
     color: ${(props) => props.PlaceHolderColor || "#0488a0"};
   }
 `;
-
 
 export const ButtonGroupContainer = styled.div`
   display: flex;
@@ -98,11 +108,18 @@ export const PlainText = styled.p`
   font-size: ${(props) => props.FontSize || "16px"};
   text-align: ${(props) => props.TextAlign || "start"};
 `;
+export const HeaderName = styled.div`
+  padding: 10px 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  color: ${(props) => props.Color || "#0488a0"};
+  font-weight: ${(props) => props.FontWeight || "600"};
+  font-size: ${(props) => props.FontSize || "20px"};
+  text-align: ${(props) => props.TextAlign || "start"};
+`;
 
 export const ContainerCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-
-

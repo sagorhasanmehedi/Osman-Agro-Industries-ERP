@@ -1,31 +1,9 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import { HeaderName } from "../../Pages/landingPage/LandingPageStyled";
-import CustomerDetails from "./CustomerDetails";
-import SaleSummary from "./SaleSummary";
 
-const InvoiceOfficeCopy = () => {
+const ItemDetails = () => {
   return (
     <>
-      <HeaderName>Customer Details</HeaderName>
-      <Table
-        striped
-        responsive
-        bordered
-        hover
-        size="sm"
-        style={{ background: "white" }}
-      >
-        <tbody>
-          <CustomerDetails />
-          <tr>
-            <th>Product Order By : </th>
-            <th>Estimate Data :</th>
-            <th>Estimate No :</th>
-          </tr>
-        </tbody>
-      </Table>
-      <HeaderName>Item Details</HeaderName>
       <Table
         striped
         responsive
@@ -55,10 +33,8 @@ const InvoiceOfficeCopy = () => {
           ))}
         </tbody>
       </Table>
-      <HeaderName>Sale Summary</HeaderName>
-      <SaleSummary />
     </>
   );
 };
 
-export default InvoiceOfficeCopy;
+export default ItemDetails;
