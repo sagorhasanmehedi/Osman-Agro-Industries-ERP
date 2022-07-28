@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import SubSaleInvoice from "../../components/sales/SubSaleInvoice";
 import ButtonNavigation from "../../components/shared/ButtonNavigation";
 import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
+import ChallanInvoice from "./Challan/ChallanInvoice";
 import DeliveryInvoiceDelivery from "./Delivery/DeliveryInvoiceDelivery";
 import { PlainText2 } from "./SaleStyled";
 
@@ -32,6 +33,8 @@ const SaleInvoice = () => {
     navigation("/dashboard/updateSale");
   } else if (data === "Add Delivery") {
     navigation("/dashboard/addDelivery");
+  } else if (data === "Add Challan") {
+    navigation("/dashboard/addChallan");
   }
   return (
     <>
@@ -44,6 +47,7 @@ const SaleInvoice = () => {
       />
       {data2 === "Invoice" && <SubSaleInvoice />}
       {data2 === "Delivery" && <DeliveryInvoiceDelivery />}
+      {data2 === "Challan" && <ChallanInvoice />}
     </>
   );
 };
