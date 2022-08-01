@@ -9,6 +9,12 @@ import SaleInvoice from "./Pages/sale/SaleInvoice";
 import UpdateSale from "./Pages/sale/UpdateSale";
 import AddDelivery from "./Pages/sale/AddDelivery";
 import AddChallan from "./Pages/sale/Challan/AddChallan";
+import AddBrand from "./Pages/product/AddBrand";
+import AddCategory from "./Pages/product/AddCategory";
+import AddUnite from "./Pages/product/AddUnite";
+import Product from "./Pages/product/Product";
+import ManageProduct from "./Pages/product/ManageProduct";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +29,15 @@ function App() {
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="addaccount" element={<AddAccount />} />
         </Route>
+
+        <Route path="product" element={<Dashboard />}>
+          <Route path="addproduct" element={<Product />} />
+          <Route path="manageproduct" element={<ManageProduct />} />
+          <Route path="brand" element={<AddBrand />} />
+          <Route path="category" element={<AddCategory />} />
+          <Route path="unite" element={<AddUnite />} />
+        </Route>
+
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

@@ -11,7 +11,7 @@ const DeliveryInvoiceDelivery = () => {
   const [data, setData] = useState("Delivery Copy");
   return (
     <>
-      <ButtonGroupContainer style={{ justifyContent: "space-between" }}>
+      <ButtonGroupContainer Possition="space-between">
         <Button>Delivery Invoice</Button>
         <ButtonGroup>BarCode</ButtonGroup>
         <Button

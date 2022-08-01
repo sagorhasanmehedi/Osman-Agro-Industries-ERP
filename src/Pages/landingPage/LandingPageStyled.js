@@ -48,6 +48,7 @@ export const Lavel = styled.label`
   width: 100%;
   padding: ${(props) => props.Padding || "15px 10px 0px"};
   font-family: "Gotham Rounded";
+  font-weight: ${(props) => props.FontWeight || "600"};
   color: ${(props) => props.Color || "#0488a0"};
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "#0488a0"};
@@ -57,6 +58,8 @@ export const Lavel = styled.label`
 export const ButtonGroupContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: ${(props) => props.Possition || "start"};
+  justi
   flex-wrap: wrap;
   margin: 10px 0px;
   padding: ${(props) => props.Padding || "0px"};
@@ -120,6 +123,6 @@ export const HeaderName = styled.div`
 
 export const ContainerCenter = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: ${(props) => props.Possition || "center"};
   align-items: center;
 `;

@@ -14,7 +14,7 @@ export const SidebarData = [
   },
   {
     title: "Sale",
-    path: "/dashboard/sale",
+    path: "#",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -22,7 +22,7 @@ export const SidebarData = [
     subNav: [
       {
         title: "New Sale",
-        path: "/reports/reports1",
+        path: "/dashboard/sale",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
@@ -40,6 +40,38 @@ export const SidebarData = [
       {
         title: "Sale Report",
         path: "/reports/reports3",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
+    title: "Product",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage Product",
+        path: "/Product/manageproduct",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Brand",
+        path: "/product/brand",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+
+      {
+        title: "Category",
+        path: "/product/category",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Unite",
+        path: "/product/unite",
         icon: <IoIcons.IoIosPaper />,
       },
     ],

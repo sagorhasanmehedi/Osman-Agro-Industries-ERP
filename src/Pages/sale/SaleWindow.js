@@ -12,29 +12,46 @@ const SaleWindow = () => {
   return (
     <div>
       <PlainText2>Sale Window</PlainText2>
-      <ButtonGroupContainer Padding="17px" BorderRadius="8px" Gap="6px">
+      <ButtonGroupContainer
+        Padding="17px"
+        BorderRadius="8px"
+        Gap="6px"
+        style={{ overflowX: "auto" }}
+      >
         <NavLink to="/dashboard/newSale">
           <Button>New Sale</Button>
         </NavLink>
-        <NavLink to="#" style={{ marginRight: "300px" }}>
+        <NavLink to="#">
           <Button>Pos Sale</Button>
         </NavLink>
 
-        <div style={{ width: "300px" }}>
-          <Input type="search" placeholder="Invoice Search" />
-        </div>
         <div
           style={{
-            width: "300px",
-            margin: "0px 10px",
+            margin: "0px auto",
             display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
             gap: "10px",
           }}
         >
-          <Input type="date" placeholder="Invoice Search" />
-          <Input type="date" placeholder="Invoice Search" />
+          <Input
+            type="search"
+            placeholder="Invoice Search"
+            style={{ width: "200px" }}
+          />
+          <Input
+            type="date"
+            placeholder="Invoice Search"
+            style={{ width: "150px" }}
+          />
+          <Input
+            type="date"
+            placeholder="Invoice Search"
+            style={{ width: "150px" }}
+          />
+          <Button>Search</Button>
         </div>
-        <Button>Search</Button>
+
         <Button style={{ marginLeft: "auto" }}>Export</Button>
         <Button>Print</Button>
       </ButtonGroupContainer>

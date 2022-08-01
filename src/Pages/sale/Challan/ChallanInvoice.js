@@ -9,7 +9,7 @@ const ChallanInvoice = () => {
   const [data, setData] = useState("Challan 1");
   return (
     <>
-      <ButtonGroupContainer style={{ justifyContent: "space-between" }}>
+      <ButtonGroupContainer Possition="space-between">
         <Button>Vehicle Challan</Button>
         <Button
           style={{
