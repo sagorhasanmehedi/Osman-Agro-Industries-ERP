@@ -112,7 +112,7 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Location input",
+        title: "Location",
         path: "/accounts/location",
         icon: <IoIcons.IoIosPaper />,
       },
