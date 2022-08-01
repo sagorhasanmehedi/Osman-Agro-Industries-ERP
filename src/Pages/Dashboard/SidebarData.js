@@ -78,7 +78,7 @@ export const SidebarData = [
   },
   {
     title: "Accounts",
-    path: "/dashboard/addaccount",
+    path: "#",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -86,34 +86,34 @@ export const SidebarData = [
     subNav: [
       {
         title: "Add Accounts",
-        path: "/dashboard/addaccount",
+        path: "/accounts/addaccount",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
         title: "All Accounts",
-        path: "/reports/addaccount",
+        path: "/accounts/allaccounts",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
         title: "Account Type",
-        path: "/reports/reports3",
+        path: "/accounts/accounttype",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Account Category",
-        path: "/reports/reports3",
+        path: "/accounts/category",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Account Area",
-        path: "/reports/reports3",
+        path: "/accounts/area",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Location input",
-        path: "/reports/reports3",
+        path: "/accounts/location",
         icon: <IoIcons.IoIosPaper />,
       },
     ],

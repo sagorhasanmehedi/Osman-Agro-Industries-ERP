@@ -15,6 +15,7 @@ const SidebarLabel = styled.span`
 const DropdownLink = styled(NavLink)`
   display: flex;
   align-items: center;
+  padding: "0px 270px";
 `;
 
 const SubMenu = ({ item }) => {
@@ -25,25 +26,27 @@ const SubMenu = ({ item }) => {
   return (
     <>
       <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
-        <div>
+        <span style={{ padding: "3px 0px 3px 0px" }}>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
-        </div>
+        </span>
         <div>
           {item.subNav && subnav
             ? item.iconOpened
             : item.subNav
-              ? item.iconClosed
-              : null}
+            ? item.iconClosed
+            : null}
         </div>
       </SidebarLink>
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <div style={{ background: "#21454d", padding: "5px 16px" }} >
+            <div style={{ background: "#21454d" }}>
               <DropdownLink to={item.path} key={index}>
-                {item.icon}
-                <SidebarLabel>{item.title}</SidebarLabel>
+                <span style={{ padding: "3px 0px 3px 20px" }}>
+                  {item.icon}
+                  <SidebarLabel>{item.title}</SidebarLabel>
+                </span>
               </DropdownLink>
             </div>
           );

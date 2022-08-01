@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: ${(props) => props.Width || "100%"};
   margin: 10px 0px;
   padding: ${(props) => props.Padding || "10px"};
   border: 1px solid #e0e0e0;
@@ -21,7 +21,7 @@ export const Input = styled.input`
   }
 `;
 export const TextAriea = styled.textarea`
-  width: 100%;
+  width: ${(props) => props.Width || "100%"};
   padding: ${(props) => props.Padding || "10px"};
   border: 1px solid #e0e0e0;
   font-family: "Gotham Rounded";
@@ -32,7 +32,7 @@ export const TextAriea = styled.textarea`
   }
 `;
 export const Select = styled.select`
-  width: 100%;
+  width: ${(props) => props.Width || "100%"};
   margin: 10px 0px;
   padding: ${(props) => props.Padding || "10px"};
   border: 1px solid #e0e0e0;
@@ -45,7 +45,7 @@ export const Select = styled.select`
 `;
 
 export const Lavel = styled.label`
-  width: 100%;
+  width:   width: ${(props) => props.Width || "100%"};
   padding: ${(props) => props.Padding || "15px 10px 0px"};
   font-family: "Gotham Rounded";
   font-weight: ${(props) => props.FontWeight || "600"};
@@ -59,13 +59,12 @@ export const ButtonGroupContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: ${(props) => props.Possition || "start"};
-  justi
-  flex-wrap: wrap;
+  overflow-x: auto;
   margin: 10px 0px;
   padding: ${(props) => props.Padding || "0px"};
   gap: ${(props) => props.Gap || "0px"};
-  /* background: #ffffff; */
   border-radius: ${(props) => props.BorderRadius || "0px"};
+  /* background: #ffffff; */
 `;
 export const ButtonGroup = styled.button`
   background: #0488a0;
@@ -86,7 +85,7 @@ export const Button = styled.button`
   font-style: normal;
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "16px"};
-  padding: ${(props) => props.Padding || "10px"};
+  padding: ${(props) => props.Padding || "10px 20px"};
   border-radius: ${(props) => props.BorderRadius || "8px"};
   border: none;
 `;

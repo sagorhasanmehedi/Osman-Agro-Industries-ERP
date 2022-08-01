@@ -14,8 +14,6 @@ const Dashboard = () => {
     setData(!data);
   };
 
-
-
   return (
     <>
       <div className="d-flex" id="wrapper">
@@ -24,31 +22,14 @@ const Dashboard = () => {
           <div className="sidebar-heading text-center py-3 primary-text fs-4 fw-bold text-uppercase border-bottom">
             HRM Project
           </div>
-          <div className="list-group list-group-flush my-3 text-start">
+          <div className="list-group list-group-flush text-start">
             {/*  <NavLink
               to="/"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               Home
             </NavLink>
-        <NavLink
-              to="sale"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
-            >
-              Sale
-            </NavLink>
-            <NavLink
-              to="home1"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
-            >
-              Admin
-            </NavLink>
-            <NavLink
-              to="home3"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
-            >
-              Product
-            </NavLink> */}
+      */}
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;
             })}
