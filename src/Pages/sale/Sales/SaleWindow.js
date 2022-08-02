@@ -1,23 +1,18 @@
 import React from "react";
-import SaleWindowTable from "../../components/sales/SaleWindowTable";
+import SaleWindowTable from "../../../components/sales/SaleWindowTable";
 import {
   ButtonGroupContainer,
   Button,
   Input,
-} from "../landingPage/LandingPageStyled";
-import { PlainText2 } from "./SaleStyled";
+} from "../../landingPage/LandingPageStyled";
+import { PlainText2 } from "../SaleStyled";
 import { NavLink } from "react-router-dom";
 
 const SaleWindow = () => {
   return (
     <div>
       <PlainText2>Sale Window</PlainText2>
-      <ButtonGroupContainer
-        Padding="17px"
-        BorderRadius="8px"
-        Gap="6px"
-        style={{ overflowX: "auto" }}
-      >
+      <ButtonGroupContainer Gap="6px">
         <NavLink to="/dashboard/newSale">
           <Button>New Sale</Button>
         </NavLink>

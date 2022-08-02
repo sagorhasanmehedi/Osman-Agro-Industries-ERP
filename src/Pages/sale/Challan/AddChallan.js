@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Table } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import CustomerDetails from "../../../components/sales/CustomerDetails";
+import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
 import ItemDetails from "../../../components/sales/ItemDetails";
 import {
   Button,

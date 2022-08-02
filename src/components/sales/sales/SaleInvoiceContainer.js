@@ -3,11 +3,11 @@ import {
   Button,
   ButtonGroup,
   ButtonGroupContainer,
-} from "../../Pages/landingPage/LandingPageStyled";
+} from "../../../Pages/landingPage/LandingPageStyled";
 import InvoiceCustomerCopy from "./InvoiceCustomerCopy";
 import InvoiceOfficeCopy from "./InvoiceOfficeCopy";
 
-const SubSaleInvoice = () => {
+const SaleInvoiceContainer = () => {
   const [data, setData] = useState("OfficeInvoice");
   return (
     <>
@@ -39,4 +39,4 @@ const SubSaleInvoice = () => {
   );
 };
 
-export default SubSaleInvoice;
+export default SaleInvoiceContainer;

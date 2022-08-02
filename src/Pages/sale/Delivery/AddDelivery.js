@@ -7,12 +7,12 @@ import {
   PlainText,
   Select,
   TextAriea,
-} from "../landingPage/LandingPageStyled";
-import { PlainText2 } from "./SaleStyled";
+} from "../../landingPage/LandingPageStyled";
+import { PlainText2 } from "../SaleStyled";
 import { Table, Row, Col } from "react-bootstrap";
-import CustomerDetails from "../../components/sales/CustomerDetails";
-import DeliveryItem from "../../components/sales/delivery/DeliveryItem";
-import NewDeliveryItem from "../../components/sales/delivery/NewDeliveryItem";
+import DeliveryItem from "../../../components/sales/delivery/DeliveryItem";
+import NewDeliveryItem from "../../../components/sales/delivery/NewDeliveryItem";
+import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
 
 const AddDelivery = () => {
   return (

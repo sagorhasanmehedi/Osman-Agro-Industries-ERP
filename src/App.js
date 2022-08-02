@@ -2,12 +2,12 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import LandingPage from "./Pages/landingPage/LandingPage";
 import PageNotFound from "./Pages/PageNotFound";
-import SaleWindow from "./Pages/sale/SaleWindow";
+import SaleWindow from "./Pages/sale/Sales/SaleWindow";
 import AddAccount from "./Pages/accountsPages/AddAccount";
-import NewSale from "./Pages/sale/NewSale";
-import SaleInvoice from "./Pages/sale/SaleInvoice";
+import NewSale from "./Pages/sale/Sales/NewSale";
+import SaleInvoice from "./Pages/sale/Sales/SaleInvoice";
 import UpdateSale from "./Pages/sale/UpdateSale";
-import AddDelivery from "./Pages/sale/AddDelivery";
+import AddDelivery from "./Pages/sale/Delivery/AddDelivery";
 import AddChallan from "./Pages/sale/Challan/AddChallan";
 import AddBrand from "./Pages/product/AddBrand";
 import AddCategory from "./Pages/product/AddCategory";
@@ -19,6 +19,9 @@ import AddAccountType from "./Pages/accountsPages/AddAccountType";
 import AddAccountArea from "./Pages/accountsPages/AddAccountArea";
 import AllAccounts from "./Pages/accountsPages/AllAccounts";
 import Location from "./Pages/accountsPages/Location";
+import ManagePurchase from "./Pages/purchasePages/Purchases/ManagePurchase";
+import NewPurchase from "./Pages/purchasePages/Purchases/NewPurchase";
+import PurchaseInvoice from "./Pages/purchasePages/Purchases/PurchaseInvoice";
 
 function App() {
   return (
@@ -40,6 +43,12 @@ function App() {
           <Route path="brand" element={<AddBrand />} />
           <Route path="category" element={<AddCategory />} />
           <Route path="unite" element={<AddUnite />} />
+        </Route>
+
+        <Route path="purchase" element={<Dashboard />}>
+          <Route path="managepurchase" element={<ManagePurchase />} />
+          <Route path="newpurchase" element={<NewPurchase />} />
+          <Route path="purchaseInvoice" element={<PurchaseInvoice />} />
         </Route>
 
         <Route path="accounts" element={<Dashboard />}>

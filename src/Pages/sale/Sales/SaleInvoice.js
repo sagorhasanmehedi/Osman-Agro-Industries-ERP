@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import SubSaleInvoice from "../../components/sales/SubSaleInvoice";
-import ButtonNavigation from "../../components/shared/ButtonNavigation";
-import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
-import ChallanInvoice from "./Challan/ChallanInvoice";
-import DeliveryInvoiceDelivery from "./Delivery/DeliveryInvoiceDelivery";
-import { PlainText2 } from "./SaleStyled";
+import SaleInvoiceContainer from "../../../components/sales/sales/SaleInvoiceContainer";
+import ButtonNavigation from "../../../components/shared/ButtonNavigation";
+import SharedButtonNavigation from "../../../components/shared/SharedButtonNavigation";
+import ChallanInvoice from "../Challan/ChallanInvoice";
+import DeliveryInvoiceDelivery from "../Delivery/DeliveryInvoiceDelivery";
+import { PlainText2 } from "../SaleStyled";
 
 const SaleInvoice = () => {
   const navigation = useNavigate();
@@ -45,7 +45,7 @@ const SaleInvoice = () => {
         data={data2}
         setData={setData2}
       />
-      {data2 === "Invoice" && <SubSaleInvoice />}
+      {data2 === "Invoice" && <SaleInvoiceContainer />}
       {data2 === "Delivery" && <DeliveryInvoiceDelivery />}
       {data2 === "Challan" && <ChallanInvoice />}
     </>

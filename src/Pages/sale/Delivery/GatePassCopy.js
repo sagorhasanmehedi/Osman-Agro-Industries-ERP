@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import CustomerDetails from "../../../components/sales/CustomerDetails";
+import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
 import DeliveryItem from "../../../components/sales/delivery/DeliveryItem";
 import VehiclesDetails from "../../../components/sales/delivery/VehiclesDetails";
 import { HeaderName } from "../../landingPage/LandingPageStyled";

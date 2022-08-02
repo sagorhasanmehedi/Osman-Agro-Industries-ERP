@@ -54,7 +54,7 @@ export const SidebarData = [
     subNav: [
       {
         title: "Manage Product",
-        path: "/Product/manageproduct",
+        path: "/product/manageproduct",
         icon: <IoIcons.IoIosPaper />,
       },
       {
@@ -72,6 +72,31 @@ export const SidebarData = [
       {
         title: "Unite",
         path: "/product/unite",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
+    title: "Purchase",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "New Purchase",
+        path: "/purchase/newpurchase",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Manage Purchase",
+        path: "/purchase/managepurchase",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Pos Purchase",
+        path: "/purchase/purchsewindow",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
