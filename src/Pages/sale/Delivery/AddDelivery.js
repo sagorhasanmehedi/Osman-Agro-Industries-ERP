@@ -13,13 +13,21 @@ import { Table, Row, Col } from "react-bootstrap";
 import DeliveryItem from "../../../components/sales/delivery/DeliveryItem";
 import NewDeliveryItem from "../../../components/sales/delivery/NewDeliveryItem";
 import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
+import SaleInvoiceInfo from "../../../components/sales/sales/SaleInvoiceInfo";
 
 const AddDelivery = () => {
   return (
     <>
       <PlainText2>Add Delivery</PlainText2>
       <HeaderName>Customer Details</HeaderName>
-      <CustomerTable />
+      <Row>
+        <Col xs={12} sm={6}>
+          <CustomerDetails />
+        </Col>
+        <Col xs={12} sm={6}>
+          <SaleInvoiceInfo />
+        </Col>
+      </Row>
       <HeaderName>Item List</HeaderName>
       <ItemDetails />
       <DeliveryMethod />
@@ -29,23 +37,6 @@ const AddDelivery = () => {
 };
 
 export default AddDelivery;
-
-function CustomerTable() {
-  return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white" }}
-    >
-      <tbody>
-        <CustomerDetails />
-      </tbody>
-    </Table>
-  );
-}
 
 function DeliveryMethod() {
   return (

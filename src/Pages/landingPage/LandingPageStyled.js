@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   box-shadow: ${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.16)"};
   border-radius: 10px;
   padding: ${(props) => props.Padding || "20px"};
   margin-top: 20px;
+  background: white;
 `;
 
 export const Input = styled.input`
@@ -57,14 +57,13 @@ export const Lavel = styled.label`
 
 export const ButtonGroupContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: ${(props) => props.Possition || "start"};
-  overflow-x: auto;
   margin: 10px 0px;
   padding: ${(props) => props.Padding || "0px"};
   gap: ${(props) => props.Gap || "0px"};
   border-radius: ${(props) => props.BorderRadius || "0px"};
-  /* background: #ffffff; */
 `;
 export const ButtonGroup = styled.button`
   background: #0488a0;

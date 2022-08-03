@@ -21,14 +21,8 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "New Sale",
-        path: "/dashboard/sale",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
         title: "Manage Sale",
-        path: "/reports/reports2",
+        path: "/dashboard/sale",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
@@ -97,6 +91,11 @@ export const SidebarData = [
       {
         title: "Pos Purchase",
         path: "/purchase/purchsewindow",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Purchase Report",
+        path: "/purchase/purchasereport",
         icon: <IoIcons.IoIosPaper />,
       },
     ],

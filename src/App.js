@@ -23,6 +23,7 @@ import ManagePurchase from "./Pages/purchasePages/Purchases/ManagePurchase";
 import NewPurchase from "./Pages/purchasePages/Purchases/NewPurchase";
 import PurchaseInvoice from "./Pages/purchasePages/Purchases/PurchaseInvoice";
 import SaleReports from "./Pages/sale/Sales/SaleReports";
+import PurchaseReports from "./Pages/purchasePages/Purchases/PurchaseReports";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="managepurchase" element={<ManagePurchase />} />
           <Route path="newpurchase" element={<NewPurchase />} />
           <Route path="purchaseInvoice" element={<PurchaseInvoice />} />
+          <Route path="purchasereport" element={<PurchaseReports />} />
         </Route>
 
         <Route path="accounts" element={<Dashboard />}>

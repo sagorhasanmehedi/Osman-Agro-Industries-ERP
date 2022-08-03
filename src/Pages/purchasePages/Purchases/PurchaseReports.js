@@ -4,7 +4,7 @@ import SaleReportTable from "../../../components/sales/sales/SaleReportTable";
 import SaleTotalReport from "../../../components/sales/sales/SaleTotalReport";
 import { CardContainer } from "../../landingPage/LandingPageStyled";
 
-const SaleReports = () => {
+const PurchaseReports = () => {
   return (
     <>
       <SaleReportHeader />
@@ -16,4 +16,4 @@ const SaleReports = () => {
   );
 };
 
-export default SaleReports;
+export default PurchaseReports;

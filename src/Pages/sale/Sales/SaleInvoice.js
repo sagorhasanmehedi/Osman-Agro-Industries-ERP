@@ -5,6 +5,7 @@ import ButtonNavigation from "../../../components/shared/ButtonNavigation";
 import SharedButtonNavigation from "../../../components/shared/SharedButtonNavigation";
 import ChallanInvoice from "../Challan/ChallanInvoice";
 import DeliveryInvoiceDelivery from "../Delivery/DeliveryInvoiceDelivery";
+import KhamContainer from "../Kham/KhamContainer";
 import { PlainText2 } from "../SaleStyled";
 
 const SaleInvoice = () => {
@@ -24,6 +25,7 @@ const SaleInvoice = () => {
     "Invoice",
     "Delivery",
     "Challan",
+    "Kham",
     "Transaction",
     " History",
     "Document",
@@ -48,6 +50,7 @@ const SaleInvoice = () => {
       {data2 === "Invoice" && <SaleInvoiceContainer />}
       {data2 === "Delivery" && <DeliveryInvoiceDelivery />}
       {data2 === "Challan" && <ChallanInvoice />}
+      {data2 === "Kham" && <KhamContainer />}
     </>
   );
 };
