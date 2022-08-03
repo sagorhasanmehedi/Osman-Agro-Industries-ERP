@@ -22,6 +22,7 @@ import Location from "./Pages/accountsPages/Location";
 import ManagePurchase from "./Pages/purchasePages/Purchases/ManagePurchase";
 import NewPurchase from "./Pages/purchasePages/Purchases/NewPurchase";
 import PurchaseInvoice from "./Pages/purchasePages/Purchases/PurchaseInvoice";
+import SaleReports from "./Pages/sale/Sales/SaleReports";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="addChallan" element={<AddChallan />} />
           <Route path="updateSale" element={<UpdateSale />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
+          <Route path="salereport" element={<SaleReports />} />
         </Route>
 
         <Route path="product" element={<Dashboard />}>

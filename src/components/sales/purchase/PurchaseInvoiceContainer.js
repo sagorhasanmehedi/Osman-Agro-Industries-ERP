@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {
   Button,
-  ButtonGroup,
   ButtonGroupContainer,
 } from "../../../Pages/landingPage/LandingPageStyled";
+import PurchaseOfficeInvoice from "./PurchaseOfficeInvoice";
 
 const PurchaseInvoiceContainer = () => {
   const [data, setData] = useState("OfficeInvoice");
@@ -31,7 +31,7 @@ const PurchaseInvoiceContainer = () => {
           Customer Copy
         </Button>
       </ButtonGroupContainer>
-      {data === "OfficeInvoice" && ""}
+      {data === "OfficeInvoice" && <PurchaseOfficeInvoice />}
       {data === "CustomerInvoice" && ""}
     </>
   );
