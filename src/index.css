@@ -18,3 +18,11 @@ code {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.kham,
+.kham th,
+.kham td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 10px;
+}

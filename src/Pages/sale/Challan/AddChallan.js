@@ -9,6 +9,7 @@ import {
   HeaderName,
   Input,
   Lavel,
+  Select,
   TextAriea,
 } from "../../landingPage/LandingPageStyled";
 import { PlainText2 } from "../SaleStyled";
@@ -48,6 +49,21 @@ export default AddChallan;
 
 function ChanllanInfo() {
   return (
+    <>
+      <Row>
+        <Col>
+          <CustomerDetails />
+        </Col>
+        <Col>
+          <ReceiverSelect />
+        </Col>
+      </Row>
+    </>
+  );
+}
+
+function ReceiverSelect() {
+  return (
     <Table
       striped
       responsive
@@ -57,7 +73,39 @@ function ChanllanInfo() {
       style={{ background: "white" }}
     >
       <tbody>
-        <CustomerDetails />
+        <tr>
+          <th colSpan={2}>
+            <Select Width="200px">
+              <option>Search Reicever& Select</option>
+              <option>Search Reicever& Select</option>
+              <option>Search Reicever& Select</option>
+            </Select>
+          </th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>
+            <Input type="text" style={{ margin: "0px" }} />
+          </th>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <th>
+            <Input type="text" style={{ margin: "0px" }} />
+          </th>
+        </tr>
+        <tr>
+          <th>Phone1</th>
+          <th>
+            <Input type="number" style={{ margin: "0px" }} />
+          </th>
+        </tr>
+        <tr>
+          <th>Phone2</th>
+          <th>
+            <Input type="number" style={{ margin: "0px" }} />
+          </th>
+        </tr>
       </tbody>
     </Table>
   );

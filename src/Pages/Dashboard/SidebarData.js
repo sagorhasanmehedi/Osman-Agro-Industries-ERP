@@ -101,6 +101,86 @@ export const SidebarData = [
     ],
   },
   {
+    title: "Production",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Production",
+        path: "/production/production",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Production Type",
+        path: "/production/productiontype",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
+    title: "Stock",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Stock Report",
+        path: "/stock/stockreport",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Stock Tranfer",
+        path: "/stock/stocktransfer",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
+    title: "Warehouse",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Wirehouse",
+        path: "/warehouse/wirehousewindow",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Delivery",
+        path: "/warehouse/delivery",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Pending Delivery",
+        path: "/warehouse/pendingdelivery",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Receipt Window",
+        path: "/warehouse/receipt",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Pending Receipt",
+        path: "/warehouse/pendingreceipt",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Vehicles Window",
+        path: "/warehouse/vehicles",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
     title: "Accounts",
     path: "#",
     icon: <IoIcons.IoIosPaper />,

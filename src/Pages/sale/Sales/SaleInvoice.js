@@ -12,7 +12,6 @@ const SaleInvoice = () => {
   const navigation = useNavigate();
   const [data, setData] = useState("");
   const navValue = [
-    "Update Sale",
     "Add Delivery",
     "Add Challan",
     "SMS Re-Send",
@@ -31,9 +30,7 @@ const SaleInvoice = () => {
     "Document",
   ];
 
-  if (data === "Update Sale") {
-    navigation("/dashboard/updateSale");
-  } else if (data === "Add Delivery") {
+  if (data === "Add Delivery") {
     navigation("/dashboard/addDelivery");
   } else if (data === "Add Challan") {
     navigation("/dashboard/addChallan");

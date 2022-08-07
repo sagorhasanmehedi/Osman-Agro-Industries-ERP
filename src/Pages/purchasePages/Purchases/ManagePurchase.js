@@ -10,7 +10,7 @@ import { PlainText2 } from "../../sale/SaleStyled";
 
 const ManagePurchase = () => {
   return (
-    <div>
+    <>
       <PlainText2>Purchase Window</PlainText2>
       <ButtonGroupContainer Gap="6px">
         <NavLink to="/purchase/newpurchase">
@@ -30,7 +30,7 @@ const ManagePurchase = () => {
         <Button>Print</Button>
       </ButtonGroupContainer>
       <SaleWindowTable />
-    </div>
+    </>
   );
 };
 

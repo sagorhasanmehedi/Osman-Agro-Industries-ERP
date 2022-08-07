@@ -1,24 +1,25 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  box-shadow: ${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.16)"};
   border-radius: 10px;
-  padding: ${(props) => props.Padding || "20px"};
   margin-top: 20px;
   background: white;
+  padding: ${(props) => props.Padding || "20px"};
+  width: ${(props) => props.Width || "100%"};
+  box-shadow: ${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.16)"};
 `;
 
 export const Input = styled.input`
-  width: ${(props) => props.Width || "100%"};
-  margin: 10px 0px;
-  padding: ${(props) => props.Padding || "10px"};
-  border: 1px solid #e0e0e0;
   font-family: "Gotham Rounded";
   border-radius: 7px;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0px;
+  padding: ${(props) => props.Padding || "10px"};
   color: ${(props) => props.Color || "#0488a0"};
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "#0488a0"};
   }
+  width: ${(props) => props.Width || "100%"};
 `;
 export const TextAriea = styled.textarea`
   width: ${(props) => props.Width || "100%"};
@@ -32,16 +33,16 @@ export const TextAriea = styled.textarea`
   }
 `;
 export const Select = styled.select`
-  width: ${(props) => props.Width || "100%"};
-  margin: 10px 0px;
-  padding: ${(props) => props.Padding || "10px"};
-  border: 1px solid #e0e0e0;
   font-family: "Gotham Rounded";
   border-radius: 7px;
+  margin: 10px 0px;
+  border: 1px solid #e0e0e0;
   color: ${(props) => props.Color || "#0488a0"};
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "#0488a0"};
   }
+  padding: ${(props) => props.Padding || "10px"};
+  width: ${(props) => props.Width || "100%"};
 `;
 
 export const Lavel = styled.label`
@@ -61,9 +62,12 @@ export const ButtonGroupContainer = styled.div`
   align-items: center;
   justify-content: ${(props) => props.Possition || "start"};
   margin: 10px 0px;
-  padding: ${(props) => props.Padding || "0px"};
+  padding: ${(props) => props.Padding || "0px 10px"};
   gap: ${(props) => props.Gap || "0px"};
-  border-radius: ${(props) => props.BorderRadius || "0px"};
+  background: ${(props) => props.Background || "white"};
+  // border: ${(props) => props.Border || "1px solid gray"};
+  border-radius: ${(props) => props.BorderRadius || "10px"};
+  box-shadow: ${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.16)"};
 `;
 export const ButtonGroup = styled.button`
   background: #0488a0;
@@ -110,17 +114,17 @@ export const PlainText = styled.p`
   text-align: ${(props) => props.TextAlign || "start"};
 `;
 export const HeaderName = styled.div`
-  padding: 10px 0px;
   font-family: "Montserrat";
   font-style: normal;
   color: ${(props) => props.Color || "#0488a0"};
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "20px"};
   text-align: ${(props) => props.TextAlign || "start"};
+  padding: ${(props) => props.Padding || "10px 0px"};
 `;
 
 export const ContainerCenter = styled.div`
   display: flex;
-  justify-content: ${(props) => props.Possition || "center"};
+  justify-content: ${(props) => props.Possition || "end"};
   align-items: center;
 `;

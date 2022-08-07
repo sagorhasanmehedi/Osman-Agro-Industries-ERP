@@ -6,7 +6,6 @@ import SaleWindow from "./Pages/sale/Sales/SaleWindow";
 import AddAccount from "./Pages/accountsPages/AddAccount";
 import NewSale from "./Pages/sale/Sales/NewSale";
 import SaleInvoice from "./Pages/sale/Sales/SaleInvoice";
-import UpdateSale from "./Pages/sale/UpdateSale";
 import AddDelivery from "./Pages/sale/Delivery/AddDelivery";
 import AddChallan from "./Pages/sale/Challan/AddChallan";
 import AddBrand from "./Pages/product/AddBrand";
@@ -24,6 +23,17 @@ import NewPurchase from "./Pages/purchasePages/Purchases/NewPurchase";
 import PurchaseInvoice from "./Pages/purchasePages/Purchases/PurchaseInvoice";
 import SaleReports from "./Pages/sale/Sales/SaleReports";
 import PurchaseReports from "./Pages/purchasePages/Purchases/PurchaseReports";
+import ProductionWindow from "./Pages/productionPages/ProductionWindow";
+import AddProductionOrder from "./Pages/productionPages/AddProductionOrder";
+import ProductionType from "./Pages/productionPages/ProductionType";
+import StockWindow from "./Pages/StockPages/StockWindow";
+import StockTranfer from "./Pages/StockPages/StockTranfer";
+import DeliveryWindow from "./Pages/warehousePages/DeliveryWindow";
+import PenddingDeliveryWindow from "./Pages/warehousePages/PenddingDeliveryWindow";
+import WirehouseWindow from "./Pages/warehousePages/WirehouseWindow";
+import ReceiptWindow from "./Pages/warehousePages/ReceiptWindow";
+import PendingReceiptWindow from "./Pages/warehousePages/PendingReceiptWindow";
+import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
 
 function App() {
   return (
@@ -35,7 +45,6 @@ function App() {
           <Route path="newSale" element={<NewSale />} />
           <Route path="addDelivery" element={<AddDelivery />} />
           <Route path="addChallan" element={<AddChallan />} />
-          <Route path="updateSale" element={<UpdateSale />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
         </Route>
@@ -53,6 +62,23 @@ function App() {
           <Route path="newpurchase" element={<NewPurchase />} />
           <Route path="purchaseInvoice" element={<PurchaseInvoice />} />
           <Route path="purchasereport" element={<PurchaseReports />} />
+        </Route>
+        <Route path="production" element={<Dashboard />}>
+          <Route path="production" element={<ProductionWindow />} />
+          <Route path="addproduction" element={<AddProductionOrder />} />
+          <Route path="productiontype" element={<ProductionType />} />
+        </Route>
+        <Route path="stock" element={<Dashboard />}>
+          <Route path="stockreport" element={<StockWindow />} />
+          <Route path="stocktransfer" element={<StockTranfer />} />
+        </Route>
+        <Route path="warehouse" element={<Dashboard />}>
+          <Route path="wirehousewindow" element={<WirehouseWindow />} />
+          <Route path="delivery" element={<DeliveryWindow />} />
+          <Route path="pendingdelivery" element={<PenddingDeliveryWindow />} />
+          <Route path="receipt" element={<ReceiptWindow />} />
+          <Route path="pendingreceipt" element={<PendingReceiptWindow />} />
+          <Route path="vehicles" element={<VehiclesWindow />} />
         </Route>
 
         <Route path="accounts" element={<Dashboard />}>

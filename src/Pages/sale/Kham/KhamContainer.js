@@ -5,6 +5,7 @@ const KhamContainer = () => {
   return (
     <>
       <Kham1 />
+      <br />
       <Kham2 />
     </>
   );
@@ -14,15 +15,8 @@ export default KhamContainer;
 
 function Kham1() {
   return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white", width: "960px", height: "432px" }}
-    >
-      <thead>
+    <table className="kham" style={{ width: "960px", height: "432px" }}>
+      <tbody>
         <tr>
           <th colSpan={3} style={{ textAlign: "center" }}>
             To/Receiver
@@ -33,44 +27,35 @@ function Kham1() {
             Vehicles: M.D.T 18-2022
           </th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td style={{ width: "50px" }}>Name</td>
+          <td width="100px">Name</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Adress</td>
+          <td width="100px">Adress</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Phone1</td>
+          <td width="100px">Phone1</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Phone2</td>
+          <td width="100px">Phone2</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Email</td>
+          <td width="100px">Email</td>
           <td></td>
         </tr>
       </tbody>
-    </Table>
+    </table>
   );
 }
 
 function Kham2() {
   return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white", width: "960px", height: "432px" }}
-    >
-      <thead>
+    <table className="kham" style={{ width: "960px", height: "432px" }}>
+      <tbody>
         <tr>
           <th colSpan={2} style={{ textAlign: "center" }}>
             Main
@@ -79,44 +64,45 @@ function Kham2() {
             To/Receiver
           </th>
         </tr>
-        <tr>
-          <th colSpan={4} style={{ textAlign: "center" }}>
-            Vehicles: M.D.T 18-2022
-          </th>
+        <tr style={{ textAlign: "center", borderBottom: "none" }}>
+          <th colSpan={4}>Vehicles: M.D.T 18-2022</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td style={{ width: "50px" }}>Name</td>
+          <td width="100px">Name</td>
           <td></td>
-          <td style={{ width: "50px" }}>Name</td>
+
+          <td width="100px">Name</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Adress</td>
+          <td width="100px">Adress</td>
           <td></td>
-          <td style={{ width: "50px" }}>Adress</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td style={{ width: "50px" }}>Phone1</td>
-          <td></td>
-          <td style={{ width: "50px" }}>Phone1</td>
+
+          <td width="100px">Adress</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Phone2</td>
+          <td width="100px">Phone1</td>
           <td></td>
-          <td style={{ width: "50px" }}>Phone2</td>
+
+          <td width="100px">Phone1</td>
           <td></td>
         </tr>
         <tr>
-          <td style={{ width: "50px" }}>Email</td>
+          <td width="100px">Phone2</td>
           <td></td>
-          <td style={{ width: "50px" }}>Email</td>
+
+          <td width="100px">Phone2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td width="100px">Email</td>
+          <td></td>
+
+          <td width="100px">Email</td>
           <td></td>
         </tr>
       </tbody>
-    </Table>
+    </table>
   );
 }

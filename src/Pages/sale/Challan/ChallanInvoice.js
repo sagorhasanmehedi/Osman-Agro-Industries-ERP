@@ -29,9 +29,19 @@ const ChallanInvoice = () => {
         >
           Challan 2
         </Button>
+        <Button
+          style={{
+            color: data === "Challan 3" && "black",
+            background: data === "Challan 3" && "gray",
+          }}
+          onClick={() => setData("Challan 3")}
+        >
+          Challan 3
+        </Button>
       </ButtonGroupContainer>
       {data === "Challan 1" && <Challan />}
       {data === "Challan 2" && <Challan />}
+      {data === "Challan 3" && <Challan />}
     </>
   );
 };

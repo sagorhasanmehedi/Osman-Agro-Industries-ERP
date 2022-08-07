@@ -11,6 +11,7 @@ import {
   TextAriea,
 } from "../../landingPage/LandingPageStyled";
 import { PlainText2 } from "../SaleStyled";
+import SaleInvoiceInfo from "../../../components/sales/sales/SaleInvoiceInfo";
 
 const Challan = () => {
   return (
@@ -35,18 +36,14 @@ export default Challan;
 
 function ChanllanInfo() {
   return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white" }}
-    >
-      <tbody>
+    <Row>
+      <Col xs={12} sm={6}>
         <CustomerDetails />
-      </tbody>
-    </Table>
+      </Col>
+      <Col xs={12} sm={6}>
+        <SaleInvoiceInfo />
+      </Col>
+    </Row>
   );
 }
 
@@ -55,7 +52,7 @@ function ChallanDetails() {
     <>
       <Row xs={1} sm={2}>
         <Col>
-          <TextAriea rows={8} placeholder="Details..." />
+          <TextAriea rows={5} placeholder="Details..." />
         </Col>
         <Col>
           <Table
@@ -69,27 +66,19 @@ function ChallanDetails() {
             <tbody>
               <tr>
                 <th>Challan No</th>
-                <th>
-                  <Input type="number" style={{ margin: "0px" }} />
-                </th>
+                <th></th>
               </tr>
               <tr>
                 <th>Challan Date</th>
-                <th>
-                  <Input type="date" style={{ margin: "0px" }} />
-                </th>
+                <th></th>
               </tr>
               <tr>
                 <th>sale Invoice No</th>
-                <th>
-                  <Input type="number" style={{ margin: "0px" }} />
-                </th>
+                <th></th>
               </tr>
               <tr>
                 <th>Created By</th>
-                <th>
-                  <Input type="text" style={{ margin: "0px" }} />
-                </th>
+                <th></th>
               </tr>
             </tbody>
           </Table>
@@ -113,56 +102,37 @@ function VehicleDetails() {
         >
           <tbody>
             <tr>
-              <th colSpan={2}>Vehicle & Owner Datails</th>
+              <th colSpan={2} style={{ textAlign: "center" }}>
+                Vehicle & Owner Datails
+              </th>
             </tr>
             <tr>
               <th>Truc No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Registration No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Owner Name</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Owner Address</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Owner Mobile No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Rent Office</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Rent Office Mobile No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
           </tbody>
         </Table>
@@ -178,55 +148,37 @@ function VehicleDetails() {
         >
           <tbody>
             <tr>
-              <th colSpan={2}>Driver Datails</th>
+              <th colSpan={2} style={{ textAlign: "center" }}>
+                Driver Datails
+              </th>
             </tr>
             <tr>
               <th>Truc No</th>
-              <th>
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Registration No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Owner Name</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Owner Address</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Owner Mobile No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Rent Office</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
             <tr>
               <th>Rent Office Mobile No</th>
-              <th>
-                {" "}
-                <Input type="number" style={{ margin: "0px" }} />
-              </th>
+              <th></th>
             </tr>
           </tbody>
         </Table>
