@@ -15,7 +15,7 @@ const AddAccount = () => {
     "Income-Expense Account",
   ];
   return (
-    <div>
+    <>
       <PlainText2>Add Account</PlainText2>
       <SharedButtonNavigation
         navValue={navValue}
@@ -26,7 +26,7 @@ const AddAccount = () => {
       {data === "Employee Account" && <EmployeeAccount />}
       {data === "Bank Account" && <BankAccountForm />}
       {data === "Income-Expense Account" && <IncomeExpenseForm />}
-    </div>
+    </>
   );
 };
 

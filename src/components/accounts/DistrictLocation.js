@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Table } from "react-bootstrap";
 import {
-  ContainerCenter,
+  ContainerPosition,
   Select,
 } from "../../Pages/landingPage/LandingPageStyled";
 import {
@@ -35,9 +35,9 @@ const DistrictLocation = () => {
             <Input name="DistrictName" placeholder="Enter your District name" />
           </Col>
         </Row>
-        <ContainerCenter Possition="end">
+        <ContainerPosition Possition="end">
           <Button>Submit</Button>
-        </ContainerCenter>
+        </ContainerPosition>
       </CardContainer>
       <CategoryList />
     </>

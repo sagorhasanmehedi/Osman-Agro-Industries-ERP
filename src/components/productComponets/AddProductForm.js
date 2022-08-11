@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {
   Button,
   CardContainer,
-  ContainerCenter,
+  ContainerPosition,
   Input,
   Lavel,
   Select,
@@ -74,9 +74,9 @@ const AddProductForm = () => {
           <Input name="ourPrice" />
         </Col>
       </Row>
-      <ContainerCenter Possition="end">
+      <ContainerPosition Possition="end">
         <Button Padding="10px 50px">Save</Button>
-      </ContainerCenter>
+      </ContainerPosition>
     </CardContainer>
   );
 };

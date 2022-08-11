@@ -4,15 +4,17 @@ import {
   ButtonGroupContainer,
   Button,
   Input,
+  ContainerPosition,
+  Lavel,
 } from "../../landingPage/LandingPageStyled";
 import { PlainText2 } from "../SaleStyled";
 import { NavLink } from "react-router-dom";
 
 const SaleWindow = () => {
   return (
-    <div>
+    <>
       <PlainText2>Sale Window</PlainText2>
-      <ButtonGroupContainer Gap="6px">
+      <ButtonGroupContainer Gap="6px" Padding="0px 5px">
         <NavLink to="/dashboard/newSale">
           <Button>New Sale</Button>
         </NavLink>
@@ -20,38 +22,21 @@ const SaleWindow = () => {
           <Button>Pos Sale</Button>
         </NavLink>
 
-        <div
-          style={{
-            margin: "0px auto",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
-          <Input
-            type="search"
-            placeholder="Invoice Search"
-            style={{ width: "200px" }}
-          />
-          <Input
-            type="date"
-            placeholder="Invoice Search"
-            style={{ width: "150px" }}
-          />
-          <Input
-            type="date"
-            placeholder="Invoice Search"
-            style={{ width: "150px" }}
-          />
+        <ContainerPosition Margin="0px auto" Possition="center" Gap="10px">
+          <Lavel>Start Date</Lavel>
+          <Input type="date" placeholder="Invoice Search" Width="150px" />
+          <Lavel>End Date</Lavel>
+          <Input type="date" placeholder="Invoice Search" Width="150px" />
+          <Input type="search" placeholder="Invoice Search" Width="250px" />
           <Button>Search</Button>
-        </div>
+        </ContainerPosition>
 
         <Button style={{ marginLeft: "auto" }}>Export</Button>
         <Button>Print</Button>
       </ButtonGroupContainer>
+
       <SaleWindowTable />
-    </div>
+    </>
   );
 };
 

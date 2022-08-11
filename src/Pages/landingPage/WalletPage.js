@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import WalletCard from "../../components/wallet/WalletCard";
-import { Button, ContainerCenter, PlainText } from "./LandingPageStyled";
+import { Button, ContainerPosition, PlainText } from "./LandingPageStyled";
 
 const WalletPage = () => {
   return (
@@ -17,7 +17,7 @@ const WalletPage = () => {
       >
         Create an Nodejs Supper fast Online store in munites
       </PlainText>
-      <ContainerCenter style={{ margin: "20px 0px" }}>
+      <ContainerPosition style={{ margin: "20px 0px" }}>
         <Button
           Padding="10px 30px"
           BorderRadius="70px"
@@ -26,7 +26,7 @@ const WalletPage = () => {
         >
           Start Free Trial
         </Button>
-      </ContainerCenter>
+      </ContainerPosition>
       <div style={{ maxWidth: "1000px", margin: "auto" }}>
         <Row xs={1} md={3} className="g-4 pb-5">
           {Array.from({ length: 3 }).map((_, idx) => (

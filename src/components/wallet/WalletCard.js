@@ -2,7 +2,7 @@ import React from "react";
 import {
   Button,
   CardContainer,
-  ContainerCenter,
+  ContainerPosition,
   PlainText,
   WalletDiv,
 } from "../../Pages/landingPage/LandingPageStyled";
@@ -51,11 +51,11 @@ const WalletCard = () => {
         <PlainText>Facebook Manager : </PlainText>
         <PlainText>Facebook Order : </PlainText>
         <PlainText>24/7 Support : </PlainText>
-        <ContainerCenter>
+        <ContainerPosition>
           <Button Padding="5px 10px" BorderRadius="10px">
             GET STARTED
           </Button>
-        </ContainerCenter>
+        </ContainerPosition>
       </WalletDiv>
     </CardContainer>
   );

@@ -3,7 +3,7 @@ import { Col, Row, Table } from "react-bootstrap";
 import {
   Button,
   CardContainer,
-  ContainerCenter,
+  ContainerPosition,
   HeaderName,
   Input,
 } from "../../Pages/landingPage/LandingPageStyled";
@@ -25,9 +25,9 @@ const CityLocation = () => {
             <Input name="cityName" placeholder="Enter your City name" />
           </Col>
         </Row>
-        <ContainerCenter Possition="end">
+        <ContainerPosition Possition="end">
           <Button>Submit</Button>
-        </ContainerCenter>
+        </ContainerPosition>
       </CardContainer>
       <CategoryList />
     </>

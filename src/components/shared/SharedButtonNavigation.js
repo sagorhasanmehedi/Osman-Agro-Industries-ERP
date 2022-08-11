@@ -6,8 +6,7 @@ import {
 
 const SharedButtonNavigation = ({ navValue, data, setData }) => {
   return (
-
-    <ButtonGroupContainer>
+    <ButtonGroupContainer Padding="0px" BorderRadius="0px">
       {navValue.map((value, idx) => (
         <ButtonGroup
           key={idx}
@@ -21,7 +20,6 @@ const SharedButtonNavigation = ({ navValue, data, setData }) => {
         </ButtonGroup>
       ))}
     </ButtonGroupContainer>
-
   );
 };
 

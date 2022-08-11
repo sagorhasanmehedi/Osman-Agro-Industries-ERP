@@ -11,10 +11,8 @@ const SaleInvoiceContainer = () => {
   const [data, setData] = useState("OfficeInvoice");
   return (
     <>
-      <ButtonGroupContainer Possition="space-between">
-        <Button>Sale Invoice</Button>
-        <ButtonGroup>BarCode</ButtonGroup>
-        <Button
+      <ButtonGroupContainer>
+        <ButtonGroup
           style={{
             color: data === "OfficeInvoice" && "black",
             background: data === "OfficeInvoice" && "gray",
@@ -22,8 +20,8 @@ const SaleInvoiceContainer = () => {
           onClick={() => setData("OfficeInvoice")}
         >
           Office Copy
-        </Button>
-        <Button
+        </ButtonGroup>
+        <ButtonGroup
           style={{
             color: data === "CustomerInvoice" && "black",
             background: data === "CustomerInvoice" && "gray",
@@ -31,7 +29,7 @@ const SaleInvoiceContainer = () => {
           onClick={() => setData("CustomerInvoice")}
         >
           Customer Copy
-        </Button>
+        </ButtonGroup>
       </ButtonGroupContainer>
       {data === "OfficeInvoice" && <InvoiceOfficeCopy />}
       {data === "CustomerInvoice" && <InvoiceCustomerCopy />}

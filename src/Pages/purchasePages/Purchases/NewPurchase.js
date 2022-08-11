@@ -6,7 +6,7 @@ import {
   Button,
   ButtonGroupContainer,
   CardContainer,
-  ContainerCenter,
+  ContainerPosition,
   HeaderName,
   Input,
   Lavel,
@@ -34,11 +34,11 @@ const NewPurchase = () => {
         <PaymentMethod />
         <HeaderName>Receipt Details</HeaderName>
         <ReceiptDetails />
-        <ContainerCenter Possition="end">
+        <ContainerPosition Possition="end">
           <Button Padding="10px 40px" onClick={() => handleSubmit()}>
             Save
           </Button>
-        </ContainerCenter>
+        </ContainerPosition>
       </CardContainer>
     </>
   );

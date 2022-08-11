@@ -1,34 +1,15 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import { PlainText } from "../../../Pages/landingPage/LandingPageStyled";
 
 const CustomerDetails = () => {
   return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white" }}
-    >
-      <tbody>
-        <tr>
-          <th>Ac/No : </th>
-        </tr>
-        <tr>
-          <th>Name : </th>
-        </tr>
-        <tr>
-          <th>Address : </th>
-        </tr>
-        <tr>
-          <th>Mobile : </th>
-        </tr>
-        <tr>
-          <th>Email : </th>
-        </tr>
-      </tbody>
-    </Table>
+    <div>
+      <PlainText>Ac/No : </PlainText>
+      <PlainText>Name :</PlainText>
+      <PlainText>Address : </PlainText>
+      <PlainText>Mobile :</PlainText>
+      <PlainText>Email : </PlainText>
+    </div>
   );
 };
 

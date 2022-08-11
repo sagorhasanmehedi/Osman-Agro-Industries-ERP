@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Table } from "react-bootstrap";
 import {
-  ContainerCenter,
+  ContainerPosition,
   Select,
 } from "../../Pages/landingPage/LandingPageStyled";
 import {
@@ -49,9 +49,9 @@ const UnionLocation = () => {
             <Input name="UnionName" placeholder="Enter your Union name" />
           </Col>
         </Row>
-        <ContainerCenter Possition="end">
+        <ContainerPosition Possition="end">
           <Button>Submit</Button>
-        </ContainerCenter>
+        </ContainerPosition>
       </CardContainer>
       <CategoryList />
     </>

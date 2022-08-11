@@ -15,7 +15,7 @@ const SaleInvoice = () => {
     "Add Delivery",
     "Add Challan",
     "SMS Re-Send",
-    "Export",
+
     "Print",
     "Report Issu",
   ];
