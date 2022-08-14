@@ -11,7 +11,7 @@ const SaleInvoiceContainer = () => {
   const [data, setData] = useState("OfficeInvoice");
   return (
     <>
-      <ButtonGroupContainer>
+      <ButtonGroupContainer Padding="0px" BorderRadius="none">
         <ButtonGroup
           style={{
             color: data === "OfficeInvoice" && "black",

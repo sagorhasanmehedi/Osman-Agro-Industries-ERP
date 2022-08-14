@@ -14,7 +14,7 @@ const SaleWindow = () => {
   return (
     <>
       <PlainText2>Sale Window</PlainText2>
-      <ButtonGroupContainer Gap="6px" Padding="0px 5px">
+      <ButtonGroupContainer Gap="6px">
         <NavLink to="/dashboard/newSale">
           <Button>New Sale</Button>
         </NavLink>

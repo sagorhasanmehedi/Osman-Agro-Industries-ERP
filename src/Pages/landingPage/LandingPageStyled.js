@@ -46,7 +46,7 @@ export const Input = styled.input`
   font-family: "Gotham Rounded";
   border-radius: 7px;
   border: 1px solid #e0e0e0;
-  margin: 10px 0px;
+  margin: ${(props) => props.Margin || "10px 0px"};
   padding: ${(props) => props.Padding || "4px 10px"};
   color: ${(props) => props.Color || "#0488a0"};
   ::placeholder {
@@ -94,7 +94,7 @@ export const ButtonGroupContainer = styled.div`
   align-items: center;
   justify-content: ${(props) => props.Possition || "start"};
   margin: ${(props) => props.Margin || "10px 0px"};
-  padding: ${(props) => props.Padding || "0px"};
+  padding: ${(props) => props.Padding || "0px 5px"};
   gap: ${(props) => props.Gap || "0px"};
   background: ${(props) => props.Background || "white"};
   border-radius: ${(props) => props.BorderRadius || "10px"};
@@ -131,4 +131,9 @@ export const ContainerPosition = styled.div`
   align-items: center;
   margin: ${(props) => props.Margin || "0px"};
   gap: ${(props) => props.Gap || "0px"};
+`;
+
+export const InvoiceBody = styled.div`
+  min-height: 81vh;
+  padding: 10px 20px;
 `;

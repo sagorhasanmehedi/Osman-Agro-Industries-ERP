@@ -26,11 +26,7 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
-      {
-        title: "Pos Sale",
-        path: "/reports/reports3",
-        icon: <IoIcons.IoIosPaper />,
-      },
+
       {
         title: "Sale Report",
         path: "/dashboard/salereport",

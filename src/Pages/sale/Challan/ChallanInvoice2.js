@@ -1,7 +1,5 @@
 import React from "react";
-import { Table } from "react-bootstrap";
-import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
-import VehiclesDetails from "../../../components/sales/delivery/VehiclesDetails";
+import ItemDetails from "../../../components/sales/ItemDetails";
 import {
   ButtonGroupContainer,
   CardContainer,
@@ -11,12 +9,14 @@ import {
   PlainText,
   TextAriea,
 } from "../../landingPage/LandingPageStyled";
-import SaleInvoiceInfo from "../../../components/sales/sales/SaleInvoiceInfo";
 import InvoiceHeader from "../../../assets/InvoiceHeader.png";
 import InvoiceFooter from "../../../assets/InvoiceFooter.png";
-import DeliveryItem from "../../../components/sales/delivery/DeliveryItem";
+import ChallanReceiver from "../../../components/sales/challan/ChallanReceiver";
+import ChallanVehicleDetails from "../../../components/sales/challan/ChallanVehicleDetails";
+import VehicleRentDetails from "../../../components/sales/challan/VehicleRentDetails";
 import InvoiceSign from "../../../components/sales/challan/InvoiceSign";
-const DeliveryCopy = () => {
+
+const ChallanInvoice2 = () => {
   return (
     <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
       <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
@@ -26,20 +26,29 @@ const DeliveryCopy = () => {
             Invoice
           </PlainText>
           <PlainText Padding="10px 40px" Border="1px solid black">
-            BarCode
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Delivery Copy
+            Challan 1
           </PlainText>
         </ButtonGroupContainer>
         <ContainerPosition Possition="space-between">
-          <CustomerDetails />
-          <SaleInvoiceInfo />
+          <div>
+            <PlainText Color="red">Main Account</PlainText>
+            <ChallanReceiver />
+          </div>
+          <div>
+            <PlainText Color="red">Receiver</PlainText>
+            <ChallanReceiver />
+          </div>
         </ContainerPosition>
-        <VehiclesDetails />
-        <GodownDetails />
-        <DeliveryItem />
-        <DeliveryDetails />
+
+        <HeaderName>Item Details</HeaderName>
+        <ItemDetails />
+        <PlainText Color="red" Padding="0px 0px 10px 0px">
+          Challan Notes
+        </PlainText>
+        <TextAriea rows={4} placeholder="details" />
+        <ChallanVehicleDetails />
+        <HeaderName>Vehicle rent Details</HeaderName>
+        <VehicleRentDetails />
       </InvoiceBody>
 
       <InvoiceSign />
@@ -54,22 +63,4 @@ const DeliveryCopy = () => {
   );
 };
 
-export default DeliveryCopy;
-
-function GodownDetails() {
-  return (
-    <>
-      <HeaderName>Godown Details</HeaderName>
-      <TextAriea rows="2" placeholder="Sale Details" />
-    </>
-  );
-}
-
-function DeliveryDetails() {
-  return (
-    <>
-      <HeaderName>Delivery Details</HeaderName>
-      <TextAriea rows="2" placeholder="delivery Details" />
-    </>
-  );
-}
+export default ChallanInvoice2;

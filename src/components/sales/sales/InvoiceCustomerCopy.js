@@ -5,6 +5,7 @@ import {
   CardContainer,
   ContainerPosition,
   HeaderName,
+  InvoiceBody,
   PlainText,
   TextAriea,
 } from "../../../Pages/landingPage/LandingPageStyled";
@@ -14,13 +15,14 @@ import CustomerDetails from "./CustomerDetails";
 import SaleInvoiceInfo from "./SaleInvoiceInfo";
 import InvoiceHeader from "../../../assets/InvoiceHeader.png";
 import InvoiceFooter from "../../../assets/InvoiceFooter.png";
+import InvoiceSign from "../challan/InvoiceSign";
 
 const InvoiceCustomerCopy = () => {
   return (
     <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
       <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
 
-      <div style={{ padding: "10px 20px", minHeight: "81vh" }}>
+      <InvoiceBody>
         <ButtonGroupContainer Possition="space-between" Shadow="none">
           <PlainText Padding="10px 40px" Border="1px solid black">
             Invoice
@@ -48,8 +50,9 @@ const InvoiceCustomerCopy = () => {
             <SaleSummary />
           </Col>
         </Row>
-      </div>
+      </InvoiceBody>
 
+      <InvoiceSign />
       <img
         src={InvoiceFooter}
         alt=""

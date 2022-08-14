@@ -1,37 +1,49 @@
 import React from "react";
 import {
   Button,
+  CardContainer,
   HeaderName,
-  Input,
   Lavel,
-  PlainText,
   Select,
   TextAriea,
 } from "../../landingPage/LandingPageStyled";
 import { PlainText2 } from "../SaleStyled";
 import { Table, Row, Col } from "react-bootstrap";
-import DeliveryItem from "../../../components/sales/delivery/DeliveryItem";
 import NewDeliveryItem from "../../../components/sales/delivery/NewDeliveryItem";
-import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
 import SaleInvoiceInfo from "../../../components/sales/sales/SaleInvoiceInfo";
+import ChallanReceiver from "../../../components/sales/challan/ChallanReceiver";
 
 const AddDelivery = () => {
   return (
     <>
       <PlainText2>Add Delivery</PlainText2>
-      <HeaderName>Customer Details</HeaderName>
-      <Row>
+
+      <Row style={{ maxWidth: "1091px" }}>
         <Col xs={12} sm={6}>
-          <CustomerDetails />
+          <CardContainer>
+            <Lavel>Customer Details</Lavel>
+            <ChallanReceiver />
+          </CardContainer>
         </Col>
         <Col xs={12} sm={6}>
-          <SaleInvoiceInfo />
+          <CardContainer>
+            <Lavel>Invoice Details</Lavel>
+            <SaleInvoiceInfo />
+          </CardContainer>
+        </Col>
+        <Col xs={12}>
+          <CardContainer>
+            <DeliveryMethod />
+          </CardContainer>
         </Col>
       </Row>
-      <HeaderName>Item List</HeaderName>
-      <ItemDetails />
-      <DeliveryMethod />
-      <DeliverySummary />
+      <CardContainer>
+        <Lavel>Item List</Lavel>
+        <NewDeliveryItem />
+      </CardContainer>
+      <CardContainer>
+        <DeliverySummary />
+      </CardContainer>
     </>
   );
 };
@@ -40,28 +52,25 @@ export default AddDelivery;
 
 function DeliveryMethod() {
   return (
-    <>
-      <Row xs={1} sm={2} md={3}>
-        <Col>
-          <Lavel>Delivery Method</Lavel>
-          <Select>
-            <option>DeliveryMethod 1</option>
-            <option>DeliveryMethod 2</option>
-            <option>DeliveryMethod 3</option>
-          </Select>
-          <Lavel>Vehicle Method</Lavel>
-          <Select>
-            <option>VehicleMethod 1</option>
-            <option>VehicleMethod 2</option>
-            <option>VehicleMethod 3</option>
-          </Select>
-        </Col>
-
-        <Col>
-          <ShowVehicle />
-        </Col>
-      </Row>
-    </>
+    <Row xs={1} sm={2}>
+      <Col>
+        <Lavel>Delivery Method</Lavel>
+        <Select>
+          <option>DeliveryMethod 1</option>
+          <option>DeliveryMethod 2</option>
+          <option>DeliveryMethod 3</option>
+        </Select>
+        <Lavel>Vehicle Method</Lavel>
+        <Select>
+          <option>VehicleMethod 1</option>
+          <option>VehicleMethod 2</option>
+          <option>VehicleMethod 3</option>
+        </Select>
+      </Col>
+      <Col>
+        <ShowVehicle />
+      </Col>
+    </Row>
   );
 }
 
@@ -91,24 +100,6 @@ function ShowVehicle() {
             <td>0011346</td>
           </tr>
         ))}
-      </tbody>
-    </Table>
-  );
-}
-
-function ItemDetails() {
-  return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white" }}
-    >
-      <tbody>
-        <DeliveryItem />
-        <NewDeliveryItem />
       </tbody>
     </Table>
   );

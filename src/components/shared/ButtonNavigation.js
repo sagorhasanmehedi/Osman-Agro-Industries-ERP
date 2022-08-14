@@ -6,7 +6,7 @@ import {
 
 const ButtonNavigation = ({ navValue, data, setData }) => {
   return (
-    <ButtonGroupContainer Gap="10px">
+    <ButtonGroupContainer Gap="10px" Padding="5px">
       {navValue.map((value, idx) => (
         <Button
           key={idx}
