@@ -11,21 +11,14 @@ import { PlainText2 } from "../SaleStyled";
 const SaleInvoice = () => {
   const navigation = useNavigate();
   const [data, setData] = useState("");
-  const navValue = [
-    "Add Delivery",
-    "Add Challan",
-    "SMS Re-Send",
-    "Print",
-    "Report Issu",
-  ];
+  const navValue = ["Add Delivery", "Add Challan", "SMS Re-Send", "Print"];
   const [data2, setData2] = useState("Invoice");
   const navValue2 = [
     "Invoice",
     "Delivery",
     "Challan",
     "Kham",
-    "Transaction",
-    " History",
+    "Transaction History",
     "Document",
   ];
 

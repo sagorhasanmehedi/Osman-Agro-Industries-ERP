@@ -1,18 +1,18 @@
 import React from "react";
 import { Col, Row, Table } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import CustomerDetails from "../../../components/sales/sales/CustomerDetails";
 import ItemDetails from "../../../components/sales/ItemDetails";
 import {
   Button,
   CardContainer,
   HeaderName,
   Input,
-  Lavel,
+  PlainText,
   Select,
   TextAriea,
 } from "../../landingPage/LandingPageStyled";
 import { PlainText2 } from "../SaleStyled";
+import ChallanReceiver from "../../../components/sales/challan/ChallanReceiver";
 
 const AddChallan = () => {
   const navigation = useNavigate();
@@ -22,17 +22,50 @@ const AddChallan = () => {
   return (
     <>
       <PlainText2>Add Challan</PlainText2>
+
+      <Row style={{ maxWidth: "1091px" }}>
+        <Col xs={12} sm={6}>
+          <CardContainer>
+            <PlainText Color="red">Main accounts</PlainText>
+            <ChallanReceiver />
+          </CardContainer>
+        </Col>
+
+        <Col xs={12} sm={6}>
+          <CardContainer>
+            <PlainText Color="red">To/Receiver</PlainText>
+            <Select>
+              <option>serach and select</option>
+              <option>serach and select</option>
+              <option>serach and select</option>
+            </Select>
+            <ChallanReceiver />
+          </CardContainer>
+        </Col>
+        <Col xs={12}>
+          <CardContainer>
+            <HeaderName>Challan Details</HeaderName>
+            <ChallanDetails />
+          </CardContainer>
+        </Col>
+        <Col xs={12}>
+          <CardContainer>
+            <HeaderName>Vehicle and Driver Details</HeaderName>
+            <VehicleDetails />
+          </CardContainer>
+        </Col>
+        <Col xs={12}>
+          <CardContainer>
+            <HeaderName>Vehicle Rent Details</HeaderName>
+            <VehicleRent />
+          </CardContainer>
+        </Col>
+      </Row>
+
       <CardContainer>
-        <HeaderName>Customer Details</HeaderName>
-        <ChanllanInfo />
-        <HeaderName>Challan Details</HeaderName>
-        <ChallanDetails />
-        <HeaderName>Vehicle and Driver Details</HeaderName>
-        <VehicleDetails />
         <HeaderName>Item Details</HeaderName>
         <ItemDetails />
-        <HeaderName>Vehicle Rent Details</HeaderName>
-        <VehicleRent />
+
         <Row>
           <Col style={{ display: "flex", justifyContent: "end" }}>
             <Button Padding="10px 40px" onClick={handleCilick}>
@@ -47,116 +80,50 @@ const AddChallan = () => {
 
 export default AddChallan;
 
-function ChanllanInfo() {
-  return (
-    <>
-      <Row>
-        <Col>
-          <CustomerDetails />
-        </Col>
-        <Col>
-          <ReceiverSelect />
-        </Col>
-      </Row>
-    </>
-  );
-}
-
-function ReceiverSelect() {
-  return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white" }}
-    >
-      <tbody>
-        <tr>
-          <th colSpan={2}>
-            <Select Width="200px">
-              <option>Search Reicever& Select</option>
-              <option>Search Reicever& Select</option>
-              <option>Search Reicever& Select</option>
-            </Select>
-          </th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>
-            <Input type="text" style={{ margin: "0px" }} />
-          </th>
-        </tr>
-        <tr>
-          <th>Address</th>
-          <th>
-            <Input type="text" style={{ margin: "0px" }} />
-          </th>
-        </tr>
-        <tr>
-          <th>Phone1</th>
-          <th>
-            <Input type="number" style={{ margin: "0px" }} />
-          </th>
-        </tr>
-        <tr>
-          <th>Phone2</th>
-          <th>
-            <Input type="number" style={{ margin: "0px" }} />
-          </th>
-        </tr>
-      </tbody>
-    </Table>
-  );
-}
-
 function ChallanDetails() {
   return (
-    <>
-      <Row xs={1} sm={2}>
-        <Col>
-          <TextAriea rows={8} placeholder="Details..." />
-        </Col>
-        <Col>
-          <Table
-            striped
-            responsive
-            bordered
-            hover
-            size="sm"
-            style={{ background: "white" }}
-          >
-            <tbody>
-              <tr>
-                <th>Challan No</th>
-                <th>
-                  <Input type="number" style={{ margin: "0px" }} />
-                </th>
-              </tr>
-              <tr>
-                <th>Challan Date</th>
-                <th>
-                  <Input type="date" style={{ margin: "0px" }} />
-                </th>
-              </tr>
-              <tr>
-                <th>sale Invoice No</th>
-                <th>
-                  <Input type="number" style={{ margin: "0px" }} />
-                </th>
-              </tr>
-              <tr>
-                <th>Created By</th>
-                <th>
-                  <Input type="text" style={{ margin: "0px" }} />
-                </th>
-              </tr>
-            </tbody>
-          </Table>
-        </Col>
-      </Row>
-    </>
+    <Row xs={1} sm={2}>
+      <Col>
+        <TextAriea rows={6} placeholder="Details..." />
+      </Col>
+      <Col>
+        <Table
+          striped
+          responsive
+          bordered
+          hover
+          size="sm"
+          style={{ background: "white" }}
+        >
+          <tbody>
+            <tr>
+              <th>Challan No</th>
+              <th>
+                <Input type="number" style={{ margin: "0px" }} />
+              </th>
+            </tr>
+            <tr>
+              <th>Challan Date</th>
+              <th>
+                <Input type="date" style={{ margin: "0px" }} />
+              </th>
+            </tr>
+            <tr>
+              <th>sale Invoice No</th>
+              <th>
+                <Input type="number" style={{ margin: "0px" }} />
+              </th>
+            </tr>
+            <tr>
+              <th>Created By</th>
+              <th>
+                <Input type="text" style={{ margin: "0px" }} />
+              </th>
+            </tr>
+          </tbody>
+        </Table>
+      </Col>
+    </Row>
   );
 }
 
@@ -309,27 +276,45 @@ function VehicleRent() {
       <tbody>
         <tr>
           <th>Receiver Name</th>
-          <th colSpan={2}>In word </th>
+          <th colSpan={2}>
+            <Input type="text" />
+          </th>
         </tr>
         <tr>
           <th>Rent Office Fee</th>
-          <th>500</th>
-          <th>In word </th>
+          <th>
+            <Input type="number" />{" "}
+          </th>
+          <th>
+            <Input type="text" />{" "}
+          </th>
         </tr>
         <tr>
           <th>Vehicle Rent</th>
-          <th>500</th>
-          <th>In word </th>
+          <th>
+            <Input type="number" />{" "}
+          </th>
+          <th>
+            <Input type="text" />{" "}
+          </th>
         </tr>
         <tr>
           <th>Advanced Rent</th>
-          <th>500</th>
-          <th>In word </th>
+          <th>
+            <Input type="number" />{" "}
+          </th>
+          <th>
+            <Input type="text" />{" "}
+          </th>
         </tr>
         <tr>
           <th>Due Rent</th>
-          <th>500</th>
-          <th>In word </th>
+          <th>
+            <Input type="number" />{" "}
+          </th>
+          <th>
+            <Input type="text" />{" "}
+          </th>
         </tr>
       </tbody>
     </Table>
