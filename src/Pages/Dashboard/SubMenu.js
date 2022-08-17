@@ -6,16 +6,35 @@ const SidebarLink = styled(NavLink)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgba(40, 54, 90, 0.8);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 5px 20px;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
 `;
 
 const SidebarLabel = styled.span`
   margin: 0px 16px;
+  color: "red";
 `;
 
 const DropdownLink = styled(NavLink)`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: "0px 270px";
+  color: rgba(40, 54, 90, 0.8);
+  // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 5px 20px;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
 `;
 
 const SubMenu = ({ item }) => {
@@ -41,7 +60,7 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <div style={{ background: "#21454d" }}>
+            <div style={{ background: "#F2F2F2" }}>
               <DropdownLink to={item.path} key={index}>
                 <span style={{ padding: "3px 0px 3px 20px" }}>
                   {item.icon}

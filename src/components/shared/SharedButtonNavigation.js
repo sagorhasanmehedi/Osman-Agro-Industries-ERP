@@ -11,8 +11,8 @@ const SharedButtonNavigation = ({ navValue, data, setData }) => {
         <ButtonGroup
           key={idx}
           style={{
+            borderBottom: data === value && "3px solid #54D487",
             color: data === value && "black",
-            background: data === value && "gray",
           }}
           onClick={() => setData(value)}
         >

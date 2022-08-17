@@ -218,4 +218,20 @@ export const SidebarData = [
       },
     ],
   },
+  {
+    title: "Cash Counter",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Cash Counter",
+        path: "/counter/cashcounter",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
 ];

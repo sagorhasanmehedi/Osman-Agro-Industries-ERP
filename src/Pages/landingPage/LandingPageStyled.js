@@ -93,35 +93,33 @@ export const ButtonGroupContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: ${(props) => props.Possition || "start"};
-  margin: ${(props) => props.Margin || "10px 0px"};
+  margin: ${(props) => props.Margin || "0px"};
   padding: ${(props) => props.Padding || "0px 5px"};
   gap: ${(props) => props.Gap || "0px"};
-  background: ${(props) => props.Background || "white"};
-  border-radius: ${(props) => props.BorderRadius || "10px"};
-  box-shadow: ${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.16)"};
+  background: ${(props) => props.Background || "#FFFFFF"};
+  box-shadow: ${(props) => props.Shadow || "0px 0px 6px rgba(0, 0, 0, 0.2)"};
 `;
 export const ButtonGroup = styled.button`
-  background: #0488a0;
-  color: white;
-  font-family: "Gotham Rounded";
+  background: #ffffff;
+  color: rgba(40, 54, 90, 0.8);
   font-style: normal;
   border: none;
-  border-right: 1px solid white;
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "16px"};
-  padding: ${(props) => props.Padding || "10px"};
+  padding: ${(props) => props.Padding || "10px 25px"};
 `;
 
 export const Button = styled.button`
-  background: ${(props) => props.Background || "#0488a0"};
+  background: ${(props) =>
+    props.Background ||
+    "linear-gradient(106.24deg, #4FBCF5 3.93%, #5B82FD 85.53%)"};
   color: ${(props) => props.Color || "white"};
-  font-family: "Gotham Rounded";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "16px"};
   padding: ${(props) => props.Padding || "10px 20px"};
   margin: ${(props) => props.Margin || "0px"};
-  border-radius: ${(props) => props.BorderRadius || "8px"};
   border: none;
 `;
 

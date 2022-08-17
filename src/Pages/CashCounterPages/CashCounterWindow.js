@@ -1,38 +1,32 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import ProductionListTable from "../../components/productionComponents/ProductionListTable";
+import CashCounterList from "../../components/CashCounterComponents/CashCounterList";
 import {
-  Button,
   ButtonGroupContainer,
   Input,
+  Lavel,
   Select,
+  Button,
 } from "../landingPage/LandingPageStyled";
 import { PlainText2 } from "../sale/SaleStyled";
 
-const ProductionWindow = () => {
+const CashCounterWindow = () => {
   return (
     <>
-      <PlainText2>Production Window</PlainText2>
+      <PlainText2>Cash Counter Window </PlainText2>
       <FilterSection />
-      <ProductionListTable />
+      <CashCounterList />
     </>
   );
 };
 
-export default ProductionWindow;
+export default CashCounterWindow;
 
 function FilterSection() {
   return (
     <ButtonGroupContainer Gap="6px">
-      <NavLink to="/production/addproduction">
-        <Button>Add Production Order</Button>
-      </NavLink>
-      <Input
-        type="date"
-        placeholder="Invoice Search"
-        Width="150px"
-        style={{ marginLeft: "auto" }}
-      />
+      <Lavel>Start Date</Lavel>
+      <Input type="date" placeholder="Invoice Search" Width="150px" />
+      <Lavel>Start Date</Lavel>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
       <Input
         type="text"
@@ -47,6 +41,9 @@ function FilterSection() {
         <option>type</option>
       </Select>
       <Button Padding="10px 40px">Search</Button>
+      <Button Padding="10px 40px" style={{ marginLeft: "auto" }}>
+        Print
+      </Button>
     </ButtonGroupContainer>
   );
 }

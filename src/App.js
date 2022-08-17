@@ -34,6 +34,7 @@ import WirehouseWindow from "./Pages/warehousePages/WirehouseWindow";
 import ReceiptWindow from "./Pages/warehousePages/ReceiptWindow";
 import PendingReceiptWindow from "./Pages/warehousePages/PendingReceiptWindow";
 import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
+import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           <Route path="stockreport" element={<StockWindow />} />
           <Route path="stocktransfer" element={<StockTranfer />} />
         </Route>
+
         <Route path="warehouse" element={<Dashboard />}>
           <Route path="wirehousewindow" element={<WirehouseWindow />} />
           <Route path="delivery" element={<DeliveryWindow />} />
@@ -88,6 +90,10 @@ function App() {
           <Route path="accounttype" element={<AddAccountType />} />
           <Route path="area" element={<AddAccountArea />} />
           <Route path="location" element={<Location />} />
+        </Route>
+
+        <Route path="counter" element={<Dashboard />}>
+          <Route path="cashcounter" element={<CashCounterWindow />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
