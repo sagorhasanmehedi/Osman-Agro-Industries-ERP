@@ -218,4 +218,31 @@ export const SidebarData = [
       },
     ],
   },
+  {
+    title: "Report",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Cash Book",
+        path: "/report/cashbook",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Inventory Ledger",
+        path: "/report/inventoryledger",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Bank Book",
+        path: "/report/bankbook",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
 ];
