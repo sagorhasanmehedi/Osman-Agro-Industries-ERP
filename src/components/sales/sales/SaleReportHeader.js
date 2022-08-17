@@ -36,11 +36,9 @@ const SaleReportHeader = () => {
           <option>Category</option>
           <option>Category</option>
         </Select>
-        <Button Padding="10px 20px">Search</Button>
-        <Button Padding="10px 20px" style={{ marginLeft: "auto" }}>
-          Export
-        </Button>
-        <Button Padding="10px 20px">Print</Button>
+        <Button>Search</Button>
+        <Button style={{ marginLeft: "auto" }}>Export</Button>
+        <Button>Print</Button>
       </ButtonGroupContainer>
     </>
   );

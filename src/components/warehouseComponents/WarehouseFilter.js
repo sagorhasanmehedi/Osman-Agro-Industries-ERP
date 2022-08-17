@@ -10,9 +10,7 @@ const WarehouseFilter = () => {
       <Input type="date" placeholder="Invoice Search" Width="150px" />
       <Input type="date" placeholder="Invoice Search" Width="150px" />
 
-      <Button Padding="10px 40px" style={{ marginLeft: "auto" }}>
-        Search
-      </Button>
+      <Button style={{ marginLeft: "auto" }}>Search</Button>
     </ButtonGroupContainer>
   );
 };

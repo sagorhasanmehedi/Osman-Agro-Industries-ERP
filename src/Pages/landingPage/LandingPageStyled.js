@@ -35,7 +35,7 @@ export const PlainText = styled.p`
 export const HeaderName = styled.div`
   font-family: "Montserrat";
   font-style: normal;
-  color: ${(props) => props.Color || "#0488a0"};
+  color: ${(props) => props.Color || "#1B253F"};
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "20px"};
   text-align: ${(props) => props.TextAlign || "start"};
@@ -45,12 +45,12 @@ export const HeaderName = styled.div`
 export const Input = styled.input`
   font-family: "Gotham Rounded";
   border-radius: 7px;
-  border: 1px solid #e0e0e0;
-  margin: ${(props) => props.Margin || "10px 0px"};
+  border: 0.5px solid #e0e0e0;
+  margin: ${(props) => props.Margin || "8px 0px"};
   padding: ${(props) => props.Padding || "4px 10px"};
-  color: ${(props) => props.Color || "#0488a0"};
+  color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#0488a0"};
+    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
   }
   width: ${(props) => props.Width || "100%"};
 `;
@@ -60,31 +60,33 @@ export const TextAriea = styled.textarea`
   border: 1px solid #e0e0e0;
   font-family: "Gotham Rounded";
   border-radius: 7px;
-  color: ${(props) => props.Color || "#0488a0"};
+  color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#0488a0"};
+    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
   }
 `;
 export const Select = styled.select`
   font-family: "Gotham Rounded";
   border-radius: 7px;
   margin: 10px 0px;
-  border: 1px solid #e0e0e0;
-  color: ${(props) => props.Color || "#0488a0"};
+  border: 1px solid #1b253f;
+  color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#0488a0"};
+    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
   }
   padding: ${(props) => props.Padding || "10px"};
   width: ${(props) => props.Width || "100%"};
 `;
 
 export const Lavel = styled.label`
-  font-family: "Gotham Rounded";
-  font-size: ${(props) => props.FontSize || "16px"};
-  font-weight: ${(props) => props.FontWeight || "600"};
-  color: ${(props) => props.Color || "#0488a0"};
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#0488a0"};
+    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
   }
 `;
 
@@ -118,8 +120,9 @@ export const Button = styled.button`
   font-style: normal;
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "16px"};
-  padding: ${(props) => props.Padding || "10px 20px"};
+  padding: ${(props) => props.Padding || "8px 20px"};
   margin: ${(props) => props.Margin || "0px"};
+  border-radius: ${(props) => props.BorderRadius || "4px"};
   border: none;
 `;
 

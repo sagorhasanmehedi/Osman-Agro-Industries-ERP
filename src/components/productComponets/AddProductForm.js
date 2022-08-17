@@ -75,7 +75,7 @@ const AddProductForm = () => {
         </Col>
       </Row>
       <ContainerPosition Possition="end">
-        <Button Padding="10px 50px">Save</Button>
+        <Button>Save</Button>
       </ContainerPosition>
     </CardContainer>
   );

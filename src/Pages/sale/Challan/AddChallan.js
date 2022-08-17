@@ -68,9 +68,7 @@ const AddChallan = () => {
 
         <Row>
           <Col style={{ display: "flex", justifyContent: "end" }}>
-            <Button Padding="10px 40px" onClick={handleCilick}>
-              Save
-            </Button>
+            <Button onClick={handleCilick}>Save</Button>
           </Col>
         </Row>
       </CardContainer>

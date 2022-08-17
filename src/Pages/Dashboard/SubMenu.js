@@ -6,8 +6,9 @@ const SidebarLink = styled(NavLink)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(40, 54, 90, 0.8);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins";
+  color: #ffffff;
+  box-shadow: 0px 0px 4px rgba(79, 188, 245, 0.48);
   border-radius: 6px;
   padding: 5px 20px;
   margin: 4px;
@@ -26,7 +27,7 @@ const DropdownLink = styled(NavLink)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(40, 54, 90, 0.8);
+  color: #ffffff;
   // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   padding: 5px 20px;
@@ -60,7 +61,7 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <div style={{ background: "#F2F2F2" }}>
+            <div style={{ background: "#283966" }}>
               <DropdownLink to={item.path} key={index}>
                 <span style={{ padding: "3px 0px 3px 20px" }}>
                   {item.icon}

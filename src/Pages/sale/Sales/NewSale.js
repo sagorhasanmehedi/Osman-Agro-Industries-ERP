@@ -44,9 +44,7 @@ const NewSale = () => {
         </Row>
 
         <ContainerPosition Possition="end">
-          <Button Padding="10px 40px" onClick={() => handleSubmit()}>
-            Save
-          </Button>
+          <Button onClick={() => handleSubmit()}>Save</Button>
         </ContainerPosition>
       </CardContainer>
     </>

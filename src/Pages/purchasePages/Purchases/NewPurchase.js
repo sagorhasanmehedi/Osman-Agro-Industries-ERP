@@ -51,9 +51,7 @@ const NewPurchase = () => {
         <HeaderName>Receipt Details</HeaderName>
         <ReceiptDetails />
         <ContainerPosition Possition="end">
-          <Button Padding="10px 40px" onClick={() => handleSubmit()}>
-            Save
-          </Button>
+          <Button onClick={() => handleSubmit()}>Save</Button>
         </ContainerPosition>
       </CardContainer>
     </>

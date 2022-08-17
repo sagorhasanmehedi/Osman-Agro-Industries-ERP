@@ -33,7 +33,7 @@ const LoginPage = () => {
             <Input type="email" placeholder="Email" Padding="21px 14px" />
             <Input type="phone" placeholder="Phone" Padding="21px 14px" />
             <Input type="password" placeholder="Password" Padding="21px 14px" />
-            <Button Padding="20px 100px">Login</Button>
+            <Button>Login</Button>
           </CardContainer>
         </Col>
       </Row>

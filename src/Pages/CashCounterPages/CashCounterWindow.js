@@ -40,10 +40,8 @@ function FilterSection() {
         <option>type</option>
         <option>type</option>
       </Select>
-      <Button Padding="10px 40px">Search</Button>
-      <Button Padding="10px 40px" style={{ marginLeft: "auto" }}>
-        Print
-      </Button>
+      <Button>Search</Button>
+      <Button style={{ marginLeft: "auto" }}>Print</Button>
     </ButtonGroupContainer>
   );
 }

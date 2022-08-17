@@ -18,16 +18,14 @@ const ManageProduct = () => {
     <>
       <PlainText2>Manage Product Window</PlainText2>
       <ButtonGroupContainer Gap="10px">
-        <Button Padding="10px 15px" onClick={addProduct}>
-          Add Product
-        </Button>
+        <Button onClick={addProduct}>Add Product</Button>
         <Input
           type="search"
           placeholder="Search"
           style={{ width: "400px", marginRight: "auto" }}
         />
-        <Button Padding="10px 15px">Export</Button>
-        <Button Padding="10px 15px">Print</Button>
+        <Button>Export</Button>
+        <Button>Print</Button>
       </ButtonGroupContainer>
       <CardContainer>
         <ManageProductTable />

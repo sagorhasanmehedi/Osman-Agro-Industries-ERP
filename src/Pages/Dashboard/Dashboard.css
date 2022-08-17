@@ -4,9 +4,8 @@
 }
 
 #sidebar-wrapper {
-  background: #ffffff;
+  background: #1b253f;
   box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.06);
-  color: black;
   min-height: 100vh;
   transition: margin 0.25s ease-out;
 }
@@ -16,7 +15,8 @@
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
-  color: #5b82fd;
+  color: #ffffff;
+  border-bottom: 2px solid #5b82fd;
 }
 
 #sidebar-wrapper .list-group {
@@ -38,7 +38,7 @@
 } */
 
 #sidebar-wrapper .list-group a:hover {
-  background: #54d487;
+  background: #5b82fd;
   color: white;
 }
 

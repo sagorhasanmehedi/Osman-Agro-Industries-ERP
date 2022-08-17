@@ -41,9 +41,7 @@ function FilterSection() {
         <option>Category</option>
         <option>Category</option>
       </Select>
-      <Button Padding="10px 40px" style={{ marginLeft: "auto" }}>
-        Search
-      </Button>
+      <Button style={{ marginLeft: "auto" }}>Search</Button>
     </ButtonGroupContainer>
   );
 }

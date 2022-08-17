@@ -19,7 +19,7 @@ const Dashboard = () => {
       <div className="d-flex" id="wrapper">
         {/* Sidebar*/}
         <div id="sidebar-wrapper" style={{ marginLeft: data && "0rem" }}>
-          <div className="sidebar-heading text-center py-3 primary-text fs-4 fw-bold text-uppercase border-bottom">
+          <div className="sidebar-heading text-center py-3 primary-text fs-4 fw-bold text-uppercase">
             HRM Project
           </div>
           <div className="list-group list-group-flush text-start">

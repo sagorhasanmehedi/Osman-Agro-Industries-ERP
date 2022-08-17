@@ -46,7 +46,7 @@ function FilterSection() {
         <option>type</option>
         <option>type</option>
       </Select>
-      <Button Padding="10px 40px">Search</Button>
+      <Button>Search</Button>
     </ButtonGroupContainer>
   );
 }

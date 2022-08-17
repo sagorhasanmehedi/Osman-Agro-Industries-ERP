@@ -98,7 +98,7 @@ const EmployeeAccountForm = () => {
             alignItems: "end",
           }}
         >
-          <Button Padding="10px 40px"> Save </Button>
+          <Button> Save </Button>
         </Col>
       </Row>
     </CardContainer>

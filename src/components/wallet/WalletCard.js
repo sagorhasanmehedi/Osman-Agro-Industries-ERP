@@ -52,9 +52,7 @@ const WalletCard = () => {
         <PlainText>Facebook Order : </PlainText>
         <PlainText>24/7 Support : </PlainText>
         <ContainerPosition>
-          <Button Padding="5px 10px" BorderRadius="10px">
-            GET STARTED
-          </Button>
+          <Button BorderRadius="10px">GET STARTED</Button>
         </ContainerPosition>
       </WalletDiv>
     </CardContainer>

@@ -27,7 +27,7 @@ function FilterSection() {
       <Button style={{ marginRight: "auto" }}>Add Transfer</Button>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
       <Input type="date" placeholder="Invoice Search" Width="150px" />
-      <Button Padding="10px 40px">Search</Button>
+      <Button>Search</Button>
     </ButtonGroupContainer>
   );
 }
