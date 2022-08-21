@@ -32,6 +32,11 @@ export const SidebarData = [
         path: "/dashboard/salereport",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Manage Pending Delivery",
+        path: "/dashboard/managependingdelivery",
+        icon: <IoIcons.IoIosPaper />,
+      },
     ],
   },
   {

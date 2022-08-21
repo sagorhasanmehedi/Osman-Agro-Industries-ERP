@@ -40,6 +40,7 @@ import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
 import CashBook from "./Pages/Report/CashBook";
 import InventoryLedger from "./Pages/Report/InventoryLedger";
 import BankBook from "./Pages/Report/BankBook";
+import ManagePendingDeliveryWindow from "./Pages/sale/ManagePendingDelivery/ManagePendingDeliveryWindow";
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <Route path="addChallan" element={<AddChallan />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
+          <Route path="managependingdelivery" element={<ManagePendingDeliveryWindow />} />
         </Route>
 
         <Route path="product" element={<Dashboard />}>
