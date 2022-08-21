@@ -34,7 +34,13 @@ import WirehouseWindow from "./Pages/warehousePages/WirehouseWindow";
 import ReceiptWindow from "./Pages/warehousePages/ReceiptWindow";
 import PendingReceiptWindow from "./Pages/warehousePages/PendingReceiptWindow";
 import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
+
 import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
+
+import CashBook from "./Pages/Report/CashBook";
+import InventoryLedger from "./Pages/Report/InventoryLedger";
+import BankBook from "./Pages/Report/BankBook";
+
 
 function App() {
   return (
@@ -92,8 +98,17 @@ function App() {
           <Route path="location" element={<Location />} />
         </Route>
 
+
         <Route path="counter" element={<Dashboard />}>
-          <Route path="cashcounter" element={<CashCounterWindow />} />
+        <Route path="cashcounter" element={<CashCounterWindow />} />
+        </Route>
+        
+
+        <Route path="report" element={<Dashboard />}>
+          <Route path="cashbook" element={<CashBook />} />
+          <Route path="inventoryledger" element={<InventoryLedger />} />
+          <Route path="bankbook" element={<BankBook />} />
+
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
