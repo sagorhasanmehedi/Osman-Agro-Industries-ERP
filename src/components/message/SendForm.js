@@ -3,7 +3,6 @@ import { Table } from "react-bootstrap";
 import {
   Button,
   CardContainer,
-
 } from "../../Pages/landingPage/LandingPageStyled";
 
 const SendForm = () => {
@@ -15,23 +14,20 @@ const SendForm = () => {
         bordered
         hover
         size="sm"
-        style={{ background: "white",textAlign: "center" }}
+        style={{ background: "white" }}
       >
-        <thead>
-          <tr >
+        <tbody>
+          <tr className="tableHeader">
             <th>SL.</th>
             <th>Mobile No</th>
             <th>Account Name</th>
             <th>Massage</th>
             <th>Create Time</th>
             <th>Sent Time</th>
-            <th >Re-Send</th>
+            <th>Re-Send</th>
           </tr>
-        </thead>
-
-        <tbody>
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <tr key={idx} >
+          {[1, 2, 2, 4].map((valeu, index) => (
+            <tr key={index}>
               <td>SL.</td>
               <td>Mobile No</td>
               <td>Account Name</td>
@@ -39,9 +35,7 @@ const SendForm = () => {
               <td>Create Time</td>
               <td>Sent Time</td>
               <td>
-              
-                  <Button>Send</Button>
-               
+                <Button>Send</Button>
               </td>
             </tr>
           ))}

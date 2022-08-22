@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import SharedButtonNavigation from "../../../components/shared/SharedButtonNavigation";
-import {
-  ButtonGroup,
-  ButtonGroupContainer,
-} from "../../landingPage/LandingPageStyled";
+import SharedButtonNavigation2 from "../../../components/shared/SharedButtonNavigation2";
+import { InvoiceNav } from "../../landingPage/LandingPageStyled";
 import DeliveryCopy from "./DeliveryCopy";
 import GatePassCopy from "./GatePassCopy";
 
@@ -13,13 +10,13 @@ const DeliveryInvoice = () => {
 
   return (
     <>
-      <div style={{ width: "840px", margin: "auto", marginTop: "40px" }}>
-        <SharedButtonNavigation
+      <InvoiceNav>
+        <SharedButtonNavigation2
           navValue={navValue}
           data={data}
           setData={setData}
         />
-      </div>
+      </InvoiceNav>
 
       {data === "Delivery Copy" && <DeliveryCopy />}
       {data === "Gate Pass Copy" && <GatePassCopy />}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
+import SharedButtonNavigation2 from "../../components/shared/SharedButtonNavigation2";
 import EmployeeAccountForm from "../../components/accounts/EmployeeAccountForm";
 import LoginInfoForm from "../../components/accounts/LoginInfoForm";
 import SalaryInfoForm from "../../components/accounts/SalaryInfoForm";
@@ -15,7 +15,7 @@ const EmployeeAccountPage = () => {
   ];
   return (
     <div>
-      <SharedButtonNavigation
+      <SharedButtonNavigation2
         navValue={navValue}
         data={data}
         setData={setData}

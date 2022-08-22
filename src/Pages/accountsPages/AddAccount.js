@@ -21,6 +21,8 @@ const AddAccount = () => {
         navValue={navValue}
         data={data}
         setData={setData}
+        Primary="rgba(84, 212, 135, 0.25)"
+        Active="#54D487"
       />
       {data === "Customer & Supplier Account" && <CustomerAndSupplierAccount />}
       {data === "Employee Account" && <EmployeeAccount />}

@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
+import Dropdown from "react-bootstrap/Dropdown";
 import {
   CardContainer,
   HeaderName,
@@ -17,8 +18,8 @@ const SaleWindowTable = () => {
         size="sm"
         style={{ background: "white" }}
       >
-        <thead>
-          <tr>
+        <tbody>
+          <tr className="tableHeader">
             <th>Si</th>
             <th>Invoice</th>
             <th>Status</th>
@@ -28,9 +29,9 @@ const SaleWindowTable = () => {
             <th>Due Bill </th>
             <th>Rent Office Fee </th>
             <th>Creator</th>
+            <th>Status</th>
+            <th>Acton</th>
           </tr>
-        </thead>
-        <tbody>
           {Array.from({ length: 6 }).map((_, idx) => (
             <tr key={idx}>
               <td>Si</td>
@@ -42,6 +43,28 @@ const SaleWindowTable = () => {
               <td>Due Bill </td>
               <td>Rent Office Fee </td>
               <td>Creator</td>
+              <td>delivered</td>
+
+              <td>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    id="dropdown-basic"
+                    style={{
+                      background: "#54D487",
+                      border: "none",
+                    }}
+                  >
+                    View
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-2">View</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Update</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Add Delivery
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </td>
             </tr>
           ))}
         </tbody>

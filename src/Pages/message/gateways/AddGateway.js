@@ -5,7 +5,7 @@ import { PlainText2 } from "../../sale/SaleStyled";
 const AddGateway = () => {
   return (
     <>
-      <PlainText2>Add Gateway</PlainText2>
+      <PlainText2 style={{textAlign:"center",margin:"10px 0"}}>Add Gateway</PlainText2>
       <AddGatewayForm/>
     </>
   );

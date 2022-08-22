@@ -11,10 +11,10 @@ const InboxForm = () => {
         bordered
         hover
         size="sm"
-        style={{ background: "white", textAlign: "center" }}
+        style={{ background: "white" }}
       >
-        <thead>
-          <tr>
+        <tbody>
+          <tr className="tableHeader">
             <th>SL.</th>
             <th>Sender</th>
             <th>Company Name</th>
@@ -23,11 +23,8 @@ const InboxForm = () => {
             <th>Status</th>
             <th>Action</th>
           </tr>
-        </thead>
-
-        <tbody>
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <tr key={idx}>
+          {[1, 2, 2, 4].map((valeu, index) => (
+            <tr key={index}>
               <td>SL.</td>
               <td>Sender</td>
               <td>Company Name</td>

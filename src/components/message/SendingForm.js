@@ -11,10 +11,10 @@ const SendingForm = () => {
         bordered
         hover
         size="sm"
-        style={{ background: "white", textAlign: "center" }}
+        style={{ background: "white" }}
       >
-        <thead>
-          <tr>
+        <tbody>
+          <tr className="tableHeader">
             <th>SL.</th>
             <th>Mobile No</th>
             <th>Account Name</th>
@@ -23,11 +23,8 @@ const SendingForm = () => {
             <th>Create Time</th>
             <th>Length</th>
           </tr>
-        </thead>
-
-        <tbody>
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <tr key={idx}>
+          {[1, 2, 2, 4].map((valeu, index) => (
+            <tr key={index}>
               <td>SL.</td>
               <td>Mobile No</td>
               <td>Account Name</td>

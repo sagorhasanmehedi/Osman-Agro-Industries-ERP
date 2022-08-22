@@ -34,13 +34,11 @@ import WirehouseWindow from "./Pages/warehousePages/WirehouseWindow";
 import ReceiptWindow from "./Pages/warehousePages/ReceiptWindow";
 import PendingReceiptWindow from "./Pages/warehousePages/PendingReceiptWindow";
 import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
-
 import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
-
+import ManageDelivery from "./Pages/sale/Delivery/ManageDelivery";
 import CashBook from "./Pages/Report/CashBook";
 import InventoryLedger from "./Pages/Report/InventoryLedger";
 import BankBook from "./Pages/Report/BankBook";
-import ManagePendingDeliveryWindow from "./Pages/sale/ManagePendingDelivery/ManagePendingDeliveryWindow";
 import Inbox from "./Pages/message/Inbox";
 import Send from "./Pages/message/Send";
 import Sending from "./Pages/message/Sending";
@@ -48,7 +46,6 @@ import ScheduleSMS from "./Pages/message/ScheduleSMS";
 import Outbox from "./Pages/message/Outbox";
 import GatewayWindow from "./Pages/message/gateways/GatewayWindow";
 import AddGateway from "./Pages/message/gateways/AddGateway";
-
 
 function App() {
   return (
@@ -62,10 +59,8 @@ function App() {
           <Route path="addChallan" element={<AddChallan />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
-          <Route
-            path="managependingdelivery"
-            element={<ManagePendingDeliveryWindow />}
-          />
+
+          <Route path="manageDelivery" element={<ManageDelivery />} />
         </Route>
 
         <Route path="product" element={<Dashboard />}>

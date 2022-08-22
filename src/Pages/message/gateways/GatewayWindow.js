@@ -14,7 +14,7 @@ const GatewayWindow = () => {
   return (
     <>
       <PlainText2>Getaway Window</PlainText2>
-      <ButtonGroupContainer Possition="end">
+      <ButtonGroupContainer Possition="end" Shadow="none" Background="none">
         <ContainerPosition Gap="10px">
         <NavLink to="/message/addgateway">
         <Button >Add New</Button>

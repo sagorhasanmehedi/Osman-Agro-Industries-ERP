@@ -12,7 +12,7 @@ const BankBook = () => {
   return (
     <>
       <PlainText2>Bank Book Window</PlainText2>
-      <ButtonGroupContainer Gap="20px" Padding="3.5px 5px">
+      <ButtonGroupContainer Gap="20px" Padding="3.5px 5px" Shadow="none" Background="none">
         <Button>Start Date</Button>
         <Button>End Date</Button>
 

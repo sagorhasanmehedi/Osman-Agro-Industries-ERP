@@ -14,7 +14,7 @@ const Sending = () => {
   return (
     <>
       <PlainText2>Massage Sending Window</PlainText2>
-      <ButtonGroupContainer Possition="space-between">
+      <ButtonGroupContainer Possition="space-between" Shadow="none" Background="none">
         <ContainerPosition Gap="10px">
           <Lavel>Start Date</Lavel>
           <Input type="date" placeholder="Invoice Search" Width="150px" />

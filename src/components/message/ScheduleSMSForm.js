@@ -8,17 +8,21 @@ import {
 const ScheduleSMSForm = () => {
   return (
     <CardContainer>
+     
+
+
+
       <Table
         striped
         responsive
         bordered
         hover
         size="sm"
-        style={{ background: "white", textAlign: "center" }}
+        style={{ background: "white" }}
       >
-        <thead>
-          <tr>
-            <th>SL.</th>
+        <tbody>
+          <tr className="tableHeader">
+          <th>SL.</th>
             <th>Leagues</th>
             <th>Massage</th>
             <th>Length</th>
@@ -26,12 +30,9 @@ const ScheduleSMSForm = () => {
             <th>Create Date&Time</th>
             <th>Send Date&Time</th>
           </tr>
-        </thead>
-
-        <tbody>
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <tr key={idx}>
-              <td>SL.</td>
+          {[1, 2, 2, 4].map((valeu, index) => (
+            <tr key={index}>
+             <td>SL.</td>
               <td>Leagues</td>
               <td>Massage</td>
               <td>Length</td>

@@ -11,10 +11,10 @@ const GatewaysForm = () => {
         bordered
         hover
         size="sm"
-        style={{ background: "white", textAlign: "center" }}
+        style={{ background: "white" }}
       >
-        <thead>
-          <tr>
+        <tbody>
+          <tr className="tableHeader">
             <th>SL.</th>
             <th>Getaway Name</th>
             <th>Getaway Code</th>
@@ -24,13 +24,8 @@ const GatewaysForm = () => {
             <th> SMS Validity</th>
             <th>USD Dial</th>
           </tr>
-        </thead>
-
-        <tbody>
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <tr key={idx}>
-             
-
+          {[1, 2, 2, 4].map((valeu, index) => (
+            <tr key={index}>
               <td>SL.</td>
               <td>Getaway Name</td>
               <td>Getaway Code</td>

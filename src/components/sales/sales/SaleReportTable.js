@@ -12,7 +12,7 @@ const SaleReportTable = () => {
       style={{ background: "white" }}
     >
       <tbody>
-        <tr>
+        <tr className="tableHeader">
           <th>SL.</th>
           <th>Invoice No</th>
           <th>Customer</th>

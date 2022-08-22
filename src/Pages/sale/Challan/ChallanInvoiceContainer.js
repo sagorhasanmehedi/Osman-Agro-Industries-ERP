@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import SharedButtonNavigation from "../../../components/shared/SharedButtonNavigation";
-import {
-  ButtonGroup,
-  ButtonGroupContainer,
-} from "../../landingPage/LandingPageStyled";
+import SharedButtonNavigation2 from "../../../components/shared/SharedButtonNavigation2";
+
 import ChallanInvoice1 from "./ChallanInvoice1";
 import ChallanInvoice2 from "./ChallanInvoice2";
 import ChallanInvoice3 from "./ChallanInvoice3";
@@ -15,7 +12,7 @@ const ChallanInvoiceContainer = () => {
   return (
     <>
       <div style={{ width: "840px", margin: "auto", marginTop: "40px" }}>
-        <SharedButtonNavigation
+        <SharedButtonNavigation2
           navValue={navValue}
           data={data}
           setData={setData}
