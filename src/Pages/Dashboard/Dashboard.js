@@ -19,7 +19,7 @@ const Dashboard = () => {
       <div className="d-flex" id="wrapper">
         {/* Sidebar*/}
         <div id="sidebar-wrapper" style={{ marginLeft: data && "0rem" }}>
-          <div className="sidebar-heading text-center py-3 primary-text fs-4 fw-bold text-uppercase">
+          <div className="sidebar-heading text-center primary-text fs-4 fw-bold text-uppercase">
             HRM Project
           </div>
           <div className="list-group list-group-flush text-start">
@@ -39,7 +39,15 @@ const Dashboard = () => {
 
         {/*  Page Content */}
         <div id="page-content-wrapper">
-          <Navbar bg="light" expand="lg" className="px-3">
+          <Navbar
+            bg="light"
+            expand="lg"
+            className="px-3"
+            style={{
+              background: "#FFFFFF",
+              boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.15)",
+            }}
+          >
             <i
               className="fas fa-align-left primary-text fs-4 me-4 toggle-icon"
               onClick={handleSubmit}
