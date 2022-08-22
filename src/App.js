@@ -41,6 +41,13 @@ import CashBook from "./Pages/Report/CashBook";
 import InventoryLedger from "./Pages/Report/InventoryLedger";
 import BankBook from "./Pages/Report/BankBook";
 import ManagePendingDeliveryWindow from "./Pages/sale/ManagePendingDelivery/ManagePendingDeliveryWindow";
+import Inbox from "./Pages/message/Inbox";
+import Send from "./Pages/message/Send";
+import Sending from "./Pages/message/Sending";
+import ScheduleSMS from "./Pages/message/ScheduleSMS";
+import Outbox from "./Pages/message/Outbox";
+import GatewayWindow from "./Pages/message/gateways/GatewayWindow";
+import AddGateway from "./Pages/message/gateways/AddGateway";
 
 
 function App() {
@@ -55,7 +62,10 @@ function App() {
           <Route path="addChallan" element={<AddChallan />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
-          <Route path="managependingdelivery" element={<ManagePendingDeliveryWindow />} />
+          <Route
+            path="managependingdelivery"
+            element={<ManagePendingDeliveryWindow />}
+          />
         </Route>
 
         <Route path="product" element={<Dashboard />}>
@@ -100,17 +110,24 @@ function App() {
           <Route path="location" element={<Location />} />
         </Route>
 
-
         <Route path="counter" element={<Dashboard />}>
-        <Route path="cashcounter" element={<CashCounterWindow />} />
+          <Route path="cashcounter" element={<CashCounterWindow />} />
         </Route>
-        
 
         <Route path="report" element={<Dashboard />}>
           <Route path="cashbook" element={<CashBook />} />
           <Route path="inventoryledger" element={<InventoryLedger />} />
           <Route path="bankbook" element={<BankBook />} />
+        </Route>
 
+        <Route path="message" element={<Dashboard />}>
+          <Route path="inbox" element={<Inbox />} />
+          <Route path="send" element={<Send />} />
+          <Route path="sending" element={<Sending />} />
+          <Route path="scheduleSMS" element={<ScheduleSMS />} />
+          <Route path="outbox" element={<Outbox />} />
+          <Route path="gatewaywindow" element={<GatewayWindow />} />
+          <Route path="addgateway" element={<AddGateway />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
