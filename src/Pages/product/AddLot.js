@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AddProductName from "../../components/productComponets/AddProductName";
 import ProductNameList from "../../components/productComponets/ProductNameList";
 
-const AddUnite = () => {
+const AddLot = () => {
   const [data, setData] = useState({});
   const [datas, setDatas] = useState([]);
 
@@ -12,12 +12,12 @@ const AddUnite = () => {
   return (
     <>
       <AddProductName
-        name="Unit"
+        name="Lot / Gallery"
         setName={setData}
         handleSubmit={handleSubmit}
       />
-      <ProductNameList name="Unit" Datas={datas} />
+      <ProductNameList name="Lot / Gallery" Datas={datas} />
     </>
   );
 };
-export default AddUnite;
+export default AddLot;

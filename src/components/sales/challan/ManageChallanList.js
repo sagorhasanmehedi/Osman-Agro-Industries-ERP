@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const ManageDeliveryList = () => {
+const ManageChallanList = () => {
   return (
     <Table
       striped
@@ -15,7 +15,7 @@ const ManageDeliveryList = () => {
       <tbody>
         <tr className="tableHeader">
           <th>SL.</th>
-          <th>Warehouse Name</th>
+          <th>Challan No</th>
           <th>Delivery Date</th>
           <th>Delivery No</th>
           <th>Sale Date</th>
@@ -31,7 +31,7 @@ const ManageDeliveryList = () => {
         {[1, 2, 2, 4].map((valeu, index) => (
           <tr key={index}>
             <td>SL.</td>
-            <td>Warehouse Name</td>
+            <td>Challan No</td>
             <td>Delivery Date</td>
             <td>Delivery No</td>
             <td>Sale Date</td>
@@ -67,4 +67,4 @@ const ManageDeliveryList = () => {
   );
 };
 
-export default ManageDeliveryList;
+export default ManageChallanList;

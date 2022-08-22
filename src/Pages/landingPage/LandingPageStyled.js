@@ -135,6 +135,7 @@ export const Button = styled.button`
 
 export const ContainerPosition = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: ${(props) => props.Possition || "end"};
   align-items: center;
   margin: ${(props) => props.Margin || "0px"};

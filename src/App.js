@@ -37,6 +37,8 @@ import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
 import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
 import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
 import ManageDelivery from "./Pages/sale/Delivery/ManageDelivery";
+import ManageChallan from "./Pages/sale/ManageChallan";
+import AddLot from "./Pages/product/AddLot";
 
 function App() {
   return (
@@ -55,6 +57,7 @@ function App() {
             path="managePendingDelivery"
             element={<ManagePendingDelivery />}
           />
+          <Route path="manageChallan" element={<ManageChallan />} />
         </Route>
 
         <Route path="product" element={<Dashboard />}>
@@ -63,6 +66,7 @@ function App() {
           <Route path="brand" element={<AddBrand />} />
           <Route path="category" element={<AddCategory />} />
           <Route path="unite" element={<AddUnite />} />
+          <Route path="lot" element={<AddLot />} />
         </Route>
 
         <Route path="purchase" element={<Dashboard />}>

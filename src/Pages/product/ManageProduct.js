@@ -1,5 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 import {
   Button,
@@ -17,15 +18,15 @@ const ManageProduct = () => {
   return (
     <>
       <PlainText2>Manage Product Window</PlainText2>
-      <ButtonGroupContainer Gap="10px">
+      <ButtonGroupContainer Gap="10px" Shadow="none" Background="none">
         <Button onClick={addProduct}>Add Product</Button>
         <Input
           type="search"
           placeholder="Search"
           style={{ width: "400px", marginRight: "auto" }}
         />
-        <Button>Export</Button>
-        <Button>Print</Button>
+        <Button Background="#1B253F">Export</Button>
+        <Button Background="#1B253F">Print</Button>
       </ButtonGroupContainer>
       <CardContainer>
         <ManageProductTable />
@@ -46,8 +47,8 @@ function ManageProductTable() {
       size="sm"
       style={{ background: "white" }}
     >
-      <thead>
-        <tr style={{ borderWidth: 0 }}>
+      <tbody>
+        <tr className="tableHeader">
           <th>SL</th>
           <th>Product Name</th>
           <th>Image</th>
@@ -59,8 +60,6 @@ function ManageProductTable() {
           <th>Our Price</th>
           <th>Action</th>
         </tr>
-      </thead>
-      <tbody>
         {[1, 2, 3, 4, 5].map((value, idx) => (
           <tr key={idx}>
             <td>SL</td>
@@ -72,7 +71,24 @@ function ManageProductTable() {
             <td>Supplier Name</td>
             <td>Supplier Price</td>
             <td>Our Price</td>
-            <td>delete, Qr-code, Barcode, Edite</td>
+            <td>
+              <Dropdown>
+                <Dropdown.Toggle
+                  id="dropdown-basic"
+                  style={{
+                    background: "#54D487",
+                    border: "none",
+                  }}
+                >
+                  View
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-2">View</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Update</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Add Delivery</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </td>
           </tr>
         ))}
       </tbody>

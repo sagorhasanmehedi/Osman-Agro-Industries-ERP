@@ -36,6 +36,11 @@ export const SidebarData = [
         path: "/dashboard/managePendingDelivery",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Manage Challan",
+        path: "/dashboard/manageChallan",
+        icon: <IoIcons.IoIosPaper />,
+      },
 
       {
         title: "Sale Report",
@@ -72,6 +77,11 @@ export const SidebarData = [
       {
         title: "Unite",
         path: "/product/unite",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Lot / Gallery",
+        path: "/product/lot",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
