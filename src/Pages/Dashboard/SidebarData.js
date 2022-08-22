@@ -26,6 +26,16 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
+      {
+        title: "Manage Delivery",
+        path: "/dashboard/manageDelivery",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Pending Delivery",
+        path: "/dashboard/managePendingDelivery",
+        icon: <IoIcons.IoIosPaper />,
+      },
 
       {
         title: "Sale Report",

@@ -15,7 +15,7 @@ const SidebarLink = styled(NavLink)`
   text-decoration: none;
   font-size: 16px;
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: 400;
 `;
 
 const SidebarLabel = styled.span`
@@ -28,14 +28,13 @@ const DropdownLink = styled(NavLink)`
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   padding: 5px 20px;
   margin: 4px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: 400;
 `;
 
 const SubMenu = ({ item }) => {

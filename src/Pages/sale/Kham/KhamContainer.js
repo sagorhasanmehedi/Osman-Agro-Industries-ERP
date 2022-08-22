@@ -15,7 +15,10 @@ export default KhamContainer;
 
 function Kham1() {
   return (
-    <table className="kham" style={{ width: "960px", height: "432px" }}>
+    <table
+      className="kham"
+      style={{ width: "960px", height: "432px", marginTop: "50px" }}
+    >
       <tbody>
         <tr>
           <th colSpan={3} style={{ textAlign: "center" }}>

@@ -11,7 +11,7 @@ const SaleTotalReport = () => {
       style={{ background: "white" }}
     >
       <tbody>
-        <tr>
+        <tr className="tableHeader">
           <th>Cash Sale Amount</th>
           <th>Due Sale Amount</th>
           <th>Total Sale Amount</th>

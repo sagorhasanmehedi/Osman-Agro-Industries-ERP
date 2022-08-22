@@ -3,8 +3,9 @@ import {
   Button,
   ButtonGroup,
   ButtonGroupContainer,
+  InvoiceNav,
 } from "../../../Pages/landingPage/LandingPageStyled";
-import SharedButtonNavigation from "../../shared/SharedButtonNavigation";
+import SharedButtonNavigation2 from "../../shared/SharedButtonNavigation2";
 import InvoiceCustomerCopy from "./InvoiceCustomerCopy";
 import InvoiceOfficeCopy from "./InvoiceOfficeCopy";
 
@@ -14,13 +15,13 @@ const SaleInvoiceContainer = () => {
 
   return (
     <>
-      <div style={{ width: "840px", margin: "auto", marginTop: "40px" }}>
-        <SharedButtonNavigation
+      <InvoiceNav>
+        <SharedButtonNavigation2
           navValue={navValue}
           data={data}
           setData={setData}
         />
-      </div>
+      </InvoiceNav>
 
       {data === "OfficeInvoice" && <InvoiceOfficeCopy />}
       {data === "CustomerInvoice" && <InvoiceCustomerCopy />}

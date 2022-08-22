@@ -4,21 +4,14 @@ import {
   ButtonGroup,
 } from "../../Pages/landingPage/LandingPageStyled";
 
-const SharedButtonNavigation = ({
-  navValue,
-  data,
-  setData,
-  Primary,
-  Active,
-}) => {
+const SharedButtonNavigation2 = ({ navValue, data, setData }) => {
   return (
     <ButtonGroupContainer Padding="0px" BorderRadius="0px">
       {navValue.map((value, idx) => (
         <ButtonGroup
           key={idx}
           style={{
-            background: data === value ? Active : Primary,
-            color: data === value && "white",
+            borderBottom: data === value && "2px solid #54D487",
             fontWeight: data === value && "600",
           }}
           onClick={() => setData(value)}
@@ -30,4 +23,4 @@ const SharedButtonNavigation = ({
   );
 };
 
-export default SharedButtonNavigation;
+export default SharedButtonNavigation2;

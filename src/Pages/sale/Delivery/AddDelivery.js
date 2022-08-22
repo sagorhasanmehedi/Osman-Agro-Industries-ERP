@@ -17,16 +17,15 @@ const AddDelivery = () => {
   return (
     <>
       <PlainText2>Add Delivery</PlainText2>
-
       <Row style={{ maxWidth: "1091px" }}>
         <Col xs={12} sm={6}>
-          <CardContainer>
+          <CardContainer Margin="0px">
             <Lavel>Customer Details</Lavel>
             <ChallanReceiver />
           </CardContainer>
         </Col>
         <Col xs={12} sm={6}>
-          <CardContainer>
+          <CardContainer Margin="0px">
             <Lavel>Invoice Details</Lavel>
             <SaleInvoiceInfo />
           </CardContainer>

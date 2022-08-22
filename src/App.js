@@ -35,6 +35,8 @@ import ReceiptWindow from "./Pages/warehousePages/ReceiptWindow";
 import PendingReceiptWindow from "./Pages/warehousePages/PendingReceiptWindow";
 import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
 import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
+import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
+import ManageDelivery from "./Pages/sale/Delivery/ManageDelivery";
 
 function App() {
   return (
@@ -48,6 +50,11 @@ function App() {
           <Route path="addChallan" element={<AddChallan />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
+          <Route path="manageDelivery" element={<ManageDelivery />} />
+          <Route
+            path="managePendingDelivery"
+            element={<ManagePendingDelivery />}
+          />
         </Route>
 
         <Route path="product" element={<Dashboard />}>

@@ -2,11 +2,11 @@ import React from "react";
 import {
   Button,
   CardContainer,
+  HeaderName,
   Input,
   Lavel,
 } from "../../Pages/landingPage/LandingPageStyled";
 import { Row, Col } from "react-bootstrap";
-import { PlainText2 } from "../../Pages/sale/SaleStyled";
 
 const BialogycalForm = () => {
   return (
@@ -51,7 +51,7 @@ const BialogycalForm = () => {
       </Row>
       <Row>
         <Col>
-          <PlainText2>Education Qualification</PlainText2>
+          <HeaderName>Education Qualification</HeaderName>
         </Col>
       </Row>
       <Row>

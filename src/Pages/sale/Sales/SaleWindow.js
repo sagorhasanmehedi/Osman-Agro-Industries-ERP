@@ -14,7 +14,7 @@ const SaleWindow = () => {
   return (
     <>
       <PlainText2>Sale Window</PlainText2>
-      <ButtonGroupContainer Gap="6px">
+      <ButtonGroupContainer Gap="6px" Shadow="none" Background="none">
         <NavLink to="/dashboard/newSale">
           <Button>New Sale</Button>
         </NavLink>
@@ -22,7 +22,12 @@ const SaleWindow = () => {
           <Button>Pos Sale</Button>
         </NavLink>
 
-        <ContainerPosition Margin="0px auto" Possition="center" Gap="10px">
+        <ContainerPosition
+          Margin="0px auto"
+          Possition="center"
+          Gap="10px"
+          style={{ margin: "auto" }}
+        >
           <Lavel>Start Date</Lavel>
           <Input type="date" placeholder="Invoice Search" Width="150px" />
           <Lavel>End Date</Lavel>
@@ -31,8 +36,8 @@ const SaleWindow = () => {
           <Button>Search</Button>
         </ContainerPosition>
 
-        <Button style={{ marginLeft: "auto" }}>Export</Button>
-        <Button>Print</Button>
+        <Button Background="#1B253F">Export</Button>
+        <Button Background="#1B253F">Print</Button>
       </ButtonGroupContainer>
 
       <SaleWindowTable />
