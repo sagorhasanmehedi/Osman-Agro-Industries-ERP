@@ -5,6 +5,7 @@ import {
   CardContainer,
   HeaderName,
   Input,
+  Lavel,
 } from "../landingPage/LandingPageStyled";
 import { PlainText2 } from "../sale/SaleStyled";
 import { Table } from "react-bootstrap";
@@ -23,9 +24,11 @@ export default StockTranfer;
 
 function FilterSection() {
   return (
-    <ButtonGroupContainer Gap="6px">
+    <ButtonGroupContainer Gap="6px" Shadow="none" Background="none">
       <Button style={{ marginRight: "auto" }}>Add Transfer</Button>
+      <Lavel>Start Date</Lavel>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
+      <Lavel>End Date</Lavel>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
       <Button>Search</Button>
     </ButtonGroupContainer>

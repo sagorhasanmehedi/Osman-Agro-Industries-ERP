@@ -1,0 +1,155 @@
+import React from "react";
+import {
+  Button,
+  CardContainer,
+  HeaderName,
+  Lavel,
+  Select,
+  TextAriea,
+} from "../landingPage/LandingPageStyled";
+
+import { Table, Row, Col } from "react-bootstrap";
+import NewDeliveryItem from "../../components/sales/delivery/NewDeliveryItem";
+import SaleInvoiceInfo from "../../components/sales/sales/SaleInvoiceInfo";
+import ChallanReceiver from "../../components/sales/challan/ChallanReceiver";
+import { PlainText2 } from "../sale/SaleStyled";
+
+const AddReceipt = () => {
+  return (
+    <>
+      <PlainText2>Add Receipt</PlainText2>
+      <Row style={{ maxWidth: "1091px" }}>
+        <Col xs={12} sm={6}>
+          <CardContainer Margin="0px">
+            <Lavel>Customer Details</Lavel>
+            <ChallanReceiver />
+          </CardContainer>
+        </Col>
+        <Col xs={12} sm={6}>
+          <CardContainer Margin="0px">
+            <Lavel>Invoice Details</Lavel>
+            <SaleInvoiceInfo />
+          </CardContainer>
+        </Col>
+        <Col xs={12}>
+          <CardContainer>
+            <DeliveryMethod />
+          </CardContainer>
+        </Col>
+      </Row>
+      <CardContainer>
+        <Lavel>Item List</Lavel>
+        <NewDeliveryItem />
+      </CardContainer>
+      <CardContainer>
+        <DeliverySummary />
+      </CardContainer>
+    </>
+  );
+};
+
+export default AddReceipt;
+
+function DeliveryMethod() {
+  return (
+    <Row xs={1} sm={2}>
+      <Col>
+        <Lavel>Vehicle Method</Lavel>
+        <Select>
+          <option>DeliveryMethod 1</option>
+          <option>DeliveryMethod 2</option>
+          <option>DeliveryMethod 3</option>
+        </Select>
+        <Lavel>Vehicle Method</Lavel>
+        <Select>
+          <option>VehicleMethod 1</option>
+          <option>VehicleMethod 2</option>
+          <option>VehicleMethod 3</option>
+        </Select>
+      </Col>
+      <Col>
+        <ShowVehicle />
+      </Col>
+    </Row>
+  );
+}
+
+function ShowVehicle() {
+  return (
+    <Table
+      striped
+      responsive
+      bordered
+      hover
+      size="sm"
+      style={{ background: "white" }}
+    >
+      <tbody>
+        <tr>
+          <th colSpan={2} style={{ textAlign: "center" }}>
+            Show Vehicle
+          </th>
+        </tr>
+        <tr>
+          <th>Available</th>
+          <th>Unavailable</th>
+        </tr>
+        {Array.from({ length: 4 }).map((_, idx) => (
+          <tr>
+            <td>001134</td>
+            <td>0011346</td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
+  );
+}
+
+function DeliverySummary() {
+  return (
+    <>
+      <HeaderName> Receipt Summary</HeaderName>
+      <Row xs={1} sm={2}>
+        <Col>
+          <TextAriea type="text" rows="3" placeholder="Details...." />
+        </Col>
+        <Col>
+          <Table
+            striped
+            responsive
+            bordered
+            hover
+            size="sm"
+            style={{ background: "white" }}
+          >
+            <tbody>
+              <tr>
+                <th>Total Order : </th>
+                <th>500</th>
+              </tr>
+              <tr>
+                <th>Total Receipt : </th>
+                <th>300</th>
+              </tr>
+              <tr>
+                <th>Pendding Receipt : </th>
+                <th>200</th>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          style={{
+            display: "flex",
+            justifyContent: "end",
+            alignItems: "end",
+          }}
+        >
+          <Button> Save </Button>
+        </Col>
+      </Row>
+    </>
+  );
+}

@@ -50,7 +50,7 @@ export const Input = styled.input`
   border: 0.5px solid #28365a;
   border-radius: 4px;
   margin: ${(props) => props.Margin || "8px 0px"};
-  padding: ${(props) => props.Padding || "10px 8px"};
+  padding: ${(props) => props.Padding || "6px 8px"};
   color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "#1B253F"};
@@ -82,7 +82,7 @@ export const Select = styled.select`
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "#1B253F"};
   }
-  padding: ${(props) => props.Padding || "10px"};
+  padding: ${(props) => props.Padding || "6px 8px"};
   width: ${(props) => props.Width || "100%"};
 `;
 
@@ -136,6 +136,7 @@ export const Button = styled.button`
 
 export const ContainerPosition = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: ${(props) => props.Possition || "end"};
   align-items: center;
   margin: ${(props) => props.Margin || "0px"};

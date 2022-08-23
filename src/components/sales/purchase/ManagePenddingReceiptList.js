@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const ManageDeliveryList = () => {
+const ManagePenddingReceiptList = () => {
   return (
     <Table
       striped
@@ -15,33 +15,27 @@ const ManageDeliveryList = () => {
       <tbody>
         <tr className="tableHeader">
           <th>SL.</th>
-          <th>Warehouse Name</th>
-          <th>Delivery Date</th>
-          <th>Delivery No</th>
-          <th>Sale Date</th>
-          <th>Sale No</th>
+          <th>Pur Date</th>
+          <th>Pur Invoice No</th>
           <th>Customer Name</th>
-          <th>item Name</th>
-          <th>Quty</th>
-          <th>Creator</th>
-          <th>Vehicles</th>
+          <th>Item</th>
+          <th>Quantity</th>
           <th>Amount</th>
+          <th>Note</th>
+          <th>Creator</th>
           <th>Action</th>
         </tr>
         {[1, 2, 2, 4].map((valeu, index) => (
           <tr key={index}>
             <td>SL.</td>
-            <td>Warehouse Name</td>
-            <td>Delivery Date</td>
-            <td>Delivery No</td>
-            <td>Sale Date</td>
-            <td>Sale No</td>
+            <td>Pur Date</td>
+            <td>Pur Invoice No</td>
             <td>Customer Name</td>
-            <td>item Name</td>
-            <td>Quty</td>
-            <td>Creator</td>
-            <td>Vehicles</td>
+            <td>Item</td>
+            <td>Quantity</td>
             <td>Amount</td>
+            <td>Note</td>
+            <td>Creator</td>
             <td>
               <Dropdown>
                 <Dropdown.Toggle
@@ -66,5 +60,4 @@ const ManageDeliveryList = () => {
     </Table>
   );
 };
-
-export default ManageDeliveryList;
+export default ManagePenddingReceiptList;

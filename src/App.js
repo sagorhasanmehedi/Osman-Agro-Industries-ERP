@@ -18,24 +18,21 @@ import AddAccountType from "./Pages/accountsPages/AddAccountType";
 import AddAccountArea from "./Pages/accountsPages/AddAccountArea";
 import AllAccounts from "./Pages/accountsPages/AllAccounts";
 import Location from "./Pages/accountsPages/Location";
-import ManagePurchase from "./Pages/purchasePages/Purchases/ManagePurchase";
-import NewPurchase from "./Pages/purchasePages/Purchases/NewPurchase";
-import PurchaseInvoice from "./Pages/purchasePages/Purchases/PurchaseInvoice";
+import ManagePurchase from "./Pages/purchasePages/ManagePurchase";
+import NewPurchase from "./Pages/purchasePages/NewPurchase";
+import PurchaseInvoice from "./Pages/purchasePages/PurchaseInvoice";
 import SaleReports from "./Pages/sale/Sales/SaleReports";
-import PurchaseReports from "./Pages/purchasePages/Purchases/PurchaseReports";
+import PurchaseReports from "./Pages/purchasePages/PurchaseReports";
 import ProductionWindow from "./Pages/productionPages/ProductionWindow";
 import AddProductionOrder from "./Pages/productionPages/AddProductionOrder";
 import ProductionType from "./Pages/productionPages/ProductionType";
 import StockWindow from "./Pages/StockPages/StockWindow";
 import StockTranfer from "./Pages/StockPages/StockTranfer";
-import DeliveryWindow from "./Pages/warehousePages/DeliveryWindow";
-import PenddingDeliveryWindow from "./Pages/warehousePages/PenddingDeliveryWindow";
 import WirehouseWindow from "./Pages/warehousePages/WirehouseWindow";
-import ReceiptWindow from "./Pages/warehousePages/ReceiptWindow";
-import PendingReceiptWindow from "./Pages/warehousePages/PendingReceiptWindow";
 import VehiclesWindow from "./Pages/warehousePages/VehiclesWindow";
 import CashCounterWindow from "./Pages/CashCounterPages/CashCounterWindow";
 import ManageDelivery from "./Pages/sale/Delivery/ManageDelivery";
+
 import CashBook from "./Pages/Report/CashBook";
 import InventoryLedger from "./Pages/Report/InventoryLedger";
 import BankBook from "./Pages/Report/BankBook";
@@ -55,6 +52,15 @@ import AccountType from "./Pages/bank/AccountType";
 import ManageBankAccount from "./Pages/bank/ManageBankAccount ";
 import AddAccountForm from "./components/bank/AddAccountForm";
 
+import ManageChallan from "./Pages/sale/ManageChallan";
+import AddLot from "./Pages/product/AddLot";
+import AddReceipt from "./Pages/purchasePages/AddReceipt";
+import PendingReceipt from "./Pages/purchasePages/PendingReceipt";
+import ManageReceiptChallan from "./Pages/purchasePages/ManageReceiptChallan";
+import ManageReceipt from "./Pages/purchasePages/ManageReceipt";
+import BalanceCheck from "./Pages/reportPages/BalanceCheck";
+import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
+
 function App() {
   return (
     <div className="App">
@@ -67,8 +73,12 @@ function App() {
           <Route path="addChallan" element={<AddChallan />} />
           <Route path="saleInvoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
-
           <Route path="manageDelivery" element={<ManageDelivery />} />
+          <Route
+            path="managePendingDelivery"
+            element={<ManagePendingDelivery />}
+          />
+          <Route path="manageChallan" element={<ManageChallan />} />
         </Route>
 
         <Route path="product" element={<Dashboard />}>
@@ -77,6 +87,7 @@ function App() {
           <Route path="brand" element={<AddBrand />} />
           <Route path="category" element={<AddCategory />} />
           <Route path="unite" element={<AddUnite />} />
+          <Route path="lot" element={<AddLot />} />
         </Route>
 
         <Route path="purchase" element={<Dashboard />}>
@@ -84,6 +95,10 @@ function App() {
           <Route path="newpurchase" element={<NewPurchase />} />
           <Route path="purchaseInvoice" element={<PurchaseInvoice />} />
           <Route path="purchasereport" element={<PurchaseReports />} />
+          <Route path="addreceipt" element={<AddReceipt />} />
+          <Route path="penddingreceipt" element={<PendingReceipt />} />
+          <Route path="receiptchallan" element={<ManageReceiptChallan />} />
+          <Route path="managereceipt" element={<ManageReceipt />} />
         </Route>
         <Route path="production" element={<Dashboard />}>
           <Route path="production" element={<ProductionWindow />} />
@@ -94,13 +109,12 @@ function App() {
           <Route path="stockreport" element={<StockWindow />} />
           <Route path="stocktransfer" element={<StockTranfer />} />
         </Route>
+        <Route path="repots" element={<Dashboard />}>
+          <Route path="balancecheck" element={<BalanceCheck />} />
+        </Route>
 
         <Route path="warehouse" element={<Dashboard />}>
           <Route path="wirehousewindow" element={<WirehouseWindow />} />
-          <Route path="delivery" element={<DeliveryWindow />} />
-          <Route path="pendingdelivery" element={<PenddingDeliveryWindow />} />
-          <Route path="receipt" element={<ReceiptWindow />} />
-          <Route path="pendingreceipt" element={<PendingReceiptWindow />} />
           <Route path="vehicles" element={<VehiclesWindow />} />
         </Route>
 
@@ -134,7 +148,10 @@ function App() {
         </Route>
 
         <Route path="marketing" element={<Dashboard />}>
-          <Route path="managerepresentative" element={<ManagerepRepresentive />} />
+          <Route
+            path="managerepresentative"
+            element={<ManagerepRepresentive />}
+          />
           <Route path="marketingreport" element={<MarketingReport />} />
         </Route>
 

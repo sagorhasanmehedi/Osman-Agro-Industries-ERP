@@ -5,6 +5,7 @@ import {
   CardContainer,
   HeaderName,
   Input,
+  Lavel,
   Select,
 } from "../landingPage/LandingPageStyled";
 import { PlainText2 } from "../sale/SaleStyled";
@@ -25,8 +26,10 @@ export default StockWindow;
 
 function FilterSection() {
   return (
-    <ButtonGroupContainer Gap="6px">
+    <ButtonGroupContainer Gap="6px" Shadow="none" Background="none">
+      <Lavel>Start Date</Lavel>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
+      <Lavel>End Date</Lavel>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
 
       <Select Width="150px">
@@ -41,7 +44,10 @@ function FilterSection() {
         <option>Category</option>
         <option>Category</option>
       </Select>
-      <Button style={{ marginLeft: "auto" }}>Search</Button>
+      <Button>Search</Button>
+      <Button Background="#1B253F" style={{ marginLeft: "auto" }}>
+        Print
+      </Button>
     </ButtonGroupContainer>
   );
 }

@@ -13,6 +13,7 @@ const SharedButtonNavigation2 = ({ navValue, data, setData }) => {
           style={{
             borderBottom: data === value && "2px solid #54D487",
             fontWeight: data === value && "600",
+            color: data === value && "#54D487",
           }}
           onClick={() => setData(value)}
         >

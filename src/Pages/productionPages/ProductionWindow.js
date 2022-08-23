@@ -5,6 +5,7 @@ import {
   Button,
   ButtonGroupContainer,
   Input,
+  Lavel,
   Select,
 } from "../landingPage/LandingPageStyled";
 import { PlainText2 } from "../sale/SaleStyled";
@@ -23,22 +24,20 @@ export default ProductionWindow;
 
 function FilterSection() {
   return (
-    <ButtonGroupContainer Gap="6px">
+    <ButtonGroupContainer Gap="6px" Shadow="none" Background="none">
       <NavLink to="/production/addproduction">
         <Button>Add Production Order</Button>
       </NavLink>
       <Input
-        type="date"
-        placeholder="Invoice Search"
-        Width="150px"
-        style={{ marginLeft: "auto" }}
-      />
-      <Input type="date" placeholder="Invoice Search" Width="150px" />
-      <Input
         type="text"
         placeholder="Barcode type and id search"
         Width="250px"
+        style={{ marginRight: "auto" }}
       />
+      <Lavel>Start Date</Lavel>
+      <Input type="date" placeholder="Invoice Search" Width="150px" />
+      <Lavel>End Date</Lavel>
+      <Input type="date" placeholder="Invoice Search" Width="150px" />
 
       <Select Width="150px">
         <option>type</option>

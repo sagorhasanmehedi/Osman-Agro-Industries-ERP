@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const ManageDeliveryList = () => {
+const ManageReceiptChallanList = () => {
   return (
     <Table
       striped
@@ -15,33 +15,31 @@ const ManageDeliveryList = () => {
       <tbody>
         <tr className="tableHeader">
           <th>SL.</th>
-          <th>Warehouse Name</th>
-          <th>Delivery Date</th>
-          <th>Delivery No</th>
-          <th>Sale Date</th>
-          <th>Sale No</th>
+          <th>Challan No</th>
+          <th>Receipt Date</th>
+          <th>Receipt No</th>
+          <th>Purchase Date</th>
+          <th>Purchase No</th>
           <th>Customer Name</th>
-          <th>item Name</th>
+          <th>Item Name</th>
           <th>Quty</th>
           <th>Creator</th>
-          <th>Vehicles</th>
-          <th>Amount</th>
+          <th>Vehicle</th>
           <th>Action</th>
         </tr>
         {[1, 2, 2, 4].map((valeu, index) => (
           <tr key={index}>
             <td>SL.</td>
-            <td>Warehouse Name</td>
-            <td>Delivery Date</td>
-            <td>Delivery No</td>
-            <td>Sale Date</td>
-            <td>Sale No</td>
+            <td>Challan No</td>
+            <td>Receipt Date</td>
+            <td>Receipt No</td>
+            <td>Purchase Date</td>
+            <td>Purchase No</td>
             <td>Customer Name</td>
-            <td>item Name</td>
+            <td>Item Name</td>
             <td>Quty</td>
             <td>Creator</td>
-            <td>Vehicles</td>
-            <td>Amount</td>
+            <td>Vehicle</td>
             <td>
               <Dropdown>
                 <Dropdown.Toggle
@@ -67,4 +65,4 @@ const ManageDeliveryList = () => {
   );
 };
 
-export default ManageDeliveryList;
+export default ManageReceiptChallanList;

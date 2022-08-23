@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
-import { Table, Row, Col } from "react-bootstrap";
 import AddProductName from "../../components/productComponets/AddProductName";
 import ProductNameList from "../../components/productComponets/ProductNameList";
 
-const ProductionType = () => {
+const AddLot = () => {
   const [data, setData] = useState({});
   const [datas, setDatas] = useState([]);
 
@@ -14,13 +12,12 @@ const ProductionType = () => {
   return (
     <>
       <AddProductName
-        name="Production Type"
+        name="Lot / Gallery"
         setName={setData}
         handleSubmit={handleSubmit}
       />
-      <ProductNameList name="Production Type" Datas={datas} />
+      <ProductNameList name="Lot / Gallery" Datas={datas} />
     </>
   );
 };
-
-export default ProductionType;
+export default AddLot;

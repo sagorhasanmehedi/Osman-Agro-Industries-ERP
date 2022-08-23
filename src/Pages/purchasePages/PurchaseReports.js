@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import SaleReportTable from "../../../components/sales/sales/SaleReportTable";
-import SaleTotalReport from "../../../components/sales/sales/SaleTotalReport";
+import SaleReportTable from "../../components/sales/sales/SaleReportTable";
+import SaleTotalReport from "../../components/sales/sales/SaleTotalReport";
 import {
   Button,
   ButtonGroupContainer,
@@ -8,8 +8,8 @@ import {
   Input,
   Lavel,
   Select,
-} from "../../landingPage/LandingPageStyled";
-import { PlainText2 } from "../../sale/SaleStyled";
+} from "../landingPage/LandingPageStyled";
+import { PlainText2 } from "../sale/SaleStyled";
 
 const PurchaseReports = () => {
   return (

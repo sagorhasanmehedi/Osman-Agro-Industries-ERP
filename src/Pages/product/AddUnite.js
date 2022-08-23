@@ -1,66 +1,23 @@
-import React from "react";
-import { Col, Row, Table } from "react-bootstrap";
-import {
-  Button,
-  CardContainer,
-  HeaderName,
-  Input,
-} from "../landingPage/LandingPageStyled";
-import { PlainText2 } from "../sale/SaleStyled";
+import React, { useState } from "react";
+import AddProductName from "../../components/productComponets/AddProductName";
+import ProductNameList from "../../components/productComponets/ProductNameList";
 
 const AddUnite = () => {
+  const [data, setData] = useState({});
+  const [datas, setDatas] = useState([]);
+
+  const handleSubmit = () => {};
+  const handleUpdate = () => {};
+
   return (
     <>
-      <PlainText2>Unite</PlainText2>
-      <CardContainer>
-        <HeaderName>Add Unite</HeaderName>
-        <Row xs={1} sx={2} md={3}>
-          <Col>
-            <Input name="uniteName" placeholder="Enter your unite name" />
-            <Button>Submit</Button>
-          </Col>
-        </Row>
-      </CardContainer>
-      <UniteList />
+      <AddProductName
+        name="Unit"
+        setName={setData}
+        handleSubmit={handleSubmit}
+      />
+      <ProductNameList name="Unit" Datas={datas} />
     </>
   );
 };
-
 export default AddUnite;
-
-function UniteList() {
-  return (
-    <CardContainer>
-      <HeaderName>Brand List</HeaderName>
-      <UniteListTable />
-    </CardContainer>
-  );
-}
-
-function UniteListTable() {
-  return (
-    <Table
-      striped
-      responsive
-      bordered
-      hover
-      size="sm"
-      style={{ background: "white" }}
-    >
-      <thead>
-        <tr style={{ borderWidth: 0 }}>
-          <th>Id</th>
-          <th>Unite Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Array.from({ length: 6 }).map((_, idx) => (
-          <tr key={idx}>
-            <td>Id</td>
-            <td>Unite Name</td>
-          </tr>
-        ))}
-      </tbody>
-    </Table>
-  );
-}

@@ -18,7 +18,7 @@ const ProductionListTable = () => {
         style={{ background: "white", marginTop: "10px" }}
       >
         <tbody>
-          <tr>
+          <tr className="tableHeader">
             <th>S.I</th>
             <th>Item Nmae</th>
             <th>Netting</th>
