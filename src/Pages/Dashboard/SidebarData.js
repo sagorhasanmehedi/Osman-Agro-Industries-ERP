@@ -31,14 +31,12 @@ export const SidebarData = [
         path: "/dashboard/manageDelivery",
         icon: <IoIcons.IoIosPaper />,
       },
-     
 
       {
         title: "Sale Report",
         path: "/dashboard/salereport",
         icon: <IoIcons.IoIosPaper />,
       },
-      
     ],
   },
   {
@@ -298,7 +296,7 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
-      
+
       {
         title: "Outbox",
         path: "/message/outbox",
@@ -314,6 +312,78 @@ export const SidebarData = [
       {
         title: "Gateways",
         path: "/message/gatewaywindow",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+
+  {
+    title: "Marketing",
+
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "M Representative",
+        path: "/marketing/managerepresentative",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Report",
+        path: "/marketing/marketingreport",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+
+
+  
+
+ 
+ 
+ 
+  {
+    title: "Bank",
+
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage Bank Name",
+        path: "/bank/managebankname ",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "M Bank Branch",
+        path: "/bank/managebankbranch",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Account Category",
+        path: "/bank/bankaccountcategory",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Account Type",
+        path: "/bank/bankaccounttype",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "M Bank Account",
+        path: "/bank/managebankaccount",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },

@@ -46,6 +46,14 @@ import ScheduleSMS from "./Pages/message/ScheduleSMS";
 import Outbox from "./Pages/message/Outbox";
 import GatewayWindow from "./Pages/message/gateways/GatewayWindow";
 import AddGateway from "./Pages/message/gateways/AddGateway";
+import ManagerepRepresentive from "./Pages/marketing/ManagerepRepresentive";
+import MarketingReport from "./Pages/marketing/MarketingReport";
+import ManageBankName from "./Pages/bank/ManageBankName";
+import ManageBankBranch from "./Pages/bank/ManageBankBranch";
+import AccountCategory from "./Pages/bank/AccountCategory";
+import AccountType from "./Pages/bank/AccountType";
+import ManageBankAccount from "./Pages/bank/ManageBankAccount ";
+import AddAccountForm from "./components/bank/AddAccountForm";
 
 function App() {
   return (
@@ -123,6 +131,20 @@ function App() {
           <Route path="outbox" element={<Outbox />} />
           <Route path="gatewaywindow" element={<GatewayWindow />} />
           <Route path="addgateway" element={<AddGateway />} />
+        </Route>
+
+        <Route path="marketing" element={<Dashboard />}>
+          <Route path="managerepresentative" element={<ManagerepRepresentive />} />
+          <Route path="marketingreport" element={<MarketingReport />} />
+        </Route>
+
+        <Route path="Bank" element={<Dashboard />}>
+          <Route path="managebankname" element={<ManageBankName />} />
+          <Route path="managebankbranch" element={<ManageBankBranch />} />
+          <Route path="bankaccountcategory" element={<AccountCategory />} />
+          <Route path="bankaccounttype" element={<AccountType />} />
+          <Route path="managebankaccount" element={<ManageBankAccount />} />
+          <Route path="addaccount" element={<AddAccountForm />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

@@ -56,6 +56,7 @@ export const Input = styled.input`
     color: ${(props) => props.PlaceHolderColor || "#1B253F"};
   }
   width: ${(props) => props.Width || "100%"};
+  outline: none
 `;
 export const TextAriea = styled.textarea`
   width: ${(props) => props.Width || "100%"};
