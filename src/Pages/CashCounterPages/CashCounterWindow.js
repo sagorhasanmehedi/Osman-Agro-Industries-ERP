@@ -23,7 +23,7 @@ export default CashCounterWindow;
 
 function FilterSection() {
   return (
-    <ButtonGroupContainer Gap="6px">
+    <ButtonGroupContainer Gap="6px" Shadow="none" Background="none">
       <Lavel>Start Date</Lavel>
       <Input type="date" placeholder="Invoice Search" Width="150px" />
       <Lavel>Start Date</Lavel>
