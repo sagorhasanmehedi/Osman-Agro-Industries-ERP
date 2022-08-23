@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
-import SaleSummary from "../../../components/sales/SaleSummary";
+import SaleSummary from "../../components/sales/SaleSummary";
 import {
   Button,
   ButtonGroupContainer,
@@ -12,12 +12,12 @@ import {
   Lavel,
   Select,
   TextAriea,
-} from "../../landingPage/LandingPageStyled";
-import { PlainText2 } from "../../sale/SaleStyled";
-import AddItems from "../../../components/sales/sales/AddItems";
-import SelectCustomer from "../../../components/sales/sales/SelectCustomer";
-import CustomerDetailsForm from "../../../components/sales/sales/CustomerDetailsForm";
-import PaymentMethod from "../../../components/sales/sales/PaymentMethod";
+} from "../landingPage/LandingPageStyled";
+import { PlainText2 } from "../sale/SaleStyled";
+import AddItems from "../../components/sales/sales/AddItems";
+import SelectCustomer from "../../components/sales/sales/SelectCustomer";
+import CustomerDetailsForm from "../../components/sales/sales/CustomerDetailsForm";
+import PaymentMethod from "../../components/sales/sales/PaymentMethod";
 
 const NewPurchase = () => {
   const navigation = useNavigate();

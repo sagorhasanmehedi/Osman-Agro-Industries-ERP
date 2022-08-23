@@ -1,15 +1,28 @@
 import React from "react";
-import { CardContainer, HeaderName } from "../landingPage/LandingPageStyled";
+import {
+  Button,
+  ButtonGroupContainer,
+  CardContainer,
+  HeaderName,
+  Input,
+  Lavel,
+} from "../landingPage/LandingPageStyled";
 import { PlainText2 } from "../sale/SaleStyled";
 
 import { Table } from "react-bootstrap";
-import WarehouseFilter from "../../components/warehouseComponents/WarehouseFilter";
 
 const WirehouseWindow = () => {
   return (
     <>
       <PlainText2>Wirehouse Window</PlainText2>
-      <WarehouseFilter />
+      <ButtonGroupContainer Gap="6px" Background="none" Shadow="none">
+        <Lavel>Start Date</Lavel>
+        <Input type="date" placeholder="Invoice Search" Width="150px" />
+        <Lavel>End Date</Lavel>
+        <Input type="date" placeholder="Invoice Search" Width="150px" />
+
+        <Button style={{ marginLeft: "auto" }}>Search</Button>
+      </ButtonGroupContainer>
       <StockTablle />
     </>
   );

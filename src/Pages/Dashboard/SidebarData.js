@@ -50,43 +50,6 @@ export const SidebarData = [
     ],
   },
   {
-    title: "Product",
-    path: "#",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: "Manage Product",
-        path: "/product/manageproduct",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Brand",
-        path: "/product/brand",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-
-      {
-        title: "Category",
-        path: "/product/category",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Unite",
-        path: "/product/unite",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Lot / Gallery",
-        path: "/product/lot",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
-  },
-  {
     title: "Purchase",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -95,20 +58,26 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "New Purchase",
-        path: "/purchase/newpurchase",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
         title: "Manage Purchase",
         path: "/purchase/managepurchase",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Pos Purchase",
-        path: "/purchase/purchsewindow",
+        title: "Pendding Receipt",
+        path: "/purchase/penddingreceipt",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Manage Receipt",
+        path: "/purchase/managereceipt",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Receipt Challan",
+        path: "/purchase/receiptchallan",
+        icon: <IoIcons.IoIosPaper />,
+      },
+
       {
         title: "Purchase Report",
         path: "/purchase/purchasereport",
@@ -169,30 +138,66 @@ export const SidebarData = [
         path: "/warehouse/wirehousewindow",
         icon: <IoIcons.IoIosPaper />,
       },
-      {
-        title: "Delivery",
-        path: "/warehouse/delivery",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Pending Delivery",
-        path: "/warehouse/pendingdelivery",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Receipt Window",
-        path: "/warehouse/receipt",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Pending Receipt",
-        path: "/warehouse/pendingreceipt",
-        icon: <IoIcons.IoIosPaper />,
-      },
+
       {
         title: "Vehicles Window",
         path: "/warehouse/vehicles",
         icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+
+  {
+    title: "Product",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage Product",
+        path: "/product/manageproduct",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Brand",
+        path: "/product/brand",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+
+      {
+        title: "Category",
+        path: "/product/category",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Unite",
+        path: "/product/unite",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Lot / Gallery",
+        path: "/product/lot",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+
+  {
+    title: "Reports",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Balance Check",
+        path: "/repots/balancecheck",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
       },
     ],
   },

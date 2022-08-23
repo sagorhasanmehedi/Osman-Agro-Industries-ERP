@@ -1,14 +1,14 @@
 import React from "react";
-import SaleWindowTable from "../../../components/sales/SaleWindowTable";
 import {
   ButtonGroupContainer,
   Button,
   Input,
   ContainerPosition,
   Lavel,
-} from "../../landingPage/LandingPageStyled";
+} from "../landingPage/LandingPageStyled";
 import { NavLink } from "react-router-dom";
-import { PlainText2 } from "../../sale/SaleStyled";
+import { PlainText2 } from "../sale/SaleStyled";
+import SaleWindowTable from "../../components/sales/SaleWindowTable";
 
 const ManagePurchase = () => {
   return (
