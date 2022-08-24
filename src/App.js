@@ -40,6 +40,10 @@ import PendingReceipt from "./Pages/purchasePages/PendingReceipt";
 import ManageReceiptChallan from "./Pages/purchasePages/ManageReceiptChallan";
 import ManageReceipt from "./Pages/purchasePages/ManageReceipt";
 import BalanceCheck from "./Pages/reportPages/BalanceCheck";
+import ReceivedVoucherWindow from "./Pages/paymentVoucherPages/ReceivedVoucherWindow";
+import ReceivedVoucherInvoice from "./Pages/paymentVoucherPages/ReceivedVoucherInvoice";
+import PaymentVoucherInvoice from "./Pages/paymentVoucherPages/PaymentVoucherInvoice";
+import PaymentVoucherWindow from "./Pages/paymentVoucherPages/PaymentVoucherWindow";
 
 function App() {
   return (
@@ -109,6 +113,16 @@ function App() {
 
         <Route path="counter" element={<Dashboard />}>
           <Route path="cashcounter" element={<CashCounterWindow />} />
+          <Route path="receivedVoucher" element={<ReceivedVoucherWindow />} />
+          <Route path="paymentVoucher" element={<PaymentVoucherWindow />} />
+          <Route
+            path="paymentVoucherInvoice"
+            element={<PaymentVoucherInvoice />}
+          />
+          <Route
+            path="receivedVoucherInvoice"
+            element={<ReceivedVoucherInvoice />}
+          />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

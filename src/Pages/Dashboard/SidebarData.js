@@ -202,7 +202,7 @@ export const SidebarData = [
     ],
   },
   {
-    title: "Accounts",
+    title: "C.Accounts",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -244,7 +244,7 @@ export const SidebarData = [
     ],
   },
   {
-    title: "Cash Counter",
+    title: "Accounts",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -254,6 +254,18 @@ export const SidebarData = [
       {
         title: "Cash Counter",
         path: "/counter/cashcounter",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Payment Voucher",
+        path: "/counter/paymentVoucher",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Recived Voucher",
+        path: "/counter/receivedVoucher",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
