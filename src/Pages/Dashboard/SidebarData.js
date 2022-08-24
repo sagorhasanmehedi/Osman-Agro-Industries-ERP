@@ -43,7 +43,6 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
 
-
       {
         title: "Sale Report",
         path: "/dashboard/salereport",
@@ -364,12 +363,6 @@ export const SidebarData = [
     ],
   },
 
-
-  
-
- 
- 
- 
   {
     title: "Bank",
 
@@ -409,6 +402,18 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
+      {
+        title: "Check Book",
+        path: "/bank/checkbook",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Check Report",
+        path: "/bank/checkreport",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      }
     ],
   },
 ];

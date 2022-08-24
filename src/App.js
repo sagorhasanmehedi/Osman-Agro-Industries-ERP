@@ -60,6 +60,8 @@ import ManageReceiptChallan from "./Pages/purchasePages/ManageReceiptChallan";
 import ManageReceipt from "./Pages/purchasePages/ManageReceipt";
 import BalanceCheck from "./Pages/reportPages/BalanceCheck";
 import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
+import CheckBook from "./Pages/bank/CheckBook";
+import CheckReportPage from "./Pages/bank/CheckReportPage";
 
 function App() {
   return (
@@ -162,6 +164,8 @@ function App() {
           <Route path="bankaccounttype" element={<AccountType />} />
           <Route path="managebankaccount" element={<ManageBankAccount />} />
           <Route path="addaccount" element={<AddAccountForm />} />
+          <Route path="checkbook" element={<CheckBook />} />
+          <Route path="checkreport" element={<CheckReportPage />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
