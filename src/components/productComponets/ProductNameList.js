@@ -5,6 +5,7 @@ import {
   HeaderName,
 } from "../../Pages/landingPage/LandingPageStyled";
 import { Table } from "react-bootstrap";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const ProductNameList = ({ name, datas, handleUpdate }) => {
   return (
@@ -28,8 +29,28 @@ const ProductNameList = ({ name, datas, handleUpdate }) => {
             <tr key={idx}>
               <td>Id</td>
               <td>Brand Name</td>
+
               <td>
-                <Button onClick={(id) => handleUpdate(id)}>Edit</Button>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    id="dropdown-basic"
+                    style={{
+                      background: "#54D487",
+                      border: "none",
+                    }}
+                  >
+                    View
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item onClick={(id) => handleUpdate(id)}>
+                      Update
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={(id) => handleUpdate(id)}>
+                      Delete
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </td>
             </tr>
           ))}

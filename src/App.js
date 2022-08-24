@@ -59,9 +59,19 @@ import PendingReceipt from "./Pages/purchasePages/PendingReceipt";
 import ManageReceiptChallan from "./Pages/purchasePages/ManageReceiptChallan";
 import ManageReceipt from "./Pages/purchasePages/ManageReceipt";
 import BalanceCheck from "./Pages/reportPages/BalanceCheck";
+
 import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
 import CheckBook from "./Pages/bank/CheckBook";
 import CheckReportPage from "./Pages/bank/CheckReportPage";
+
+import ReceivedVoucherWindow from "./Pages/paymentVoucherPages/ReceivedVoucherWindow";
+import ReceivedVoucherInvoice from "./Pages/paymentVoucherPages/ReceivedVoucherInvoice";
+import PaymentVoucherInvoice from "./Pages/paymentVoucherPages/PaymentVoucherInvoice";
+import PaymentVoucherWindow from "./Pages/paymentVoucherPages/PaymentVoucherWindow";
+import BankDepositwindow from "./Pages/bank/bankdeposit/BankDepositwindow";
+import BankWithdrawWindow from "./Pages/bank/bankwithdraw/BankWithdrawWindow";
+import DepositWendowInvoice from "./Pages/bank/bankdeposit/DepositWendowInvoice";
+import BankWithdrawInvoice from "./Pages/bank/bankwithdraw/BankWithdrawInvoice";
 
 function App() {
   return (
@@ -131,6 +141,16 @@ function App() {
 
         <Route path="counter" element={<Dashboard />}>
           <Route path="cashcounter" element={<CashCounterWindow />} />
+          <Route path="receivedVoucher" element={<ReceivedVoucherWindow />} />
+          <Route path="paymentVoucher" element={<PaymentVoucherWindow />} />
+          <Route
+            path="paymentVoucherInvoice"
+            element={<PaymentVoucherInvoice />}
+          />
+          <Route
+            path="receivedVoucherInvoice"
+            element={<ReceivedVoucherInvoice />}
+          />
         </Route>
 
         <Route path="report" element={<Dashboard />}>
@@ -166,6 +186,10 @@ function App() {
           <Route path="addaccount" element={<AddAccountForm />} />
           <Route path="checkbook" element={<CheckBook />} />
           <Route path="checkreport" element={<CheckReportPage />} />
+          <Route path="deposit" element={<BankDepositwindow />} />
+          <Route path="depositinvoice" element={<DepositWendowInvoice />} />
+          <Route path="withdraw" element={<BankWithdrawWindow />} />
+          <Route path="withdrawinvoice" element={<BankWithdrawInvoice />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

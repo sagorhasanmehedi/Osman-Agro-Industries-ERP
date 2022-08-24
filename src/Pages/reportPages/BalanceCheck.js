@@ -23,8 +23,6 @@ const BalanceCheck = () => {
         navValue={navValue}
         data={data}
         setData={setData}
-        Primary="rgba(84, 212, 135, 0.25)"
-        Active="#54D487"
       />
       <FilterSection />
 

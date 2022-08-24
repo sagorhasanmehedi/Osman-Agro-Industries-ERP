@@ -55,13 +55,11 @@ function CategoryListTable() {
       size="sm"
       style={{ background: "white" }}
     >
-      <thead>
-        <tr style={{ borderWidth: 0 }}>
+      <tbody>
+        <tr className="tableHeader">
           <th>Id</th>
           <th>City Name</th>
         </tr>
-      </thead>
-      <tbody>
         {Array.from({ length: 6 }).map((_, idx) => (
           <tr key={idx}>
             <td>Id</td>

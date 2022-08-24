@@ -65,17 +65,19 @@ function CategoryListTable() {
       size="sm"
       style={{ background: "white" }}
     >
-      <thead>
+      <tbody>
         <tr style={{ borderWidth: 0 }}>
           <th>Id</th>
+          <th>City Name</th>
           <th>District Name</th>
+          <th>District Code</th>
         </tr>
-      </thead>
-      <tbody>
         {Array.from({ length: 6 }).map((_, idx) => (
           <tr key={idx}>
             <td>Id</td>
+            <td>City Name</td>
             <td>District Name</td>
+            <td>District Code</td>
           </tr>
         ))}
       </tbody>
