@@ -17,7 +17,7 @@ const ManageBankBranchForm = () => {
           <th>SL.</th>
           <th>Bank Name</th>
           <th>Brance Name</th>
-          <th>Contact No</th>
+
           <th>Action</th>
         </tr>
 
@@ -26,7 +26,7 @@ const ManageBankBranchForm = () => {
             <td>SL.</td>
             <td>Bank Name</td>
             <td>Brance Name</td>
-            <td>Contact No</td>
+
             <td>
               <Dropdown>
                 <Dropdown.Toggle

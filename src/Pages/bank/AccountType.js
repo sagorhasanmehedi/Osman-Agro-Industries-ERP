@@ -1,36 +1,25 @@
-import React from 'react';
-import { PlainText2 } from '../sale/SaleStyled';
-import {
-  Button,
-  ButtonGroupContainer,
-  CardContainer,
-  ContainerPosition,
-  Input,
-} from "../landingPage/LandingPageStyled";
-import { NavLink } from "react-router-dom";
-import AcountTypeForm from '../../components/bank/AcountTypeForm';
+import React, { useState } from 'react';
+
+
+import AddProductName from '../../components/productComponets/AddProductName';
+import ProductNameList from '../../components/productComponets/ProductNameList';
 
 const AccountType = () => {
-    return (
-        <>
-      <PlainText2>Bank Account Type Window</PlainText2>
+  const [data, setData] = useState({});
+  const [datas, setDatas] = useState([]);
 
+  const handleSubmit = () => {};
+  const handleUpdate = () => {};
 
-      <ButtonGroupContainer Possition="space-between" Shadow="none" Background="none">
-        <NavLink to="/message/testlink">
-          <Button>Add Bank</Button>
-        </NavLink>
-        <ContainerPosition Gap="10px">
-          <Input type="search" placeholder="Search" Width="250px" />
-          <Button>Print</Button>
-        </ContainerPosition>
-      </ButtonGroupContainer>
-
-      <CardContainer>
-       <AcountTypeForm/> 
-      </CardContainer>
+  return (
+    <>
+      <AddProductName
+        name="Account Type"
+        setName={setData}
+        handleSubmit={handleSubmit}
+      />
+      <ProductNameList name="Account Type" Datas={datas} handleUpdate={handleUpdate} />
     </>
-    );
+  );
 };
-
 export default AccountType;

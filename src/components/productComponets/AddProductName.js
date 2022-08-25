@@ -8,7 +8,7 @@ import {
 import { PlainText2 } from "../../Pages/sale/SaleStyled";
 import { Col, Row } from "react-bootstrap";
 
-const AddProductName = ({ name, setName, handleSubmit }) => {
+const AddProductName = ({ name, setName, handleSubmit, }) => {
   return (
     <CardContainer>
       <HeaderName>Add {name}</HeaderName>

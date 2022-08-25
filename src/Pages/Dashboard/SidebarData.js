@@ -302,8 +302,57 @@ export const SidebarData = [
     ],
   },
 
+  // {
+  //   title: "Message",
+
+  //   path: "#",
+  //   icon: <IoIcons.IoIosPaper />,
+  //   iconClosed: <RiIcons.RiArrowDownSFill />,
+  //   iconOpened: <RiIcons.RiArrowUpSFill />,
+
+  //   subNav: [
+  //     {
+  //       title: "Inbox",
+  //       path: "/message/inbox",
+  //       icon: <IoIcons.IoIosPaper />,
+  //       cName: "sub-nav",
+  //     },
+  //     {
+  //       title: "Send",
+  //       path: "/message/send",
+  //       icon: <IoIcons.IoIosPaper />,
+  //       cName: "sub-nav",
+  //     },
+  //     {
+  //       title: "Sending",
+  //       path: "/message/sending",
+  //       icon: <IoIcons.IoIosPaper />,
+  //       cName: "sub-nav",
+  //     },
+
+  //     {
+  //       title: "Outbox",
+  //       path: "/message/outbox",
+  //       icon: <IoIcons.IoIosPaper />,
+  //       cName: "sub-nav",
+  //     },
+  //     {
+  //       title: "Schedule SMS",
+  //       path: "/message/scheduleSMS",
+  //       icon: <IoIcons.IoIosPaper />,
+  //       cName: "sub-nav",
+  //     },
+  //     {
+  //       title: "Gateways",
+  //       path: "/message/gatewaywindow",
+  //       icon: <IoIcons.IoIosPaper />,
+  //       cName: "sub-nav",
+  //     },
+  //   ],
+  // },
+
   {
-    title: "Message",
+    title: "Messages",
 
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -312,39 +361,8 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "Inbox",
-        path: "/message/inbox",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Send",
-        path: "/message/send",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Sending",
-        path: "/message/sending",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-
-      {
-        title: "Outbox",
-        path: "/message/outbox",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Schedule SMS",
-        path: "/message/scheduleSMS",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Gateways",
-        path: "/message/gatewaywindow",
+        title: "Message",
+        path: "/message/message",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
@@ -440,7 +458,28 @@ export const SidebarData = [
       },
     ],
   },
-];
 
- 
- 
+  {
+    title: "Payroll",
+
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Salary Generate",
+        path: "/payroll/salarygenerate ",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Salary Sheet",
+        path: "/payroll/salarysheet",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+];

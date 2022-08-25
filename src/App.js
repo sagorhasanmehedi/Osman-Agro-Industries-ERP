@@ -72,6 +72,10 @@ import BankDepositwindow from "./Pages/bank/bankdeposit/BankDepositwindow";
 import BankWithdrawWindow from "./Pages/bank/bankwithdraw/BankWithdrawWindow";
 import DepositWendowInvoice from "./Pages/bank/bankdeposit/DepositWendowInvoice";
 import BankWithdrawInvoice from "./Pages/bank/bankwithdraw/BankWithdrawInvoice";
+import UpdateMessage from "./Pages/message/UpdateMessage";
+import CreateNewMessage from "./components/message/CreateNewMessage";
+import SalaryGenerate from "./Pages/payroll/SalaryGenerate";
+import SalarySheet from "./Pages/payroll/SalarySheet";
 
 function App() {
   return (
@@ -190,6 +194,15 @@ function App() {
           <Route path="depositinvoice" element={<DepositWendowInvoice />} />
           <Route path="withdraw" element={<BankWithdrawWindow />} />
           <Route path="withdrawinvoice" element={<BankWithdrawInvoice />} />
+        </Route>
+        <Route path="message" element={<Dashboard />}>
+          <Route path="message" element={<UpdateMessage />} />
+          <Route path="createmessage" element={<CreateNewMessage />} />
+        </Route>
+        <Route path="payroll" element={<Dashboard />}>
+          <Route path="salarygenerate" element={<SalaryGenerate />} />
+          <Route path="salarysheet" element={<SalarySheet />} />
+        
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
