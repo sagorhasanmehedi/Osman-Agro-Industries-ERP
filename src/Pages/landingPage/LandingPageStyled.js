@@ -47,7 +47,7 @@ export const Input = styled.input`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  border: 0.5px solid #28365a;
+  border: 0.5px solid #ecd0c9;
   border-radius: 4px;
   margin: ${(props) => props.Margin || "8px 0px"};
   padding: ${(props) => props.Padding || "6px 8px"};
@@ -61,7 +61,7 @@ export const Input = styled.input`
 export const TextAriea = styled.textarea`
   width: ${(props) => props.Width || "100%"};
   padding: ${(props) => props.Padding || "10px"};
-  border: 0.5px solid #28365a;
+  border: 0.5px solid #ecd0c9;
   border-radius: 4px;
   font-family: "Poppins";
   color: ${(props) => props.Color || "#1B253F"};
@@ -75,7 +75,7 @@ export const Select = styled.select`
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
-  border: 0.5px solid #28365a;
+  border: 0.5px solid #ecd0c9;
   border-radius: 4px;
   margin: ${(props) => props.Margin || "8px 0px"};
   color: ${(props) => props.Color || "#1B253F"};

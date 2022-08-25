@@ -60,8 +60,8 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <div style={{ background: "#283966" }}>
-              <DropdownLink to={item.path} key={index}>
+            <div style={{ background: "#283966" }} key={index}>
+              <DropdownLink to={item.path}>
                 <span style={{ padding: "3px 0px 3px 20px" }}>
                   {item.icon}
                   <SidebarLabel>{item.title}</SidebarLabel>

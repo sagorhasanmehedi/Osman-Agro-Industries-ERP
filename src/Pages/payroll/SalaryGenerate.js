@@ -4,7 +4,7 @@ import {
   Button,
   ButtonGroupContainer,
   ContainerPosition,
-  Input,
+
   Select,
 } from "../landingPage/LandingPageStyled";
 import { PlainText2 } from "../sale/SaleStyled";

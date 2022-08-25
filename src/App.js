@@ -60,14 +60,15 @@ import ManageReceiptChallan from "./Pages/purchasePages/ManageReceiptChallan";
 import ManageReceipt from "./Pages/purchasePages/ManageReceipt";
 import BalanceCheck from "./Pages/reportPages/BalanceCheck";
 
+
 import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
 import CheckBook from "./Pages/bank/CheckBook";
 import CheckReportPage from "./Pages/bank/CheckReportPage";
 
-import ReceivedVoucherWindow from "./Pages/paymentVoucherPages/ReceivedVoucherWindow";
-import ReceivedVoucherInvoice from "./Pages/paymentVoucherPages/ReceivedVoucherInvoice";
-import PaymentVoucherInvoice from "./Pages/paymentVoucherPages/PaymentVoucherInvoice";
-import PaymentVoucherWindow from "./Pages/paymentVoucherPages/PaymentVoucherWindow";
+// import ReceivedVoucherWindow from "./Pages/paymentVoucherPages/ReceivedVoucherWindow";
+// import ReceivedVoucherInvoice from "./Pages/paymentVoucherPages/ReceivedVoucherInvoice";
+// import PaymentVoucherInvoice from "./Pages/paymentVoucherPages/PaymentVoucherInvoice";
+// import PaymentVoucherWindow from "./Pages/paymentVoucherPages/PaymentVoucherWindow";
 import BankDepositwindow from "./Pages/bank/bankdeposit/BankDepositwindow";
 import BankWithdrawWindow from "./Pages/bank/bankwithdraw/BankWithdrawWindow";
 import DepositWendowInvoice from "./Pages/bank/bankdeposit/DepositWendowInvoice";
@@ -76,6 +77,19 @@ import UpdateMessage from "./Pages/message/UpdateMessage";
 import CreateNewMessage from "./components/message/CreateNewMessage";
 import SalaryGenerate from "./Pages/payroll/SalaryGenerate";
 import SalarySheet from "./Pages/payroll/SalarySheet";
+
+import ReceivedVoucherWindow from "./Pages/voucherPages/ReceivedVoucherWindow";
+import ReceivedVoucherInvoice from "./Pages/voucherPages/ReceivedVoucherInvoice";
+import PaymentVoucherInvoice from "./Pages/voucherPages/PaymentVoucherInvoice";
+import PaymentVoucherWindow from "./Pages/voucherPages/PaymentVoucherWindow";
+import VoucherApproval from "./Pages/voucherPages/VoucherApproval";
+import Division from "./Pages/hrmPages/Division";
+import Designation from "./Pages/hrmPages/Designation";
+import AddEmployee from "./Pages/hrmPages/AddEmployee";
+import ManageEmployee from "./Pages/hrmPages/ManageEmployee";
+import MenualAttendence from "./Pages/attendencePages/MenualAttendence";
+import ManageAttendence from "./Pages/attendencePages/ManageAttendence";
+
 
 function App() {
   return (
@@ -147,6 +161,7 @@ function App() {
           <Route path="cashcounter" element={<CashCounterWindow />} />
           <Route path="receivedVoucher" element={<ReceivedVoucherWindow />} />
           <Route path="paymentVoucher" element={<PaymentVoucherWindow />} />
+          <Route path="voucherapproval" element={<VoucherApproval />} />
           <Route
             path="paymentVoucherInvoice"
             element={<PaymentVoucherInvoice />}
@@ -155,6 +170,16 @@ function App() {
             path="receivedVoucherInvoice"
             element={<ReceivedVoucherInvoice />}
           />
+        </Route>
+        <Route path="hrm" element={<Dashboard />}>
+          <Route path="manageemployee" element={<ManageEmployee />} />
+          <Route path="addemployee" element={<AddEmployee />} />
+          <Route path="division" element={<Division />} />
+          <Route path="designation" element={<Designation />} />
+        </Route>
+        <Route path="attendence" element={<Dashboard />}>
+          <Route path="menualattendence" element={<MenualAttendence />} />
+          <Route path="manageattendence" element={<ManageAttendence />} />
         </Route>
 
         <Route path="report" element={<Dashboard />}>

@@ -51,6 +51,43 @@ export const SidebarData = [
     ],
   },
   {
+    title: "Product",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage Product",
+        path: "/product/manageproduct",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Brand",
+        path: "/product/brand",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+
+      {
+        title: "Category",
+        path: "/product/category",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Unite",
+        path: "/product/unite",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Lot / Gallery",
+        path: "/product/lot",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
     title: "Purchase",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -149,44 +186,6 @@ export const SidebarData = [
   },
 
   {
-    title: "Product",
-    path: "#",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: "Manage Product",
-        path: "/product/manageproduct",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Brand",
-        path: "/product/brand",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-
-      {
-        title: "Category",
-        path: "/product/category",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Unite",
-        path: "/product/unite",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Lot / Gallery",
-        path: "/product/lot",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
-  },
-
-  {
     title: "Reports",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -268,6 +267,56 @@ export const SidebarData = [
       {
         title: "Recived Voucher",
         path: "/counter/receivedVoucher",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Voucher Approval",
+        path: "/counter/voucherapproval",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+  {
+    title: "HRM",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage employee",
+        path: "/hrm/manageemployee",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Division",
+        path: "/hrm/division",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Designation",
+        path: "/hrm/designation",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+  {
+    title: "Attendence",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage Attendence",
+        path: "/attendence/manageattendence",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
