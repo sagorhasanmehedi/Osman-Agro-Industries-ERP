@@ -13,14 +13,7 @@ const SaleInvoice = () => {
   const [data, setData] = useState("");
   const navValue = ["Add Delivery", "Add Challan", "SMS Re-Send", "Print"];
   const [data2, setData2] = useState("Invoice");
-  const navValue2 = [
-    "Invoice",
-    "Delivery",
-    "Challan",
-    "Kham",
-    "Transaction History",
-    "Document",
-  ];
+  const navValue2 = ["Invoice", "Delivery", "Challan", "Kham"];
 
   if (data === "Add Delivery") {
     navigation("/dashboard/addDelivery");

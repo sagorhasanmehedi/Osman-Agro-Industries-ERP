@@ -50,6 +50,43 @@ export const SidebarData = [
     ],
   },
   {
+    title: "Product",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Manage Product",
+        path: "/product/manageproduct",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Brand",
+        path: "/product/brand",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+
+      {
+        title: "Category",
+        path: "/product/category",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Unite",
+        path: "/product/unite",
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: "Lot / Gallery",
+        path: "/product/lot",
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
     title: "Purchase",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -142,44 +179,6 @@ export const SidebarData = [
       {
         title: "Vehicles Window",
         path: "/warehouse/vehicles",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
-  },
-
-  {
-    title: "Product",
-    path: "#",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: "Manage Product",
-        path: "/product/manageproduct",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Brand",
-        path: "/product/brand",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-
-      {
-        title: "Category",
-        path: "/product/category",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Unite",
-        path: "/product/unite",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Lot / Gallery",
-        path: "/product/lot",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
