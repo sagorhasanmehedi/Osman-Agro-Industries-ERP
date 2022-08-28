@@ -23,17 +23,6 @@ const InvoiceOfficeCopy = () => {
     <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
       <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
       <InvoiceBody>
-        <ButtonGroupContainer Possition="space-between" Shadow="none">
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Invoice
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            BarCode
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Office Copy
-          </PlainText>
-        </ButtonGroupContainer>
         <ContainerPosition Possition="space-between">
           <CustomerDetails />
           <SaleInvoiceInfo />

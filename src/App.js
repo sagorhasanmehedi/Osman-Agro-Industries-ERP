@@ -51,6 +51,11 @@ import AddEmployee from "./Pages/hrmPages/AddEmployee";
 import ManageEmployee from "./Pages/hrmPages/ManageEmployee";
 import MenualAttendence from "./Pages/attendencePages/MenualAttendence";
 import ManageAttendence from "./Pages/attendencePages/ManageAttendence";
+import ManageWeightScale from "./Pages/weightScalePages/ManageWeightScale";
+import AddWeight from "./Pages/weightScalePages/AddWeight";
+import WeightScaleInvoiceContainer from "./Pages/weightScalePages/WeightScaleInvoiceContainer";
+import BookingVehicles from "./Pages/vehiclesPages/BookingVehicles";
+import CustomerManagement from "./Pages/vehiclesPages/CustomerManagement";
 
 function App() {
   return (
@@ -141,6 +146,15 @@ function App() {
         <Route path="attendence" element={<Dashboard />}>
           <Route path="menualattendence" element={<MenualAttendence />} />
           <Route path="manageattendence" element={<ManageAttendence />} />
+        </Route>
+        <Route path="weightscale" element={<Dashboard />}>
+          <Route path="manageweightscale" element={<ManageWeightScale />} />
+          <Route path="addweightscale" element={<AddWeight />} />
+          <Route path="invoice" element={<WeightScaleInvoiceContainer />} />
+        </Route>
+        <Route path="vehicles" element={<Dashboard />}>
+          <Route path="bookingList" element={<BookingVehicles />} />
+          <Route path="customer" element={<CustomerManagement />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

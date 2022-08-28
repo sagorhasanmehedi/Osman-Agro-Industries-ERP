@@ -108,6 +108,16 @@ export const ButtonGroupContainer = styled.div`
   box-shadow: ${(props) => props.Shadow || "0px 0px 2px rgba(0, 0, 0, 0.25)"};
 `;
 
+export const PlainHeaderContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: ${(props) => props.Possition || "start"};
+  margin: ${(props) => props.Margin || "0px"};
+  padding: ${(props) => props.Padding || "0px 5px"};
+  gap: ${(props) => props.Gap || "0px"};
+`;
+
 export const ButtonGroup = styled.button`
   font-family: "Poppins";
   font-style: normal;
