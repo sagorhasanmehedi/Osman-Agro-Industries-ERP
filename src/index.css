@@ -26,6 +26,7 @@ html {
 
 .tableHeader {
   background: #54d487;
+  color: white;
 }
 
 th {
@@ -34,6 +35,7 @@ th {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  color: white !important;
 }
 
 td {

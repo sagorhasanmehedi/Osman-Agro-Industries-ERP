@@ -20,8 +20,7 @@ const WirehouseWindow = () => {
         <Input type="date" placeholder="Invoice Search" Width="150px" />
         <Lavel>End Date</Lavel>
         <Input type="date" placeholder="Invoice Search" Width="150px" />
-
-        <Button style={{ marginLeft: "auto" }}>Search</Button>
+        <Button>Search</Button>
       </ButtonGroupContainer>
       <StockTablle />
     </>
@@ -43,7 +42,7 @@ function StockTablle() {
         style={{ background: "white", marginTop: "10px" }}
       >
         <tbody>
-          <tr>
+          <tr className="tableHeader">
             <th>S.I</th>
             <th>Warehouse Nmae</th>
             <th>Date</th>
@@ -59,7 +58,7 @@ function StockTablle() {
             <th>Amount</th>
           </tr>
           {Array.from({ length: 4 }).map((_, index) => (
-            <tr>
+            <tr key={index}>
               <td>S.I</td>
               <td>Warehouse Nmae</td>
               <td>Date</td>

@@ -96,6 +96,16 @@ export const Lavel = styled.label`
   }
 `;
 
+export const PlainHeaderContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: ${(props) => props.Possition || "start"};
+  margin: ${(props) => props.Margin || "0px"};
+  padding: ${(props) => props.Padding || "0px 5px"};
+  gap: ${(props) => props.Gap || "0px"};
+`;
+
 export const ButtonGroupContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -106,16 +116,7 @@ export const ButtonGroupContainer = styled.div`
   gap: ${(props) => props.Gap || "0px"};
   background: ${(props) => props.Background || "#FFFFFF"};
   box-shadow: ${(props) => props.Shadow || "0px 0px 2px rgba(0, 0, 0, 0.25)"};
-`;
-
-export const PlainHeaderContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: ${(props) => props.Possition || "start"};
-  margin: ${(props) => props.Margin || "0px"};
-  padding: ${(props) => props.Padding || "0px 5px"};
-  gap: ${(props) => props.Gap || "0px"};
+  border-radius: ${(props) => props.Radius || "0px"};
 `;
 
 export const ButtonGroup = styled.button`

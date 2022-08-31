@@ -56,6 +56,8 @@ import AddWeight from "./Pages/weightScalePages/AddWeight";
 import WeightScaleInvoiceContainer from "./Pages/weightScalePages/WeightScaleInvoiceContainer";
 import BookingVehicles from "./Pages/vehiclesPages/BookingVehicles";
 import CustomerManagement from "./Pages/vehiclesPages/CustomerManagement";
+import AddWirehouseContainer from "./Pages/warehousePages/AddWirehouseContainer";
+import SoftwareSettingWindow from "./Pages/settingPages/SoftwareSettingWindow";
 
 function App() {
   return (
@@ -111,6 +113,7 @@ function App() {
 
         <Route path="warehouse" element={<Dashboard />}>
           <Route path="wirehousewindow" element={<WirehouseWindow />} />
+          <Route path="addwirehouse" element={<AddWirehouseContainer />} />
           <Route path="vehicles" element={<VehiclesWindow />} />
         </Route>
 
@@ -154,7 +157,11 @@ function App() {
         </Route>
         <Route path="vehicles" element={<Dashboard />}>
           <Route path="bookingList" element={<BookingVehicles />} />
-          <Route path="customer" element={<CustomerManagement />} />
+          <Route path="customer" element={<SoftwareSettingWindow />} />
+        </Route>
+
+        <Route path="settings" element={<Dashboard />}>
+          <Route path="software" element={<SoftwareSettingWindow />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

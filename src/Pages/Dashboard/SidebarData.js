@@ -175,6 +175,11 @@ export const SidebarData = [
         path: "/warehouse/wirehousewindow",
         icon: <IoIcons.IoIosPaper />,
       },
+      {
+        title: "Add Wirehouse",
+        path: "/warehouse/addwirehouse",
+        icon: <IoIcons.IoIosPaper />,
+      },
 
       {
         title: "Vehicles Window",
@@ -336,6 +341,7 @@ export const SidebarData = [
       },
     ],
   },
+
   {
     title: "Vehicles",
     path: "#",
@@ -353,6 +359,22 @@ export const SidebarData = [
       {
         title: "Customer",
         path: "/vehicles/customer",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+  {
+    title: "Settings",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Software Setting",
+        path: "/settings/software",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
