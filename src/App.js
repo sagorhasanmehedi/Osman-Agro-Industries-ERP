@@ -58,6 +58,11 @@ import BookingVehicles from "./Pages/vehiclesPages/BookingVehicles";
 import CustomerManagement from "./Pages/vehiclesPages/CustomerManagement";
 import AddWirehouseContainer from "./Pages/warehousePages/AddWirehouseContainer";
 import SoftwareSettingWindow from "./Pages/settingPages/SoftwareSettingWindow";
+import CompanySettingWindow from "./Pages/settingPages/CompanySettingWindow";
+import ManageUserSetting from "./Pages/settingPages/ManageUserSetting";
+import CurrencySetting from "./Pages/settingPages/CurrencySetting";
+import UserAssignRole from "./Pages/settingPages/UserAssignRole";
+import RolePermissionForm from "./components/forms/RolePermissionForm";
 
 function App() {
   return (
@@ -162,6 +167,11 @@ function App() {
 
         <Route path="settings" element={<Dashboard />}>
           <Route path="software" element={<SoftwareSettingWindow />} />
+          <Route path="company" element={<CompanySettingWindow />} />
+          <Route path="usermanage" element={<ManageUserSetting />} />
+          <Route path="currency" element={<CurrencySetting />} />
+          <Route path="userrole" element={<UserAssignRole />} />
+          <Route path="permissionrole" element={<RolePermissionForm />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

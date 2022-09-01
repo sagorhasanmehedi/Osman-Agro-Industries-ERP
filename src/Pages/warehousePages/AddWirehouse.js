@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Table } from "react-bootstrap";
-import AddSingleType from "../../components/forms/AddSingleType";
+import DynamicTextInput from "../../components/forms/DynamicTextInput";
+import SingleFormContainer from "../../components/forms/SingleFormContainer";
 import { ActionEditAndDelete } from "../../components/shared/ActionButtons";
 import {
   Button,
@@ -37,12 +38,12 @@ const AddWirehouse = () => {
           style={{ marginLeft: "auto" }}
         />
       </ButtonGroupContainer>
-      {/* <AddSingleType
-        windowHeader="Add Wirehouse"
-        inputName={inputName}
-        setData={setData}
+      {/* <SingleFormContainer
+        windowHeader="Company Setting Window"
         handleSubmit={handleSubmit}
-      /> */}
+      >
+        <DynamicTextInput inputName={inputName} setData={setData} />
+      </SingleFormContainer> */}
       <TableList handleAction={handleAction} />
     </>
   );
