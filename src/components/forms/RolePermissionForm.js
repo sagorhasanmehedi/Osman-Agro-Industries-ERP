@@ -27,7 +27,7 @@ const RolePermissionForm = ({ HeadName, data }) => {
             <th>Update All</th>
             <th>Delete All</th>
           </tr>
-          {[1, 3, 4, 5].map((value, idx) => (
+          {data.map((value, idx) => (
             <tr key={idx}>
               <td>{value}</td>
               <td>

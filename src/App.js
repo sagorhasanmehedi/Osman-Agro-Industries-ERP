@@ -55,14 +55,13 @@ import ManageWeightScale from "./Pages/weightScalePages/ManageWeightScale";
 import AddWeight from "./Pages/weightScalePages/AddWeight";
 import WeightScaleInvoiceContainer from "./Pages/weightScalePages/WeightScaleInvoiceContainer";
 import BookingVehicles from "./Pages/vehiclesPages/BookingVehicles";
-import CustomerManagement from "./Pages/vehiclesPages/CustomerManagement";
 import AddWirehouseContainer from "./Pages/warehousePages/AddWirehouseContainer";
 import SoftwareSettingWindow from "./Pages/settingPages/SoftwareSettingWindow";
 import CompanySettingWindow from "./Pages/settingPages/CompanySettingWindow";
 import ManageUserSetting from "./Pages/settingPages/ManageUserSetting";
 import CurrencySetting from "./Pages/settingPages/CurrencySetting";
 import UserAssignRole from "./Pages/settingPages/UserAssignRole";
-import RolePermissionForm from "./components/forms/RolePermissionForm";
+import RolePermissionWindow from "./Pages/settingPages/RolePermissionWindow";
 
 function App() {
   return (
@@ -171,7 +170,7 @@ function App() {
           <Route path="usermanage" element={<ManageUserSetting />} />
           <Route path="currency" element={<CurrencySetting />} />
           <Route path="userrole" element={<UserAssignRole />} />
-          <Route path="permissionrole" element={<RolePermissionForm />} />
+          <Route path="permissionrole" element={<RolePermissionWindow />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
