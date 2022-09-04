@@ -7,33 +7,30 @@ import {
 } from "../../Pages/landingPage/LandingPageStyled";
 import { Table } from "react-bootstrap";
 import { PlainText2 } from "../sale/SaleStyled";
-import { ActionAll } from "../../components/shared/ActionButtons";
+import { ActionDelete } from "../../components/shared/ActionButtons";
 
-const BookingVehicles = () => {
+const ReminderVehicles = () => {
   return (
     <>
-      <PlainText2>Booking List</PlainText2>
-      <BookingNav />
-      <BookingList />
+      <PlainText2>Reminder</PlainText2>
+      <ReminderNav />
+      <ReminderList />
     </>
   );
 };
 
-export default BookingVehicles;
+export default ReminderVehicles;
 
-function BookingNav() {
+function ReminderNav() {
   return (
     <PlainHeaderContainer Possition="space-between">
-      <Button>Add Booking</Button>
-      <Input Width="300px" placeholder="search booking" />
+      <Button>Add Reminder</Button>
+      <Input Width="300px" placeholder="serch Remainder" />
     </PlainHeaderContainer>
   );
 }
 
-function BookingList() {
-  const handleAction = (id, action) => {
-    console.log(id, action);
-  };
+function ReminderList() {
   return (
     <CardContainer>
       <Table
@@ -49,23 +46,19 @@ function BookingList() {
         <tbody>
           <tr className="tableHeader">
             <th>SL.</th>
-            <th>Customer</th>
             <th>Vehicles</th>
-            <th>Type</th>
-            <th>Driver</th>
-            <th>Trip Status</th>
+            <th>Date</th>
+            <th>Message</th>
             <th>Action</th>
           </tr>
           {[1, 2, 2, 4].map((valeu, index) => (
             <tr key={index}>
               <td>SL.</td>
-              <td>Customer</td>
               <td>Vehicles</td>
-              <td>Type</td>
-              <td>Driver</td>
-              <td>Trip Status</td>
+              <td>Date</td>
+              <td>Message</td>
               <td>
-                <ActionAll id={index} handleAction={handleAction} />
+                <ActionDelete />
               </td>
             </tr>
           ))}

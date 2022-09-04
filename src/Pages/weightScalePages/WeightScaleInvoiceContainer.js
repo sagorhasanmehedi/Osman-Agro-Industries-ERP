@@ -13,7 +13,6 @@ const WeightScaleInvoiceContainer = () => {
   const navValue2 = ["Office Invoice"];
 
   if (data === "Pay Vehicle Rent") {
-    navigation("/dashboard/addDelivery");
   }
   return (
     <>

@@ -66,7 +66,7 @@ const CompanySettingWindow = () => {
         <Button onClick={() => setForm(true)}>Add Company</Button>
         <Input
           type="search"
-          placeholder="Invoice Search"
+          placeholder="Search...."
           Width="250px"
           style={{ marginLeft: "auto" }}
         />

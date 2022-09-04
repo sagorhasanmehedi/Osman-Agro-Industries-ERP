@@ -7,6 +7,7 @@ import {
 } from "../../Pages/landingPage/LandingPageStyled";
 import { Table } from "react-bootstrap";
 import { PlainText2 } from "../sale/SaleStyled";
+import { ActionAll } from "../../components/shared/ActionButtons";
 
 const CustomerManagement = () => {
   return (
@@ -59,7 +60,9 @@ function BookingList() {
               <td>Mobile</td>
               <td>Email</td>
               <td>Address</td>
-              <td>Action</td>
+              <td>
+                <ActionAll />
+              </td>
             </tr>
           ))}
         </tbody>

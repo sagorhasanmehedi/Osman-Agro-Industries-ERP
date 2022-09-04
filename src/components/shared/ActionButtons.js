@@ -51,6 +51,7 @@ export const ActionEditAndDelete = ({ id, handleAction }) => {
       Gap="5px"
       Shadow="none"
       Background="none"
+      FlexWrap="nowrap"
     >
       <Button
         Padding="5px 10px"
@@ -79,6 +80,7 @@ export const ActionAll = ({ id, handleAction }) => {
       Gap="5px"
       Shadow="none"
       Background="none"
+      FlexWrap="nowrap"
     >
       <Button
         Padding="5px 10px"

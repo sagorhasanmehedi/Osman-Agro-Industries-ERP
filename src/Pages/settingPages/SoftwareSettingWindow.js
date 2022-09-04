@@ -36,7 +36,7 @@ const SoftwareSettingWindow = () => {
     <>
       <ButtonGroupContainer Gap="6px" Shadow="none" Background="none">
         <Button onClick={() => setForm(true)}>Add Field</Button>
-        <Input type="search" placeholder="Invoice Search" Width="250px" />
+        <Input type="search" placeholder="Search....." Width="250px" />
         <Select
           Width="250px"
           style={{ marginLeft: "auto" }}

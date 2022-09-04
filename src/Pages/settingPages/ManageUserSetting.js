@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 import DynamicInput from "../../components/forms/DynamicInput";
 import DynamicTextInput from "../../components/forms/DynamicTextInput";
 import SingleFormContainer from "../../components/forms/SingleFormContainer";
-import { ActionAll, ActionEdit } from "../../components/shared/ActionButtons";
+import { ActionEditAndDelete } from "../../components/shared/ActionButtons";
 import {
   Button,
   ButtonGroupContainer,
@@ -98,7 +98,7 @@ function ManageUserList({ HeadName, handleAction }) {
               <td>User Phone</td>
               <td>Status</td>
               <td>
-                <ActionAll id={idx} handleAction={handleAction} />
+                <ActionEditAndDelete id={idx} handleAction={handleAction} />
               </td>
             </tr>
           ))}

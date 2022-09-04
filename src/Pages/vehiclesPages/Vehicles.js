@@ -4,35 +4,37 @@ import {
   Button,
   Input,
   PlainHeaderContainer,
-} from "../../Pages/landingPage/LandingPageStyled";
+} from "../landingPage/LandingPageStyled";
 import { Table } from "react-bootstrap";
 import { PlainText2 } from "../sale/SaleStyled";
 import { ActionAll } from "../../components/shared/ActionButtons";
+import { useNavigate } from "react-router-dom";
 
-const BookingVehicles = () => {
+const Vehicles = () => {
   return (
     <>
-      <PlainText2>Booking List</PlainText2>
-      <BookingNav />
-      <BookingList />
+      <PlainText2>Vehicles List</PlainText2>
+      <VehiclesNav />
+      <VehiclesList />
     </>
   );
 };
 
-export default BookingVehicles;
+export default Vehicles;
 
-function BookingNav() {
+function VehiclesNav() {
   return (
     <PlainHeaderContainer Possition="space-between">
-      <Button>Add Booking</Button>
-      <Input Width="300px" placeholder="search booking" />
+      <Button>Add Vehicles</Button>
+      <Input Width="300px" placeholder="serch Vehicles" />
     </PlainHeaderContainer>
   );
 }
 
-function BookingList() {
+function VehiclesList() {
+  const navigate = useNavigate();
   const handleAction = (id, action) => {
-    console.log(id, action);
+    navigate(`/vehicles/vehiclses/${id}`);
   };
   return (
     <CardContainer>
@@ -49,21 +51,23 @@ function BookingList() {
         <tbody>
           <tr className="tableHeader">
             <th>SL.</th>
-            <th>Customer</th>
-            <th>Vehicles</th>
+            <th>Name</th>
+            <th>Model</th>
+            <th>Registration No</th>
+            <th>Engine No</th>
             <th>Type</th>
-            <th>Driver</th>
-            <th>Trip Status</th>
+            <th>Created Date</th>
             <th>Action</th>
           </tr>
           {[1, 2, 2, 4].map((valeu, index) => (
             <tr key={index}>
               <td>SL.</td>
-              <td>Customer</td>
-              <td>Vehicles</td>
+              <td>Name</td>
+              <td>Model</td>
+              <td>Registration No</td>
+              <td>Engine No</td>
               <td>Type</td>
-              <td>Driver</td>
-              <td>Trip Status</td>
+              <td>Created Date</td>
               <td>
                 <ActionAll id={index} handleAction={handleAction} />
               </td>

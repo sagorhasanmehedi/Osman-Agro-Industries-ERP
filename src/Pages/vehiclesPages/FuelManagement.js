@@ -9,31 +9,28 @@ import { Table } from "react-bootstrap";
 import { PlainText2 } from "../sale/SaleStyled";
 import { ActionAll } from "../../components/shared/ActionButtons";
 
-const BookingVehicles = () => {
+const FuelManagement = () => {
   return (
     <>
-      <PlainText2>Booking List</PlainText2>
-      <BookingNav />
-      <BookingList />
+      <PlainText2>Fuel Management</PlainText2>
+      <FuelNav />
+      <FuelList />
     </>
   );
 };
 
-export default BookingVehicles;
+export default FuelManagement;
 
-function BookingNav() {
+function FuelNav() {
   return (
     <PlainHeaderContainer Possition="space-between">
-      <Button>Add Booking</Button>
-      <Input Width="300px" placeholder="search booking" />
+      <Button>Add Fuel</Button>
+      <Input Width="300px" placeholder="serch Fuel" />
     </PlainHeaderContainer>
   );
 }
 
-function BookingList() {
-  const handleAction = (id, action) => {
-    console.log(id, action);
-  };
+function FuelList() {
   return (
     <CardContainer>
       <Table
@@ -49,23 +46,28 @@ function BookingList() {
         <tbody>
           <tr className="tableHeader">
             <th>SL.</th>
-            <th>Customer</th>
+            <th>Fuel Fill Date</th>
             <th>Vehicles</th>
-            <th>Type</th>
-            <th>Driver</th>
-            <th>Trip Status</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Fuel Fill By</th>
+            <th>Autometer Reading</th>
+            <th>Components</th>
             <th>Action</th>
           </tr>
           {[1, 2, 2, 4].map((valeu, index) => (
             <tr key={index}>
               <td>SL.</td>
-              <td>Customer</td>
+              <td>Fuel Fill Date</td>
               <td>Vehicles</td>
-              <td>Type</td>
-              <td>Driver</td>
-              <td>Trip Status</td>
+              <td>Quantity</td>
+              <td>Total Price</td>
+              <td>Fuel Fill By</td>
+              <td>Autometer Reading</td>
+              <td>Components</td>
+
               <td>
-                <ActionAll id={index} handleAction={handleAction} />
+                <ActionAll />
               </td>
             </tr>
           ))}

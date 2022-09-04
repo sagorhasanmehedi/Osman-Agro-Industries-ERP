@@ -326,6 +326,58 @@ export const SidebarData = [
     ],
   },
   {
+    title: "Vehicles",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Vehicles",
+        path: "/vehicles/vehiclses",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Booking",
+        path: "/vehicles/bookingList",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Customer",
+        path: "/vehicles/customer",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Fuel Management",
+        path: "/vehicles/fuelmanagement",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Reminder Vehicles",
+        path: "/vehicles/reminder",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Income Expense",
+        path: "/vehicles/incomeexpense",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "History Tracking",
+        path: "/vehicles/historytracking",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
+  {
     title: "Weight Scale",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -343,28 +395,6 @@ export const SidebarData = [
   },
 
   {
-    title: "Vehicles",
-    path: "#",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: "Booking",
-        path: "/vehicles/bookingList",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Customer",
-        path: "/vehicles/customer",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-    ],
-  },
-  {
     title: "Settings",
     path: "#",
     icon: <IoIcons.IoIosPaper />,
@@ -373,37 +403,38 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "Software Setting",
-        path: "/settings/software",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Company Setting",
+        title: "Company Settings",
         path: "/settings/company",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
-        title: "Users Setting",
+        title: "Software Settings",
+        path: "/settings/software",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+
+      {
+        title: "Users Settings",
         path: "/settings/usermanage",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
-        title: "Currency Setting",
+        title: "Currency Settings",
         path: "/settings/currency",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
-        title: "User Role Setting",
+        title: "User Role Settings",
         path: "/settings/userrole",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
-        title: "User Role Permission Setting",
+        title: "User Role Permission Settings",
         path: "/settings/permissionrole",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",

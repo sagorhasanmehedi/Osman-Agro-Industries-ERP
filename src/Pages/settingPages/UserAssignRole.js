@@ -32,7 +32,7 @@ const UserAssignRole = () => {
         <Button>Search</Button>
       </ButtonGroupContainer>
       {addform && <AddForm setForm={setForm} />}
-      <UserRoleList HeadName="Currency" handleAction={handleAction} />
+      <UserRoleList HeadName="Role List Window" handleAction={handleAction} />
     </>
   );
 };

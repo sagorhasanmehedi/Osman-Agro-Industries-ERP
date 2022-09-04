@@ -9,28 +9,28 @@ import { Table } from "react-bootstrap";
 import { PlainText2 } from "../sale/SaleStyled";
 import { ActionAll } from "../../components/shared/ActionButtons";
 
-const BookingVehicles = () => {
+const IncomeExpenseVehicles = () => {
   return (
     <>
-      <PlainText2>Booking List</PlainText2>
-      <BookingNav />
-      <BookingList />
+      <PlainText2>Income Expense</PlainText2>
+      <IncomeExpenseNav />
+      <IncomeExpenseList />
     </>
   );
 };
 
-export default BookingVehicles;
+export default IncomeExpenseVehicles;
 
-function BookingNav() {
+function IncomeExpenseNav() {
   return (
     <PlainHeaderContainer Possition="space-between">
-      <Button>Add Booking</Button>
-      <Input Width="300px" placeholder="search booking" />
+      <Button>Add IncomeExpense</Button>
+      <Input Width="300px" placeholder="serch Income expense" />
     </PlainHeaderContainer>
   );
 }
 
-function BookingList() {
+function IncomeExpenseList() {
   const handleAction = (id, action) => {
     console.log(id, action);
   };
@@ -49,21 +49,21 @@ function BookingList() {
         <tbody>
           <tr className="tableHeader">
             <th>SL.</th>
-            <th>Customer</th>
             <th>Vehicles</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
             <th>Type</th>
-            <th>Driver</th>
-            <th>Trip Status</th>
             <th>Action</th>
           </tr>
-          {[1, 2, 2, 4].map((valeu, index) => (
+          {[1, 2, 2, 4].map((value, index) => (
             <tr key={index}>
               <td>SL.</td>
-              <td>Customer</td>
               <td>Vehicles</td>
+              <td>Date</td>
+              <td>Description</td>
+              <td>Amount</td>
               <td>Type</td>
-              <td>Driver</td>
-              <td>Trip Status</td>
               <td>
                 <ActionAll id={index} handleAction={handleAction} />
               </td>

@@ -62,6 +62,13 @@ import ManageUserSetting from "./Pages/settingPages/ManageUserSetting";
 import CurrencySetting from "./Pages/settingPages/CurrencySetting";
 import UserAssignRole from "./Pages/settingPages/UserAssignRole";
 import RolePermissionWindow from "./Pages/settingPages/RolePermissionWindow";
+import CustomerManagement from "./Pages/vehiclesPages/CustomerManagement";
+import FuelManagement from "./Pages/vehiclesPages/FuelManagement";
+import ReminderVehicles from "./Pages/vehiclesPages/ReminderVehicles";
+import IncomeExpenseVehicles from "./Pages/vehiclesPages/IncomeExpenseVehicles";
+import HistoryTracking from "./Pages/vehiclesPages/HistoryTracking";
+import Vehicles from "./Pages/vehiclesPages/Vehicles";
+import VehiclesView from "./Pages/vehiclesPages/VehiclesView";
 
 function App() {
   return (
@@ -160,8 +167,14 @@ function App() {
           <Route path="invoice" element={<WeightScaleInvoiceContainer />} />
         </Route>
         <Route path="vehicles" element={<Dashboard />}>
+          <Route path="vehiclses" element={<Vehicles />} />
+          <Route path="vehiclses/:id" element={<VehiclesView />} />
           <Route path="bookingList" element={<BookingVehicles />} />
-          <Route path="customer" element={<SoftwareSettingWindow />} />
+          <Route path="customer" element={<CustomerManagement />} />
+          <Route path="fuelmanagement" element={<FuelManagement />} />
+          <Route path="reminder" element={<ReminderVehicles />} />
+          <Route path="incomeexpense" element={<IncomeExpenseVehicles />} />
+          <Route path="historytracking" element={<HistoryTracking />} />
         </Route>
 
         <Route path="settings" element={<Dashboard />}>

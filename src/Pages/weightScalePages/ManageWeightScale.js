@@ -1,12 +1,13 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
   Button,
   CardContainer,
   Input,
   PlainHeaderContainer,
 } from "../landingPage/LandingPageStyled";
+import { ActionAll } from "../../components/shared/ActionButtons";
 
 const ManageWeightScale = () => {
   return (
@@ -33,6 +34,13 @@ function ManageHeder() {
 }
 
 function ManageList() {
+  const navigate = useNavigate();
+  const handleAction = (id, action) => {
+    console.log(id, action);
+    if (action === "view") {
+      navigate("/weightscale/invoice");
+    }
+  };
   return (
     <CardContainer>
       <Table
@@ -70,7 +78,7 @@ function ManageList() {
               <td>vehicle Rent Pay</td>
               <td>Status</td>
               <td>
-                <Button>Delete</Button>
+                <ActionAll id={index} handleAction={handleAction} />
               </td>
             </tr>
           ))}

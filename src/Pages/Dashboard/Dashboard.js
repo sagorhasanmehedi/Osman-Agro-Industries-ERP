@@ -7,6 +7,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
+import { FiSettings } from "react-icons/fi";
+import { Button, SelfContainer } from "../landingPage/LandingPageStyled";
 
 const Dashboard = () => {
   const [data, setData] = useState(false);
@@ -52,7 +54,42 @@ const Dashboard = () => {
               className="fas fa-align-left primary-text fs-4 me-4 toggle-icon"
               onClick={handleSubmit}
             ></i>
+
             <Nav className="ms-auto">
+              <SelfContainer
+                Direction="row"
+                Gap="10px"
+                style={{ alignSelf: "center" }}
+              >
+                <span
+                  style={{
+                    border: "1px solid blue",
+                    padding: "5px 10px",
+                    borderRadius: "4px",
+                  }}
+                >
+                  <FiSettings />
+                </span>
+                <span
+                  style={{
+                    border: "1px solid blue",
+                    padding: "5px 10px",
+                    borderRadius: "4px",
+                  }}
+                >
+                  <FiSettings />
+                </span>
+                <span
+                  style={{
+                    border: "1px solid blue",
+                    padding: "5px 10px",
+                    borderRadius: "4px",
+                  }}
+                >
+                  <FiSettings />
+                </span>
+              </SelfContainer>
+
               <NavDropdown
                 title="Profile"
                 // id="basic-nav-dropdown"
