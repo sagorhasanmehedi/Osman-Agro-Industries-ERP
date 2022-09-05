@@ -18,7 +18,7 @@ import PaymentMethod from "../../../components/sales/sales/PaymentMethod";
 const NewSale = () => {
   const navigation = useNavigate();
   const handleSubmit = () => {
-    navigation("/dashboard/saleInvoice");
+    navigation("/sale/invoice");
   };
 
   return (

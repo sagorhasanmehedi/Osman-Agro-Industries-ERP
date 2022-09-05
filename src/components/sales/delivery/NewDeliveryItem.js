@@ -14,7 +14,17 @@ const NewDeliveryItem = () => {
     >
       <tbody>
         <tr>
-          <td>5</td>
+          <th>Assign Vehicle</th>
+          <th>Item</th>
+          <th>Order (Qty)</th>
+          <th>Delivery (Qty)</th>
+          <th>Pending (Qty)</th>
+          <th>Unite</th>
+          <th>Lot / Gallery</th>
+          <th>Batch no</th>
+          <th>Product sl no</th>
+        </tr>
+        <tr>
           <td>
             <Input type="text" Margin="0px" />
           </td>

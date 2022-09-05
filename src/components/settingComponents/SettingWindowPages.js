@@ -51,8 +51,18 @@ const SettingWindowPages = ({ HeadName, handleAction }) => {
                   alignItems: "center",
                 }}
               >
-                <Input type="radio" Width="50px" name="selected" />
-                <Input type="radio" Width="50px" name="selected" />
+                <Input
+                  type="radio"
+                  Width="50px"
+                  name="selected"
+                  Shadow="none"
+                />
+                <Input
+                  type="radio"
+                  Width="50px"
+                  name="selected"
+                  Shadow="none"
+                />
               </td>
               <td>
                 <ActionEdit id={idx} handleAction={handleAction} />

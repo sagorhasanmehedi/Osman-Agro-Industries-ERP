@@ -28,6 +28,7 @@ const SelectCustomer = () => {
         <Input
           type="checkbox"
           Width="30px"
+          Shadow="none"
           style={{ marginLeft: "20px" }}
           onChange={(e) => console.log(e.target.checked)}
         />

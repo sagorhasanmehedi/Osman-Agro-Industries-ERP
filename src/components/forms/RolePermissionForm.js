@@ -31,19 +31,19 @@ const RolePermissionForm = ({ HeadName, data }) => {
             <tr key={idx}>
               <td>{value}</td>
               <td>
-                <Input type="checkbox" />
+                <Input type="checkbox" Shadow="none" />
               </td>
               <td>
-                <Input type="checkbox" />
+                <Input type="checkbox" Shadow="none" />
               </td>
               <td>
-                <Input type="checkbox" />
+                <Input type="checkbox" Shadow="none" />
               </td>
               <td>
-                <Input type="checkbox" />
+                <Input type="checkbox" Shadow="none" />
               </td>
               <td>
-                <Input type="checkbox" />
+                <Input type="checkbox" Shadow="none" />
               </td>
             </tr>
           ))}

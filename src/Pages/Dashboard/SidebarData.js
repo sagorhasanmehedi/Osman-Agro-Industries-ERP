@@ -22,29 +22,29 @@ export const SidebarData = [
     subNav: [
       {
         title: "Manage Sale",
-        path: "/dashboard/sale",
+        path: "/sale/sale",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
         title: "Manage Delivery",
-        path: "/dashboard/manageDelivery",
+        path: "/sale/manageDelivery",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Pending Delivery",
-        path: "/dashboard/managePendingDelivery",
+        path: "/sale/managePendingDelivery",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Manage Challan",
-        path: "/dashboard/manageChallan",
+        path: "/sale/manageChallan",
         icon: <IoIcons.IoIosPaper />,
       },
 
       {
         title: "Sale Report",
-        path: "/dashboard/salereport",
+        path: "/sale/salereport",
         icon: <IoIcons.IoIosPaper />,
       },
     ],

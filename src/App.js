@@ -75,12 +75,13 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
-        <Route path="dashboard" element={<Dashboard />}>
+        <Route path="sale" element={<Dashboard />}>
+          <Route path="/sale" element={<SaleWindow />} />
           <Route path="sale" element={<SaleWindow />} />
           <Route path="newSale" element={<NewSale />} />
           <Route path="addDelivery" element={<AddDelivery />} />
           <Route path="addChallan" element={<AddChallan />} />
-          <Route path="saleInvoice" element={<SaleInvoice />} />
+          <Route path="invoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
           <Route path="manageDelivery" element={<ManageDelivery />} />
           <Route

@@ -4,7 +4,7 @@
 }
 
 .brand {
-  color: gold !important;
+  color: rgb(167, 161, 127) !important;
   font-weight: bold;
 }
 .list_item {
@@ -12,4 +12,5 @@
   margin-right: 10px;
   font-weight: bold;
   text-decoration: none;
+  align-self: center;
 }

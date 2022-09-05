@@ -16,9 +16,9 @@ const SaleInvoice = () => {
   const navValue2 = ["Invoice", "Delivery", "Challan", "Kham"];
 
   if (data === "Add Delivery") {
-    navigation("/dashboard/addDelivery");
+    navigation("/sale/addDelivery");
   } else if (data === "Add Challan") {
-    navigation("/dashboard/addChallan");
+    navigation("/sale/addChallan");
   }
   return (
     <>
