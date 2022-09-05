@@ -60,7 +60,6 @@ import ManageReceiptChallan from "./Pages/purchasePages/ManageReceiptChallan";
 import ManageReceipt from "./Pages/purchasePages/ManageReceipt";
 import BalanceCheck from "./Pages/reportPages/BalanceCheck";
 
-
 import ManagePendingDelivery from "./Pages/sale/Delivery/ManagePendingDelivery";
 import CheckBook from "./Pages/bank/CheckBook";
 import CheckReportPage from "./Pages/bank/CheckReportPage";
@@ -107,7 +106,11 @@ import IncomeExpenseVehicles from "./Pages/vehiclesPages/IncomeExpenseVehicles";
 import HistoryTracking from "./Pages/vehiclesPages/HistoryTracking";
 import Vehicles from "./Pages/vehiclesPages/Vehicles";
 import VehiclesView from "./Pages/vehiclesPages/VehiclesView";
-
+import IncomeExpenseTransaction from "./Pages/IncomeExpense/IncomeExpenseTransaction";
+import ExpensenvoiceOfficeCopy from "./components/incomeExpense/ExpensenvoiceOfficeCopy";
+import ExpenseInvoice from "./components/incomeExpense/ExpenseInvoice";
+import Income from "./Pages/IncomeExpense/Income";
+import IncomeInvoice from "./components/incomeExpense/IncomeInvoice";
 
 function App() {
   return (
@@ -270,7 +273,16 @@ function App() {
         <Route path="payroll" element={<Dashboard />}>
           <Route path="salarygenerate" element={<SalaryGenerate />} />
           <Route path="salarysheet" element={<SalarySheet />} />
-        
+        </Route>
+
+        <Route path="incomeexpense" element={<Dashboard />}>
+          <Route
+            path="expensetransaction"
+            element={<IncomeExpenseTransaction />}
+          />
+          <Route path="expenseinvoice" element={<ExpenseInvoice />} />
+          <Route path="income" element={<Income />} />
+          <Route path="incomeinvoice" element={<IncomeInvoice />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
