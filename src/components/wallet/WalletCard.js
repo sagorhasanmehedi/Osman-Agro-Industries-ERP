@@ -10,7 +10,7 @@ import {
 const WalletCard = () => {
   return (
     <CardContainer Padding="0px">
-      <WalletDiv TopLeft="10px" TopRight="10px">
+      <WalletDiv TopLeft="10px" TopRight="10px" Background="#1B253F">
         <PlainText
           TextAlign="center"
           FontSize="34px"

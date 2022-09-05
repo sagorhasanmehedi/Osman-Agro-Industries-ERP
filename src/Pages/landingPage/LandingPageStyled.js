@@ -47,13 +47,16 @@ export const Input = styled.input`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  border: 0.5px solid #ecd0c9;
+  border: 1px solid #54d487;
+  box-shadow: 0px 0px 6px #d5d5d5;
   border-radius: 4px;
+  background: ${(props) => props.Background || "#FFFFFF"};
   margin: ${(props) => props.Margin || "8px 0px"};
   padding: ${(props) => props.Padding || "6px 8px"};
   color: ${(props) => props.Color || "#1B253F"};
+
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
+    color: ${(props) => props.PlaceHolderColor || "gray"};
   }
   width: ${(props) => props.Width || "100%"};
   outline: none
@@ -61,12 +64,14 @@ export const Input = styled.input`
 export const TextAriea = styled.textarea`
   width: ${(props) => props.Width || "100%"};
   padding: ${(props) => props.Padding || "10px"};
-  border: 0.5px solid #ecd0c9;
+  border: 1px solid #54d487;
+  box-shadow: 0px 0px 6px #d5d5d5;
   border-radius: 4px;
+  background: ${(props) => props.Background || "#FFFFFF"};
   font-family: "Poppins";
   color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
+    color: ${(props) => props.PlaceHolderColor || "gray"};
   }
 `;
 export const Select = styled.select`
@@ -74,13 +79,14 @@ export const Select = styled.select`
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 20px;
-  border: 0.5px solid #ecd0c9;
+  border: 1px solid #54d487;
+  box-shadow: 0px 0px 6px #d5d5d5;
   border-radius: 4px;
+  background: ${(props) => props.Background || "#FFFFFF"};
   margin: ${(props) => props.Margin || "8px 0px"};
   color: ${(props) => props.Color || "#1B253F"};
   ::placeholder {
-    color: ${(props) => props.PlaceHolderColor || "#1B253F"};
+    color: ${(props) => props.PlaceHolderColor || "gray"};
   }
   padding: ${(props) => props.Padding || "6px 8px"};
   width: ${(props) => props.Width || "100%"};
@@ -97,7 +103,7 @@ export const Lavel = styled.label`
   }
 `;
 
-export const ButtonGroupContainer = styled.div`
+export const PlainHeaderContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -105,8 +111,19 @@ export const ButtonGroupContainer = styled.div`
   margin: ${(props) => props.Margin || "0px"};
   padding: ${(props) => props.Padding || "0px 5px"};
   gap: ${(props) => props.Gap || "0px"};
+`;
+
+export const ButtonGroupContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: ${(props) => props.FlexWrap || "wrap"};
+  justify-content: ${(props) => props.Possition || "start"};
+  margin: ${(props) => props.Margin || "0px"};
+  padding: ${(props) => props.Padding || "0px 5px"};
+  gap: ${(props) => props.Gap || "0px"};
   background: ${(props) => props.Background || "#FFFFFF"};
   box-shadow: ${(props) => props.Shadow || "0px 0px 2px rgba(0, 0, 0, 0.25)"};
+  border-radius: ${(props) => props.Radius || "0px"};
 `;
 
 export const ButtonGroup = styled.button`
@@ -139,6 +156,17 @@ export const ContainerPosition = styled.div`
   flex-wrap: wrap;
   justify-content: ${(props) => props.Possition || "end"};
   align-items: center;
+  margin: ${(props) => props.Margin || "0px"};
+  gap: ${(props) => props.Gap || "0px"};
+`;
+
+export const SelfContainer = styled.div`
+  display: flex;
+  justify-content: ${(props) => props.Possition || "center"};
+  align-items: center;
+  flex-direction: ${(props) => props.Direction || "Column"};
+  height: 100%;
+  width: 100%;
   margin: ${(props) => props.Margin || "0px"};
   gap: ${(props) => props.Gap || "0px"};
 `;

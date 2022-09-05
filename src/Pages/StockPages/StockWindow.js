@@ -65,7 +65,7 @@ function StockTablle() {
         style={{ background: "white", marginTop: "10px" }}
       >
         <tbody>
-          <tr>
+          <tr className="tableHeader">
             <th>S.I</th>
             <th>Product Nmae</th>
             <th>Product</th>

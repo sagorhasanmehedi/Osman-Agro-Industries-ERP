@@ -17,7 +17,7 @@ const ButtonNavigation = ({ navValue, data, setData }) => {
           key={idx}
           style={{
             color: data === value && "white",
-            background: data === value && "#1B253F",
+            background: value === "Print" && "#1B253F",
             marginLeft: value === "Print" && "auto",
           }}
           onClick={() => setData(value)}

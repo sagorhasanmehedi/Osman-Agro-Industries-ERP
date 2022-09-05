@@ -119,7 +119,9 @@ function DeliverySummary() {
             bordered
             hover
             size="sm"
-            style={{ background: "white" }}
+            style={{
+              background: "white",
+            }}
           >
             <tbody>
               <tr>

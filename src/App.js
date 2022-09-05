@@ -89,6 +89,24 @@ import AddEmployee from "./Pages/hrmPages/AddEmployee";
 import ManageEmployee from "./Pages/hrmPages/ManageEmployee";
 import MenualAttendence from "./Pages/attendencePages/MenualAttendence";
 import ManageAttendence from "./Pages/attendencePages/ManageAttendence";
+import ManageWeightScale from "./Pages/weightScalePages/ManageWeightScale";
+import AddWeight from "./Pages/weightScalePages/AddWeight";
+import WeightScaleInvoiceContainer from "./Pages/weightScalePages/WeightScaleInvoiceContainer";
+import BookingVehicles from "./Pages/vehiclesPages/BookingVehicles";
+import AddWirehouseContainer from "./Pages/warehousePages/AddWirehouseContainer";
+import SoftwareSettingWindow from "./Pages/settingPages/SoftwareSettingWindow";
+import CompanySettingWindow from "./Pages/settingPages/CompanySettingWindow";
+import ManageUserSetting from "./Pages/settingPages/ManageUserSetting";
+import CurrencySetting from "./Pages/settingPages/CurrencySetting";
+import UserAssignRole from "./Pages/settingPages/UserAssignRole";
+import RolePermissionWindow from "./Pages/settingPages/RolePermissionWindow";
+import CustomerManagement from "./Pages/vehiclesPages/CustomerManagement";
+import FuelManagement from "./Pages/vehiclesPages/FuelManagement";
+import ReminderVehicles from "./Pages/vehiclesPages/ReminderVehicles";
+import IncomeExpenseVehicles from "./Pages/vehiclesPages/IncomeExpenseVehicles";
+import HistoryTracking from "./Pages/vehiclesPages/HistoryTracking";
+import Vehicles from "./Pages/vehiclesPages/Vehicles";
+import VehiclesView from "./Pages/vehiclesPages/VehiclesView";
 
 
 function App() {
@@ -145,6 +163,7 @@ function App() {
 
         <Route path="warehouse" element={<Dashboard />}>
           <Route path="wirehousewindow" element={<WirehouseWindow />} />
+          <Route path="addwirehouse" element={<AddWirehouseContainer />} />
           <Route path="vehicles" element={<VehiclesWindow />} />
         </Route>
 
@@ -180,6 +199,30 @@ function App() {
         <Route path="attendence" element={<Dashboard />}>
           <Route path="menualattendence" element={<MenualAttendence />} />
           <Route path="manageattendence" element={<ManageAttendence />} />
+        </Route>
+        <Route path="weightscale" element={<Dashboard />}>
+          <Route path="manageweightscale" element={<ManageWeightScale />} />
+          <Route path="addweightscale" element={<AddWeight />} />
+          <Route path="invoice" element={<WeightScaleInvoiceContainer />} />
+        </Route>
+        <Route path="vehicles" element={<Dashboard />}>
+          <Route path="vehiclses" element={<Vehicles />} />
+          <Route path="vehiclses/:id" element={<VehiclesView />} />
+          <Route path="bookingList" element={<BookingVehicles />} />
+          <Route path="customer" element={<CustomerManagement />} />
+          <Route path="fuelmanagement" element={<FuelManagement />} />
+          <Route path="reminder" element={<ReminderVehicles />} />
+          <Route path="incomeexpense" element={<IncomeExpenseVehicles />} />
+          <Route path="historytracking" element={<HistoryTracking />} />
+        </Route>
+
+        <Route path="settings" element={<Dashboard />}>
+          <Route path="software" element={<SoftwareSettingWindow />} />
+          <Route path="company" element={<CompanySettingWindow />} />
+          <Route path="usermanage" element={<ManageUserSetting />} />
+          <Route path="currency" element={<CurrencySetting />} />
+          <Route path="userrole" element={<UserAssignRole />} />
+          <Route path="permissionrole" element={<RolePermissionWindow />} />
         </Route>
 
         <Route path="report" element={<Dashboard />}>

@@ -1,28 +1,34 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Input, CardContainer, Button, Select } from "./LandingPageStyled";
+import {
+  Input,
+  CardContainer,
+  Button,
+  Select,
+  HeaderName,
+  SelfContainer,
+} from "./LandingPageStyled";
 import loginImage from "../../assets/loginImage.png";
 
 const LoginPage = () => {
   return (
     <Container
-      style={{
-        width: "100%",
-        height: "90vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      style={{ background: "white", borderRadius: "4px", marginTop: "100px" }}
     >
-      <Row xs={1} md={2}>
-        <Col>
+      {/* <CardContainer Padding="0px"> */}
+      <Row>
+        <Col xs={8} style={{ padding: "0px" }}>
           <img src={loginImage} alt="" width="100%" height="100%" />
         </Col>
-        <Col>
-          <CardContainer>
+        <Col xs={4}>
+          <SelfContainer>
+            <HeaderName FontSize="24px" Color="#54D487">
+              Login to your Account
+            </HeaderName>
             <Select
               onChange={(e) => console.log(e.target.value)}
-              Padding="21px 14px"
+              Width="340px"
+              Padding="11px 20px"
             >
               <option>Company</option>
               <option value="Wixtech1">Wixtech</option>
@@ -30,13 +36,36 @@ const LoginPage = () => {
               <option value="Wixtech3">Wixtech3</option>
             </Select>
 
-            <Input type="email" placeholder="Email" Padding="21px 14px" />
-            <Input type="phone" placeholder="Phone" Padding="21px 14px" />
-            <Input type="password" placeholder="Password" Padding="21px 14px" />
-            <Button>Login</Button>
-          </CardContainer>
+            <Input
+              type="email"
+              placeholder="Email"
+              Width="340px"
+              Padding="11px 20px"
+            />
+            <Input
+              type="phone"
+              placeholder="Phone"
+              Width="340px"
+              Padding="11px 20px"
+            />
+            <Input
+              type="password"
+              placeholder="Password"
+              Width="340px"
+              Padding="11px 20px"
+            />
+            <Input
+              type="submit"
+              Width="340px"
+              Padding="11px 20px"
+              Background="#54D487"
+              Color="white"
+              value="Login"
+            />
+          </SelfContainer>
         </Col>
       </Row>
+      {/* </CardContainer> */}
     </Container>
   );
 };

@@ -5,7 +5,6 @@ import {
   HeaderName,
   Input,
 } from "../../Pages/landingPage/LandingPageStyled";
-import { PlainText2 } from "../../Pages/sale/SaleStyled";
 import { Col, Row } from "react-bootstrap";
 
 const AddProductName = ({ name, setName, handleSubmit, }) => {
