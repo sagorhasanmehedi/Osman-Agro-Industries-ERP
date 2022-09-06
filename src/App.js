@@ -106,6 +106,7 @@ import IncomeExpenseVehicles from "./Pages/vehiclesPages/IncomeExpenseVehicles";
 import HistoryTracking from "./Pages/vehiclesPages/HistoryTracking";
 import Vehicles from "./Pages/vehiclesPages/Vehicles";
 import VehiclesView from "./Pages/vehiclesPages/VehiclesView";
+
 import IncomeExpenseTransaction from "./Pages/IncomeExpense/IncomeExpenseTransaction";
 import ExpenseInvoice from "./components/incomeExpense/ExpenseInvoice";
 import Income from "./Pages/IncomeExpense/Income";
@@ -115,17 +116,24 @@ import NewSaleQuotation from "./Pages/quotation/NewSaleQuotation";
 import PurchasesQuotation from "./Pages/quotation/PurchasesQuotation";
 import NewPurchaseQuotation from "./Pages/quotation/NewPurchaseQuotation";
 
+import Index from "./Pages/DashBoardPages/Index";
+import VehiclesDashboard from "./Pages/vehiclesPages/VehiclesDashboard";
+
+
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="dashboard" element={<Dashboard />}>
+          <Route path="/dashboard" element={<Index />} />
+        </Route>
+        <Route path="sale" element={<Dashboard />}>
           <Route path="sale" element={<SaleWindow />} />
           <Route path="newSale" element={<NewSale />} />
           <Route path="addDelivery" element={<AddDelivery />} />
           <Route path="addChallan" element={<AddChallan />} />
-          <Route path="saleInvoice" element={<SaleInvoice />} />
+          <Route path="invoice" element={<SaleInvoice />} />
           <Route path="salereport" element={<SaleReports />} />
           <Route path="manageDelivery" element={<ManageDelivery />} />
           <Route
@@ -212,6 +220,7 @@ function App() {
           <Route path="invoice" element={<WeightScaleInvoiceContainer />} />
         </Route>
         <Route path="vehicles" element={<Dashboard />}>
+          <Route path="dashboard" element={<VehiclesDashboard />} />
           <Route path="vehiclses" element={<Vehicles />} />
           <Route path="vehiclses/:id" element={<VehiclesView />} />
           <Route path="bookingList" element={<BookingVehicles />} />

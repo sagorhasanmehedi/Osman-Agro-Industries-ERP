@@ -1,25 +1,29 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
-import { FiSettings } from "react-icons/fi";
-import { Button, SelfContainer } from "../landingPage/LandingPageStyled";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { HeaderName, SelfContainer } from "../landingPage/LandingPageStyled";
+import Avatar from "react-avatar";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState(false);
   const handleSubmit = () => {
     setData(!data);
   };
 
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <>
       <div className="d-flex" id="wrapper">
-        {/* Sidebar*/}
         <div id="sidebar-wrapper" style={{ marginLeft: data && "0rem" }}>
           <div className="sidebar-heading text-center primary-text fs-4 fw-bold text-uppercase">
             HRM Project
@@ -37,9 +41,7 @@ const Dashboard = () => {
             })}
           </div>
         </div>
-        {/* #sidebar-wrapper*/}
 
-        {/*  Page Content */}
         <div id="page-content-wrapper">
           <Navbar
             bg="light"
@@ -48,14 +50,34 @@ const Dashboard = () => {
             style={{
               background: "#FFFFFF",
               boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.15)",
+              display: "flex",
+              justifyContent: "space-between",
             }}
           >
-            <i
-              className="fas fa-align-left primary-text fs-4 me-4 toggle-icon"
-              onClick={handleSubmit}
-            ></i>
+            <Nav>
+              <i
+                className="fas fa-align-left primary-text fs-4 me-4 toggle-icon"
+                onClick={handleSubmit}
+                style={{ alignSelf: "center" }}
+              ></i>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <HeaderName Padding="0px" FontWeight="500" FontSize="16px">
+                  Time: 06:07 AM
+                </HeaderName>
+                <HeaderName Padding="0px" FontWeight="500" FontSize="16px">
+                  Date: 19-08-2022
+                </HeaderName>
+              </div>
+            </Nav>
 
-            <Nav className="ms-auto">
+            <Nav>
               <SelfContainer
                 Direction="row"
                 Gap="10px"
@@ -63,51 +85,36 @@ const Dashboard = () => {
               >
                 <span
                   style={{
-                    border: "1px solid blue",
+                    border: "1px solid #5B82FD",
                     padding: "5px 10px",
                     borderRadius: "4px",
+                    color: "#5B82FD",
                   }}
                 >
-                  <FiSettings />
+                  Eng
+                  <RiArrowDropDownLine size={20} />
                 </span>
+
                 <span
                   style={{
-                    border: "1px solid blue",
+                    border: "1px solid #5B82FD",
                     padding: "5px 10px",
                     borderRadius: "4px",
+                    color: "#5B82FD",
                   }}
                 >
-                  <FiSettings />
-                </span>
-                <span
-                  style={{
-                    border: "1px solid blue",
-                    padding: "5px 10px",
-                    borderRadius: "4px",
-                  }}
-                >
-                  <FiSettings />
+                  {/* <FiSettings /> */}
+                  Menu
                 </span>
               </SelfContainer>
 
-              <NavDropdown
-                title="Profile"
-                // id="basic-nav-dropdown"
-                style={{
-                  color: "red",
-                  fontWeight: "bold",
-                  marginRight: "80px",
-                  padding: "7px 0px",
-                }}
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Avatar
+                name="Wim Mostmans"
+                size="55px"
+                round={true}
+                style={{ marginLeft: "20px" }}
+                onClick={handleClick}
+              />
             </Nav>
           </Navbar>
 

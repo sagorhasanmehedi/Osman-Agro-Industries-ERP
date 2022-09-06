@@ -27,7 +27,7 @@ export const PlainText = styled.p`
   color: ${(props) => props.Color || "balck"};
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "16px"};
-  text-align: ${(props) => props.TextAlign || "start"};
+  text-align: ${(props) => props.TextAlign || "left"};
   border: ${(props) => props.Border || "none"};
   padding: ${(props) => props.Padding || "0px"};
 `;
@@ -38,7 +38,7 @@ export const HeaderName = styled.div`
   color: ${(props) => props.Color || "#1B253F"};
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "20px"};
-  text-align: ${(props) => props.TextAlign || "start"};
+  text-align: ${(props) => props.TextAlign || "left"};
   padding: ${(props) => props.Padding || "10px 0px"};
 `;
 
@@ -54,7 +54,11 @@ export const Input = styled.input`
   margin: ${(props) => props.Margin || "8px 0px"};
   padding: ${(props) => props.Padding || "6px 8px"};
   color: ${(props) => props.Color || "#1B253F"};
-
+  box-shadow: ${(props) => props.Shadow || "0px 0px 6px #d5d5d5"};
+  &:focus {
+    outline: none;
+    border: 1px solid gray;
+  }
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "gray"};
   }
@@ -69,7 +73,12 @@ export const TextAriea = styled.textarea`
   border-radius: 4px;
   background: ${(props) => props.Background || "#FFFFFF"};
   font-family: "Poppins";
+  box-shadow: ${(props) => props.Shadow || "0px 0px 6px #d5d5d5"};
   color: ${(props) => props.Color || "#1B253F"};
+  &:focus {
+    outline: none;
+    border: 1px solid gray;
+  }
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "gray"};
   }
@@ -80,11 +89,15 @@ export const Select = styled.select`
   font-weight: 400;
   font-size: 13px;
   border: 1px solid #54d487;
-  box-shadow: 0px 0px 6px #d5d5d5;
+  box-shadow: ${(props) => props.Shadow || "0px 0px 6px #d5d5d5"};
   border-radius: 4px;
   background: ${(props) => props.Background || "#FFFFFF"};
   margin: ${(props) => props.Margin || "8px 0px"};
   color: ${(props) => props.Color || "#1B253F"};
+  &:focus {
+    outline: none;
+    border: 1px solid gray;
+  }
   ::placeholder {
     color: ${(props) => props.PlaceHolderColor || "gray"};
   }

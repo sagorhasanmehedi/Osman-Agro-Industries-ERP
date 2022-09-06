@@ -6,8 +6,8 @@ import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
   {
-    title: "Home",
-    path: "/",
+    title: "Dashboard",
+    path: "/dashboard",
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -22,30 +22,30 @@ export const SidebarData = [
     subNav: [
       {
         title: "Manage Sale",
-        path: "/dashboard/sale",
+        path: "/sale/sale",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
       },
       {
         title: "Manage Delivery",
-        path: "/dashboard/manageDelivery",
+        path: "/sale/manageDelivery",
         icon: <IoIcons.IoIosPaper />,
       },
 
       {
         title: "Pending Delivery",
-        path: "/dashboard/managePendingDelivery",
+        path: "/sale/managePendingDelivery",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Manage Challan",
-        path: "/dashboard/manageChallan",
+        path: "/sale/manageChallan",
         icon: <IoIcons.IoIosPaper />,
       },
 
       {
         title: "Sale Report",
-        path: "/dashboard/salereport",
+        path: "/sale/salereport",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
@@ -624,34 +624,7 @@ export const SidebarData = [
       },
     ],
   },
-  {
-    title: "HRM",
-    path: "#",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
 
-    subNav: [
-      {
-        title: "Manage employee",
-        path: "/hrm/manageemployee",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Division",
-        path: "/hrm/division",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-      {
-        title: "Designation",
-        path: "/hrm/designation",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
-      },
-    ],
-  },
   {
     title: "Attendence",
     path: "#",
@@ -676,6 +649,12 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
+      {
+        title: "Dashboard",
+        path: "/vehicles/dashboard",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
       {
         title: "Vehicles",
         path: "/vehicles/vehiclses",

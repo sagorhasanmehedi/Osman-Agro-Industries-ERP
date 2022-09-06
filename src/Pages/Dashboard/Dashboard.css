@@ -1,6 +1,6 @@
 #wrapper {
   overflow-x: hidden;
-  background-color: #f2f2f2;
+  background-color: #f9fbfd;
 }
 
 #sidebar-wrapper {
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .toggle-icon {
     display: none;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }

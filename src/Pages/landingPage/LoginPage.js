@@ -17,17 +17,16 @@ const LoginPage = () => {
     >
       {/* <CardContainer Padding="0px"> */}
       <Row>
-        <Col xs={8} style={{ padding: "0px" }}>
+        <Col xs={12} md={8} style={{ padding: "0px" }}>
           <img src={loginImage} alt="" width="100%" height="100%" />
         </Col>
-        <Col xs={4}>
+        <Col xs={12} md={4}>
           <SelfContainer>
             <HeaderName FontSize="24px" Color="#54D487">
               Login to your Account
             </HeaderName>
             <Select
               onChange={(e) => console.log(e.target.value)}
-              Width="340px"
               Padding="11px 20px"
             >
               <option>Company</option>
@@ -37,26 +36,14 @@ const LoginPage = () => {
             </Select>
 
             <Input
-              type="email"
-              placeholder="Email"
-              Width="340px"
+              type="text"
+              placeholder="Enter Email or Phone number"
               Padding="11px 20px"
             />
-            <Input
-              type="phone"
-              placeholder="Phone"
-              Width="340px"
-              Padding="11px 20px"
-            />
-            <Input
-              type="password"
-              placeholder="Password"
-              Width="340px"
-              Padding="11px 20px"
-            />
+
+            <Input type="password" placeholder="Password" Padding="11px 20px" />
             <Input
               type="submit"
-              Width="340px"
               Padding="11px 20px"
               Background="#54D487"
               Color="white"
