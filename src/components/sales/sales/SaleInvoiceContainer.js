@@ -15,13 +15,11 @@ const SaleInvoiceContainer = () => {
 
   return (
     <>
-      <InvoiceNav>
-        <SharedButtonNavigation2
-          navValue={navValue}
-          data={data}
-          setData={setData}
-        />
-      </InvoiceNav>
+      <SharedButtonNavigation2
+        navValue={navValue}
+        data={data}
+        setData={setData}
+      />
 
       {data === "OfficeInvoice" && <InvoiceOfficeCopy />}
       {data === "CustomerInvoice" && <InvoiceCustomerCopy />}

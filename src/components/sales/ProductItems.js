@@ -9,10 +9,12 @@ const ProductItems = () => {
       bordered
       hover
       size="sm"
-      style={{ background: "white" }}
+      style={{
+        background: "white",
+      }}
     >
       <tbody>
-        <tr>
+        <tr className="tableHeader">
           <th>S.I</th>
           <th>Product Nmae</th>
           <th>Quty</th>
@@ -20,8 +22,8 @@ const ProductItems = () => {
           <th>Rate</th>
           <th>Amount</th>
         </tr>
-        {Array.from({ length: 4 }).map((_, index) => (
-          <tr>
+        {[1, 2, 2, 4].map((valeu, index) => (
+          <tr key={index}>
             <td>{index + 1}</td>
             <td>Product Nmae</td>
             <td>Quty</td>

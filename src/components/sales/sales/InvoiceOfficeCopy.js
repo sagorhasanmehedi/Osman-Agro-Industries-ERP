@@ -5,23 +5,20 @@ import ProductItems from "../ProductItems";
 import SaleSummary from "../SaleSummary";
 import SaleInvoiceInfo from "./SaleInvoiceInfo";
 import ProductOrderBy from "./ProductOrderBy";
-import InvoiceHeader from "../../../assets/InvoiceHeader.png";
-import InvoiceFooter from "../../../assets/InvoiceFooter.png";
+import InvoiceBarcode from "../../../components/invoice/InvoiceBarcode";
 import {
-  ButtonGroupContainer,
-  CardContainer,
   ContainerPosition,
   HeaderName,
   InvoiceBody,
-  PlainText,
   TextAriea,
 } from "../../../Pages/landingPage/LandingPageStyled";
 import InvoiceSign from "../challan/InvoiceSign";
+import InvoiceFormat from "../../invoice/InvoiceFormat";
 
 const InvoiceOfficeCopy = () => {
   return (
-    <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
-      <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
+    <InvoiceFormat>
+      <InvoiceBarcode invoiceName="Invoice" copyName="Office Copy" />
       <InvoiceBody>
         <ContainerPosition Possition="space-between">
           <CustomerDetails />
@@ -42,14 +39,7 @@ const InvoiceOfficeCopy = () => {
       </InvoiceBody>
 
       <InvoiceSign />
-      <img
-        src={InvoiceFooter}
-        alt=""
-        style={{
-          width: "100%",
-        }}
-      />
-    </CardContainer>
+    </InvoiceFormat>
   );
 };
 

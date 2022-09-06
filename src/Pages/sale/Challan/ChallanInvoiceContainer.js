@@ -11,13 +11,11 @@ const ChallanInvoiceContainer = () => {
 
   return (
     <>
-      <div style={{ width: "840px", margin: "auto", marginTop: "40px" }}>
-        <SharedButtonNavigation2
-          navValue={navValue}
-          data={data}
-          setData={setData}
-        />
-      </div>
+      <SharedButtonNavigation2
+        navValue={navValue}
+        data={data}
+        setData={setData}
+      />
       {data === "Challan 1" && <ChallanInvoice1 />}
       {data === "Challan 2" && <ChallanInvoice2 />}
       {data === "Challan 3" && <ChallanInvoice3 />}

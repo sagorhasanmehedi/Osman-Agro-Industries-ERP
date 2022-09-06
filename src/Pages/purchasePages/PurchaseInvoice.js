@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SaleInvoiceContainer from "../../components/sales/sales/SaleInvoiceContainer";
 import ButtonNavigation from "../../components/shared/ButtonNavigation";
+import SharedButtonNavigation from "../../components/shared/SharedButtonNavigation";
 import SharedButtonNavigation2 from "../../components/shared/SharedButtonNavigation2";
 import ChallanInvoiceContainer from "../sale/Challan/ChallanInvoiceContainer";
 import DeliveryInvoice from "../sale/Delivery/DeliveryInvoice";
@@ -32,7 +33,7 @@ const PurchaseInvoice = () => {
     <>
       <PlainText2>Purchase Invoice</PlainText2>
       <ButtonNavigation navValue={navValue} data={data} setData={setData} />
-      <SharedButtonNavigation2
+      <SharedButtonNavigation
         navValue={navValue2}
         data={data2}
         setData={setData2}

@@ -1,37 +1,26 @@
 import React from "react";
-
 import ItemDetails from "../../../components/sales/ItemDetails";
 import {
-  ButtonGroupContainer,
-  CardContainer,
+
   ContainerPosition,
   HeaderName,
   InvoiceBody,
   PlainText,
   TextAriea,
 } from "../../landingPage/LandingPageStyled";
-import InvoiceHeader from "../../../assets/InvoiceHeader.png";
-import InvoiceFooter from "../../../assets/InvoiceFooter.png";
 import ChallanReceiver from "../../../components/sales/challan/ChallanReceiver";
 import ChallanVehicleDetails from "../../../components/sales/challan/ChallanVehicleDetails";
 import ChallanDetails from "../../../components/sales/challan/ChallanDetails";
 import VehicleRentDetails from "../../../components/sales/challan/VehicleRentDetails";
 import InvoiceSign from "../../../components/sales/challan/InvoiceSign";
+import InvoiceFormat from "../../../components/invoice/InvoiceFormat";
+import InvoiceBarcode from "../../../components/invoice/InvoiceBarcode";
 
 const ChallanInvoice1 = () => {
   return (
-    <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
-      <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
+    <InvoiceFormat>
+      <InvoiceBarcode invoiceName="Invoice" copyName=" Challan 1" />
       <InvoiceBody>
-        <ButtonGroupContainer Possition="space-between" Shadow="none">
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Invoice
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Challan 1
-          </PlainText>
-        </ButtonGroupContainer>
-
         <ContainerPosition Possition="space-between">
           <div>
             <PlainText Color="red">To/Receiver</PlainText>
@@ -55,14 +44,7 @@ const ChallanInvoice1 = () => {
       </InvoiceBody>
 
       <InvoiceSign />
-      <img
-        src={InvoiceFooter}
-        alt=""
-        style={{
-          width: "100%",
-        }}
-      />
-    </CardContainer>
+    </InvoiceFormat>
   );
 };
 

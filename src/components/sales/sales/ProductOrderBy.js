@@ -9,14 +9,23 @@ const ProductOrderBy = () => {
       bordered
       hover
       size="sm"
-      style={{ background: "white" }}
+      style={{
+        background: "white",
+      }}
     >
       <tbody>
-        <tr>
+        <tr className="tableHeader">
           <th>Product Order By : </th>
           <th>Estimate Data :</th>
           <th>Estimate No :</th>
         </tr>
+        {[1].map((valeu, index) => (
+          <tr key={index}>
+            <td>Product Order By : </td>
+            <td>Estimate Data :</td>
+            <td>Estimate No :</td>
+          </tr>
+        ))}
       </tbody>
     </Table>
   );

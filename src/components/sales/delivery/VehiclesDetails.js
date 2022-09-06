@@ -6,27 +6,32 @@ const VehiclesDetails = () => {
   return (
     <>
       <HeaderName>Vehicles Details</HeaderName>
+
       <Table
         striped
         responsive
         bordered
         hover
         size="sm"
-        style={{ background: "white" }}
+        style={{
+          background: "white",
+        }}
       >
         <tbody>
-          <tr>
+          <tr className="tableHeader">
             <th>Truc Number</th>
             <th>Owner Name and Mobile</th>
             <th>Driver Name</th>
             <th>Driver Mobile</th>
           </tr>
-          <tr>
-            <td>Truc Number</td>
-            <td>Owner Name and Mobile</td>
-            <td>Driver Name</td>
-            <td>Driver Mobile</td>
-          </tr>
+          {[1].map((valeu, index) => (
+            <tr key={index}>
+              <td>Truc Number</td>
+              <td>Owner Name and Mobile</td>
+              <td>Driver Name</td>
+              <td>Driver Mobile</td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </>

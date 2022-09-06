@@ -6,16 +6,19 @@ const DeliveryItem = () => {
   return (
     <>
       <HeaderName>Delivery Item</HeaderName>
+
       <Table
         striped
         responsive
         bordered
         hover
         size="sm"
-        style={{ background: "white" }}
+        style={{
+          background: "white",
+        }}
       >
         <tbody>
-          <tr>
+          <tr className="tableHeader">
             <th>S.I</th>
             <th>Vehicle Name</th>
             <th>Item</th>
@@ -27,8 +30,8 @@ const DeliveryItem = () => {
             <th>Batch no</th>
             <th>Product SI No</th>
           </tr>
-          {Array.from({ length: 4 }).map((_, index) => (
-            <tr>
+          {[1,2,3,4,5,6].map((valeu, index) => (
+            <tr key={index}>
               <td>{index + 1}</td>
               <td>Vehicle Name</td>
               <td>Item</td>

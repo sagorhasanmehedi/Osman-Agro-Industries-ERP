@@ -16,22 +16,13 @@ import InvoiceHeader from "../../../assets/InvoiceHeader.png";
 import InvoiceFooter from "../../../assets/InvoiceFooter.png";
 import DeliveryItem from "../../../components/sales/delivery/DeliveryItem";
 import InvoiceSign from "../../../components/sales/challan/InvoiceSign";
+import InvoiceFormat from "../../../components/invoice/InvoiceFormat";
+import InvoiceBarcode from "../../../components/invoice/InvoiceBarcode";
 const DeliveryCopy = () => {
   return (
-    <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
-      <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
+    <InvoiceFormat>
+      <InvoiceBarcode invoiceName="Invoice" copyName="Delivery Copy" />
       <InvoiceBody>
-        <ButtonGroupContainer Possition="space-between" Shadow="none">
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Invoice
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            BarCode
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Delivery Copy
-          </PlainText>
-        </ButtonGroupContainer>
         <ContainerPosition Possition="space-between">
           <CustomerDetails />
           <SaleInvoiceInfo />
@@ -41,16 +32,8 @@ const DeliveryCopy = () => {
         <DeliveryItem />
         <DeliveryDetails />
       </InvoiceBody>
-
       <InvoiceSign />
-      <img
-        src={InvoiceFooter}
-        alt=""
-        style={{
-          width: "100%",
-        }}
-      />
-    </CardContainer>
+    </InvoiceFormat>
   );
 };
 

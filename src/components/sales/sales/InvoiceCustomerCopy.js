@@ -16,24 +16,15 @@ import SaleInvoiceInfo from "./SaleInvoiceInfo";
 import InvoiceHeader from "../../../assets/InvoiceHeader.png";
 import InvoiceFooter from "../../../assets/InvoiceFooter.png";
 import InvoiceSign from "../challan/InvoiceSign";
+import InvoiceFormat from "../../invoice/InvoiceFormat";
+import InvoiceBarcode from "../../../components/invoice/InvoiceBarcode";
 
 const InvoiceCustomerCopy = () => {
   return (
-    <CardContainer Width="840px" Padding="0px" style={{ margin: "auto" }}>
-      <img src={InvoiceHeader} alt="" style={{ width: "100%" }} />
-
+    <InvoiceFormat>
+       <InvoiceBarcode invoiceName="Invoice" copyName="Customer Copy" />
       <InvoiceBody>
-        <ButtonGroupContainer Possition="space-between" Shadow="none">
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Invoice
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            BarCode
-          </PlainText>
-          <PlainText Padding="10px 40px" Border="1px solid black">
-            Customer Copy
-          </PlainText>
-        </ButtonGroupContainer>
+       
         <ContainerPosition Possition="space-between">
           <CustomerDetails />
           <SaleInvoiceInfo />
@@ -53,14 +44,7 @@ const InvoiceCustomerCopy = () => {
       </InvoiceBody>
 
       <InvoiceSign />
-      <img
-        src={InvoiceFooter}
-        alt=""
-        style={{
-          width: "100%",
-        }}
-      />
-    </CardContainer>
+    </InvoiceFormat>
   );
 };
 

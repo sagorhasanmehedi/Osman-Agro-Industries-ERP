@@ -3,6 +3,10 @@ import { Table } from "react-bootstrap";
 
 const VehicleRentDetails = () => {
   return (
+
+
+
+    
     <Table
       striped
       responsive
