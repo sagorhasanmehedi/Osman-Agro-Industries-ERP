@@ -27,7 +27,7 @@ export const PlainText = styled.p`
   color: ${(props) => props.Color || "balck"};
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "16px"};
-  text-align: ${(props) => props.TextAlign || "start"};
+  text-align: ${(props) => props.TextAlign || "left"};
   border: ${(props) => props.Border || "none"};
   padding: ${(props) => props.Padding || "0px"};
 `;
@@ -38,7 +38,7 @@ export const HeaderName = styled.div`
   color: ${(props) => props.Color || "#1B253F"};
   font-weight: ${(props) => props.FontWeight || "600"};
   font-size: ${(props) => props.FontSize || "20px"};
-  text-align: ${(props) => props.TextAlign || "start"};
+  text-align: ${(props) => props.TextAlign || "left"};
   padding: ${(props) => props.Padding || "10px 0px"};
 `;
 

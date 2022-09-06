@@ -6,8 +6,8 @@ import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
   {
-    title: "Home",
-    path: "/",
+    title: "Dashboard",
+    path: "/dashboard",
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -333,6 +333,12 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
+      {
+        title: "Dashboard",
+        path: "/vehicles/dashboard",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
       {
         title: "Vehicles",
         path: "/vehicles/vehiclses",

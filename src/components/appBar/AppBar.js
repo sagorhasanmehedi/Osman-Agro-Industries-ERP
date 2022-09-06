@@ -19,7 +19,7 @@ function AppBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavLink
-              to="/sale"
+              to="/dashboard"
               className="list_item"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >

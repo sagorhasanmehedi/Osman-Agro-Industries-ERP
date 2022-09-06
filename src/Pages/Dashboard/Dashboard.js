@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
-import { FiSettings } from "react-icons/fi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { HeaderName, SelfContainer } from "../landingPage/LandingPageStyled";
 import Avatar from "react-avatar";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState(false);
   const handleSubmit = () => {
     setData(!data);
+  };
+
+  const handleClick = () => {
+    navigate("/");
   };
 
   return (
@@ -110,6 +113,7 @@ const Dashboard = () => {
                 size="55px"
                 round={true}
                 style={{ marginLeft: "20px" }}
+                onClick={handleClick}
               />
             </Nav>
           </Navbar>
