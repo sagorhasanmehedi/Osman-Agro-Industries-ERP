@@ -24,7 +24,7 @@ const DashBoardActivityCard = ({ data }) => {
           {data.icon}
         </span>
       </SelfContainer>
-      <HeaderName FontSize="36px" FontWeight="600">
+      <HeaderName FontSize="28px" FontWeight="600">
         {data.money}
       </HeaderName>
     </CardContainer>
