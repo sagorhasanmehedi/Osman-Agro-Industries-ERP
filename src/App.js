@@ -107,10 +107,13 @@ import HistoryTracking from "./Pages/vehiclesPages/HistoryTracking";
 import Vehicles from "./Pages/vehiclesPages/Vehicles";
 import VehiclesView from "./Pages/vehiclesPages/VehiclesView";
 import IncomeExpenseTransaction from "./Pages/IncomeExpense/IncomeExpenseTransaction";
-import ExpensenvoiceOfficeCopy from "./components/incomeExpense/ExpensenvoiceOfficeCopy";
 import ExpenseInvoice from "./components/incomeExpense/ExpenseInvoice";
 import Income from "./Pages/IncomeExpense/Income";
 import IncomeInvoice from "./components/incomeExpense/IncomeInvoice";
+import SaleQuotation from "./Pages/quotation/SaleQuotation";
+import NewSaleQuotation from "./Pages/quotation/NewSaleQuotation";
+import PurchasesQuotation from "./Pages/quotation/PurchasesQuotation";
+import NewPurchaseQuotation from "./Pages/quotation/NewPurchaseQuotation";
 
 function App() {
   return (
@@ -283,6 +286,13 @@ function App() {
           <Route path="expenseinvoice" element={<ExpenseInvoice />} />
           <Route path="income" element={<Income />} />
           <Route path="incomeinvoice" element={<IncomeInvoice />} />
+        </Route>
+
+        <Route path="Quotation" element={<Dashboard />}>
+          <Route path="salequotation" element={<SaleQuotation />} />
+          <Route path="newsalequotation" element={<NewSaleQuotation />} />
+          <Route path="purchasequotation" element={<PurchasesQuotation />} />
+          <Route path="newpurchasequotation" element={<NewPurchaseQuotation />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />

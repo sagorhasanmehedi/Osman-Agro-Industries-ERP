@@ -806,4 +806,26 @@ export const SidebarData = [
       },
     ],
   },
+  {
+    title: "Quotation",
+    path: "#",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Sale Quotation",
+        path: "/quotation/salequotation",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Purchase Quotation",
+        path: "/quotation/purchasequotation",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+    ],
+  },
 ];
